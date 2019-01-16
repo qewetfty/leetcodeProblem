@@ -19,7 +19,7 @@ func removeDuplicates(nums []int) int {
 	return len(nums)
 }
 
-func main() {
+func main2() {
 	input1 := []int{1, 1, 2}
 	fmt.Println(removeDuplicates(input1))
 	input2 := []int{0, 0, 1, 1, 2, 2, 3, 3, 4}

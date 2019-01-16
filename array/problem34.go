@@ -61,7 +61,7 @@ func searchRange(nums []int, target int) []int {
 	return []int{left, right}
 }
 
-func main() {
+func main1() {
 	input1 := []int{5, 7, 7, 8, 8, 10}
 	fmt.Println(searchRange(input1, 8))
 	fmt.Println(searchRange(input1, 6))
