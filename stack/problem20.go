@@ -99,7 +99,7 @@ func (s Stack) IsEmpty() bool {
 	return s.Len() == 0
 }
 
-func main() {
+func testProblem20() {
 	input1 := "()"
 	fmt.Println(isValid(input1))
 	input2 := "()[]{}"

@@ -36,7 +36,7 @@ func firstMissingPositive(nums []int) int {
 	return numsLen + 1
 }
 
-func main() {
+func testProblem41() {
 	input1 := []int{1, 2, 0}
 	fmt.Println(firstMissingPositive(input1))
 	input2 := []int{1}

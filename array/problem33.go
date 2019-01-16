@@ -1,8 +1,7 @@
-package main
+package array
 
 import (
 	"fmt"
-	"github.com/leetcodeProblem/main/array"
 )
 
 //Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
@@ -56,7 +55,7 @@ func search(nums []int, target int) int {
 	return -1
 }
 
-func main() {
+func testProblem33() {
 	input1 := []int{4, 5, 6, 7, 0, 1, 2}
 	fmt.Println(search(input1, 0))
 	fmt.Println(search(input1, 3))
@@ -64,5 +63,4 @@ func main() {
 	fmt.Println(search(input2, 1))
 	input3 := []int{1, 3}
 	fmt.Println(search(input3, 3))
-	fmt.Println(array.SearchInsert(input1, 1))
 }
