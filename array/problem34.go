@@ -8,6 +8,8 @@ import "fmt"
 //
 //If the target is not found in the array, return [-1, -1].
 
+// use 2 times binary search can solve this problem
+
 func searchRange(nums []int, target int) []int {
 	numsLen := len(nums)
 	if numsLen == 0 {
@@ -18,7 +20,7 @@ func searchRange(nums []int, target int) []int {
 	mid := 0
 	left := -1
 	right := -1
-	// 先找target在最左侧的index
+	// first find left index
 	for i <= j {
 		mid = (i + j) / 2
 		searchNum := nums[mid]
@@ -40,7 +42,7 @@ func searchRange(nums []int, target int) []int {
 			j = mid - 1
 		}
 	}
-	// 再找target最右侧的index
+	// then find right index
 	i = 0
 	j = numsLen - 1
 	for i <= j {
