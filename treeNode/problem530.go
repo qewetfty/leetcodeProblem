@@ -1,13 +1,14 @@
 package treeNode
 
 import (
+	"github.com/leetcodeProblem/data"
 	"math"
 )
 
 // 给定一个所有节点为非负值的二叉搜索树，求树中任意两节点的差的绝对值的最小值。
 // 注意: 树中至少有2个节点。
 
-func getMinimumDifference(root *TreeNode) int {
+func getMinimumDifference(root *data.TreeNode) int {
 	if root == nil {
 		return 0
 	}
@@ -20,7 +21,7 @@ func getMinimumDifference(root *TreeNode) int {
 	return min
 }
 
-func searchTreeNode(root *TreeNode, res *[]int) {
+func searchTreeNode(root *data.TreeNode, res *[]int) {
 	if root == nil {
 		return
 	}

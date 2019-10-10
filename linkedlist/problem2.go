@@ -1,12 +1,14 @@
 package linkedlist
 
+import "github.com/leetcodeProblem/data"
+
 // You are given two non-empty linked lists representing two non-negative integers.
 // The digits are stored in reverse order and each of their nodes contain a single digit.
 // Add the two numbers and return it as a linked list.
 
 // You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers(l1 *data.ListNode, l2 *data.ListNode) *data.ListNode {
 	head := l1
 	for l1 != nil && l2 != nil {
 		l1.Val += l2.Val
@@ -15,7 +17,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			if l1.Next != nil {
 				l1.Next.Val += 1
 			} else {
-				newNode := new(ListNode)
+				newNode := new(data.ListNode)
 				newNode.Val = 1
 				l1.Next = newNode
 			}
@@ -32,7 +34,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		if l1.Next != nil {
 			l1.Next.Val += 1
 		} else {
-			newNode := new(ListNode)
+			newNode := new(data.ListNode)
 			newNode.Val = 1
 			l1.Next = newNode
 		}
