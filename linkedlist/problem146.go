@@ -117,7 +117,7 @@ func (this *LRUCache) Put(key int, value int) {
  * obj.Put(key,value);
  */
 
-func testCase() {
+func testProblem146() {
 	obj := Constructor(2)
 	fmt.Println(obj.Get(2))
 	obj.Put(2, 6)
