@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -63,7 +63,7 @@ func fourSum(nums []int, target int) [][]int {
 	return nSum(nums, target, 4, true)
 }
 
-func main() {
+func testProblem18() {
 	a := []int{1, 0, -1, 0, -2, 2}
 	fmt.Println(fourSum(a, 0))
 }
