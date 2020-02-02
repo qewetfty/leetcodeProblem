@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -48,7 +48,7 @@ func threeSum(nums []int) [][]int {
 	return result
 }
 
-func main() {
+func testProblem15() {
 	a := []int{-1, 0, 1, 2, -1, -4}
 	fmt.Println(threeSum(a))
 }
