@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -36,7 +36,7 @@ func findDuplicate(nums []int) int {
 	return prev
 }
 
-func main() {
+func testProblem287() {
 	a := []int{1, 3, 4, 2, 2}
 	fmt.Println(findDuplicate(a))
 	b := []int{3, 1, 3, 4, 2}

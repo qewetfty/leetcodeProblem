@@ -54,3 +54,28 @@ func detectCycle(head *data.ListNode) *data.ListNode {
 	}
 	return second
 }
+
+func detectCycle2(head *data.ListNode) *data.ListNode {
+	if head == nil || head.Next == nil {
+		return nil
+	}
+	slow := head
+	fast := head
+	for slow != nil && fast != nil {
+		if fast.Next == nil || fast.Next.Next == nil {
+			return nil
+		}
+		slow = slow.Next
+		fast = fast.Next.Next
+		if slow == fast {
+			break
+		}
+	}
+
+	pointer := head
+	for pointer != fast {
+		pointer = pointer.Next
+		fast = fast.Next
+	}
+	return pointer
+}
