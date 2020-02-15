@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -52,7 +52,7 @@ func reverseKGroup(head *data.ListNode, k int) *data.ListNode {
 	return dummy.Next
 }
 
-func main() {
+func testProblem25() {
 	a := data.NewListNode(1)
 	b := data.NewListNode(2)
 	c := data.NewListNode(3)
