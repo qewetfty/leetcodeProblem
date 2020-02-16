@@ -2,6 +2,7 @@ package array
 
 import "fmt"
 
+// move array costs times
 func removeDuplicates(nums []int) int {
 	if len(nums) <= 1 {
 		return len(nums)
@@ -17,6 +18,26 @@ func removeDuplicates(nums []int) int {
 		}
 	}
 	return len(nums)
+}
+
+// two pointer method, faster than first method
+func removeDuplicates2(nums []int) int {
+	if len(nums) <= 1 {
+		return 1
+	}
+	first := 0
+	second := 0
+	prev := nums[0]
+	for first < len(nums) {
+		currNum := nums[first]
+		if prev != currNum {
+			prev = currNum
+			second++
+			nums[second] = currNum
+		}
+		first++
+	}
+	return second + 1
 }
 
 func testProblem26() {

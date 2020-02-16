@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -62,7 +62,7 @@ func reverse(nums []int, start, end int) {
 	}
 }
 
-func main() {
+func testProblem189() {
 	a := []int{1, 2, 3, 4, 5, 6, 7}
 	rotate3(a, 3)
 	fmt.Println(a)
