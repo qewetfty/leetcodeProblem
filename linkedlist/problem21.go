@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -64,7 +64,7 @@ func mergeTwoListsNonRecursive(l1 *data.ListNode, l2 *data.ListNode) *data.ListN
 	return dummy.Next
 }
 
-func main() {
+func testProblem21() {
 	a := data.NewListNode(1)
 	b := data.NewListNode(2)
 	c := data.NewListNode(4)
