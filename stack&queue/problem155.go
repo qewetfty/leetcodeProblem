@@ -1,15 +1,15 @@
-package stack
+package stack_queue
 
 import (
 	"fmt"
 	"github.com/leetcodeProblem/data"
 )
 
-// Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-//	push(x) -- Push element x onto stack.
-//	pop() -- Removes the element on top of the stack.
+// Design a stack&queue that supports push, pop, top, and retrieving the minimum element in constant time.
+//	push(x) -- Push element x onto stack&queue.
+//	pop() -- Removes the element on top of the stack&queue.
 //	top() -- Get the top element.
-//	getMin() -- Retrieve the minimum element in the stack.
+//	getMin() -- Retrieve the minimum element in the stack&queue.
 //
 //	Example:
 //		MinStack minStack = new MinStack();
@@ -26,7 +26,7 @@ type MinStack struct {
 	Min  *data.Stack
 }
 
-func Constructor() MinStack {
+func MinStackConstructor() MinStack {
 	minStack := new(MinStack)
 	min := new(data.Stack)
 	data := new(data.Stack)
@@ -58,7 +58,7 @@ func (this *MinStack) GetMin() int {
 }
 
 func testProblem155() {
-	minStack := Constructor()
+	minStack := MinStackConstructor()
 	minStack.Push(-2)
 	minStack.Push(0)
 	minStack.Push(-3)
