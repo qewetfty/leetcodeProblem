@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -35,7 +35,7 @@ func trap(height []int) int {
 	return wholeArea
 }
 
-func main() {
+func testProblem42() {
 	a := []int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}
 	fmt.Println(trap(a))
 	b := []int{5, 4, 1, 2}
