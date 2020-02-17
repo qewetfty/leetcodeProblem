@@ -1,4 +1,4 @@
-package main
+package stack
 
 import (
 	"fmt"
@@ -57,7 +57,7 @@ func (this *MinStack) GetMin() int {
 	return this.Min.Top().(int)
 }
 
-func main() {
+func testProblem155() {
 	minStack := Constructor()
 	minStack.Push(-2)
 	minStack.Push(0)

@@ -6,6 +6,13 @@ import (
 	"strings"
 )
 
+// Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+// determine if the input string is valid.
+// An input string is valid if:
+//	Open brackets must be closed by the same type of brackets.
+//	Open brackets must be closed in the correct order.
+// Note that an empty string is also considered valid.
+
 func isValid(s string) bool {
 	if len(s) == 0 {
 		return true
@@ -63,6 +70,29 @@ func isValid(s string) bool {
 			}
 		default:
 			stack.Push(nextString)
+		}
+	}
+	return stack.IsEmpty()
+}
+
+func isValid2(s string) bool {
+	if len(s) == 0 {
+		return true
+	}
+	stack := new(data.Stack)
+	brackets := make(map[string]string, 3)
+	brackets[")"] = "("
+	brackets["]"] = "["
+	brackets["}"] = "{"
+	str := []byte(s)
+	for _, c := range str {
+		if sta, exists := brackets[string(c)]; exists {
+			stackChar, err := stack.Pop()
+			if err != nil || !strings.EqualFold(sta, stackChar.(string)) {
+				return false
+			}
+		} else {
+			stack.Push(string(c))
 		}
 	}
 	return stack.IsEmpty()
