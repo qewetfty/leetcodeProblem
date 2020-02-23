@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -78,7 +78,7 @@ func isDigit(c byte) bool {
 	return '0' <= c && c <= '9'
 }
 
-func main() {
+func testProblem224() {
 	fmt.Println(calculate("2147483647"))
 	fmt.Println(calculate("+2 -3 * 8 / 4"))
 	fmt.Println(calculate("2 + 3 * 4 - 7"))
