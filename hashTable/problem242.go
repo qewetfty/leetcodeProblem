@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -37,7 +37,7 @@ func isAnagram(s string, t string) bool {
 	return true
 }
 
-func main() {
+func testProblem242() {
 	s := "anagram"
 	t := "nagaram"
 	fmt.Println(isAnagram(s, t))
