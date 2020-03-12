@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -95,7 +95,7 @@ func convert2Str(intSlice []int) string {
 	return s
 }
 
-func main() {
+func testProblem49() {
 	a := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
 	fmt.Println(groupAnagrams2(a))
 }
