@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -10,6 +10,7 @@ import (
 // from the root node down to the farthest leaf node.
 //	Note: A leaf is a node with no children.
 
+// DFS method
 func maxDepth(root *data.TreeNode) int {
 	if root == nil {
 		return 0
@@ -18,8 +19,4 @@ func maxDepth(root *data.TreeNode) int {
 		return 1
 	}
 	return int(math.Max(float64(maxDepth(root.Left))+1, float64(maxDepth(root.Right))+1))
-}
-
-func main() {
-
 }
