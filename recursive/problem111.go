@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -23,8 +23,4 @@ func minDepth(root *data.TreeNode) int {
 		return left + right + 1
 	}
 	return int(math.Min(float64(left), float64(right))) + 1
-}
-
-func main() {
-
 }
