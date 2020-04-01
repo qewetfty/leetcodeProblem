@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import "github.com/leetcodeProblem/data"
 
@@ -15,21 +15,25 @@ import "github.com/leetcodeProblem/data"
 //		Output: 5
 //		Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 
+// Way to think:
+//	1. if root is p or q, then their lowest common ancestor is root.
+//	2. if p and q are in different side of tree node, then their lowest common ancestor is root.
+//	3. if p and q are in the same side, we recursive in that side and do search again.
+
 func lowestCommonAncestor(root, p, q *data.TreeNode) *data.TreeNode {
 	if root == nil || p == root || q == root {
 		return root
 	}
 	left := lowestCommonAncestor(root.Left, p, q)
 	right := lowestCommonAncestor(root.Right, p, q)
+	// if left find is null, then p and q must in the right side. So result is right.
 	if left == nil {
 		return right
 	}
 	if right == nil {
 		return left
 	}
+	// Both left and right are not null means that they are in different side.
+	// So their lowest common ancestor is root.
 	return root
-}
-
-func main() {
-
 }
