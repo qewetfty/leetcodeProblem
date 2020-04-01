@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import (
 	"fmt"
@@ -97,7 +97,7 @@ func buildTreeNode(valueList []string, pos *int) *data.TreeNode {
  * ans := obj.deserialize(data);
  */
 
-func main() {
+func testProblem297() {
 	obj := Constructor()
 	ans := obj.deserialize("")
 	fmt.Println(obj.serialize(ans))
