@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -39,6 +39,6 @@ func backtrack(n int, k int, start int, data []int, res *[][]int) {
 	}
 }
 
-func main() {
+func testProblem77() {
 	fmt.Println(combine(4, 2))
 }
