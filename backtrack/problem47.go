@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import (
 	"fmt"
@@ -23,11 +23,11 @@ func permuteUnique(nums []int) [][]int {
 	sort.Ints(nums)
 	data := make([]int, 0)
 	useList := make([]bool, len(nums))
-	backtrack(nums, useList, data, &res)
+	backtrack1(nums, useList, data, &res)
 	return res
 }
 
-func backtrack(nums []int, useList []bool, data []int, res *[][]int) {
+func backtrack1(nums []int, useList []bool, data []int, res *[][]int) {
 	if len(nums) == len(data) {
 		newData := make([]int, 0)
 		newData = append(newData, data[0:]...)
@@ -43,12 +43,12 @@ func backtrack(nums []int, useList []bool, data []int, res *[][]int) {
 		}
 		data = append(data, nums[i])
 		useList[i] = true
-		backtrack(nums, useList, data, res)
+		backtrack1(nums, useList, data, res)
 		data = data[:len(data)-1]
 		useList[i] = false
 	}
 }
 
-func main() {
+func testProblem47() {
 	fmt.Println(permuteUnique([]int{1, 1, 2}))
 }
