@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -46,7 +46,7 @@ func majorityElement2(nums []int) int {
 	return candidate
 }
 
-func main() {
+func testProblem169() {
 	fmt.Println(majorityElement2([]int{8, 8, 7, 7, 7}))
 	fmt.Println(majorityElement2([]int{3, 2, 3}))
 	fmt.Println(majorityElement2([]int{2, 2, 1, 1, 1, 2, 2}))
