@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -36,6 +36,6 @@ func backtrack(nums []int, lastIndex int, data []int, res *[][]int) {
 	}
 }
 
-func main() {
+func testProblem78() {
 	fmt.Println(subsets([]int{1, 2, 3}))
 }
