@@ -1,4 +1,4 @@
-package main
+package divideAndConquer
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func myPow(x float64, n int) float64 {
 	return res
 }
 
-func main() {
+func testProblem50() {
 	fmt.Println(myPow(2.000, 10))
 	fmt.Println(myPow(2.1000, 3))
 	fmt.Println(myPow(2.000, -2))
