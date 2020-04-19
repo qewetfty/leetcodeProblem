@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -26,11 +26,11 @@ func letterCombinations(digits string) []string {
 	if len(digits) == 0 {
 		return res
 	}
-	backtrack(digits, 0, "", &res)
+	backtrack17(digits, 0, "", &res)
 	return res
 }
 
-func backtrack(digit string, start int, letter string, res *[]string) {
+func backtrack17(digit string, start int, letter string, res *[]string) {
 	if len(letter) == len(digit) {
 		*res = append(*res, letter)
 		return
@@ -39,12 +39,12 @@ func backtrack(digit string, start int, letter string, res *[]string) {
 		num := digit[i : i+1]
 		for _, l := range letterMap[num] {
 			letter = letter + l
-			backtrack(digit, i+1, letter, res)
+			backtrack17(digit, i+1, letter, res)
 			letter = letter[:len(letter)-1]
 		}
 	}
 }
 
-func main() {
+func testProblem17() {
 	fmt.Println(letterCombinations("23"))
 }
