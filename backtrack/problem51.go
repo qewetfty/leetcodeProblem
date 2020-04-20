@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import (
 	"fmt"
@@ -132,7 +132,7 @@ func isNotUnderAttack(x, y int) bool {
 	return true
 }
 
-func main() {
+func testProblem51() {
 	fmt.Println(solveNQueens2(1))
 	fmt.Println(solveNQueens2(2))
 	fmt.Println(solveNQueens2(3))
