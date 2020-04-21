@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -44,7 +44,7 @@ func longestCommonPrefix(strs []string) string {
 	return commonPre
 }
 
-func main() {
+func testProblem14() {
 	fmt.Println(longestCommonPrefix([]string{"flower", "flow", "flight"}))
 	fmt.Println(longestCommonPrefix([]string{"dog", "racecar", "car"}))
 }
