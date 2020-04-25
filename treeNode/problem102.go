@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import (
 	"container/list"
@@ -66,8 +66,4 @@ func dfs(root *data.TreeNode, level int, res *[][]int) {
 	(*res)[level-1] = append((*res)[level-1], root.Val)
 	dfs(root.Left, level+1, res)
 	dfs(root.Right, level+1, res)
-}
-
-func main() {
-
 }
