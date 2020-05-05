@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -71,7 +71,7 @@ func minMutation(start string, end string, bank []string) int {
 	return -1
 }
 
-func main() {
+func testProblem433() {
 	fmt.Println(minMutation("AACCGGTT", "AACCGGTA", []string{"AACCGGTA"}))
 	fmt.Println(minMutation("AACCGGTT", "AAACGGTA", []string{"AACCGGTA", "AACCGCTA", "AAACGGTA"}))
 	fmt.Println(minMutation("AAAAACCC", "AACCCCCC", []string{"AAAACCCC", "AAACCCCC", "AACCCCCC"}))
