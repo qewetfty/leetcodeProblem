@@ -3,6 +3,7 @@ package dfs_bfs
 import (
 	"container/list"
 	"fmt"
+	"math"
 	"strings"
 )
 
@@ -71,8 +72,50 @@ func minMutation(start string, end string, bank []string) int {
 	return -1
 }
 
+// DFS method
+var base = []string{"A", "T", "C", "G"}
+
+func minMutation2(start string, end string, bank []string) int {
+	if strings.EqualFold(start, end) {
+		return 0
+	}
+	geneMap := make(map[string]bool, len(bank))
+	for _, gene := range bank {
+		geneMap[gene] = false
+	}
+	if _, ok := geneMap[end]; !ok {
+		return -1
+	}
+	var visitedMap = make(map[string]bool)
+	var minCount = math.MaxInt32
+	dfs433(start, end, 0, &minCount, &geneMap, &visitedMap)
+	if minCount == math.MaxInt32 {
+		minCount = -1
+	}
+	return minCount
+}
+
+func dfs433(start, end string, count int, minCount *int, geneMap, visitedMap *map[string]bool) {
+	if start == end {
+		*minCount = int(math.Min(float64(*minCount), float64(count)))
+		return
+	}
+	if _, ok := (*visitedMap)[start]; ok {
+		return
+	}
+	(*visitedMap)[start] = true
+	for i := 0; i < len(start); i++ {
+		for _, nu := range base {
+			newDna := start[:i] + nu + start[i+1:]
+			if _, ok := (*geneMap)[newDna]; ok {
+				dfs433(newDna, end, count+1, minCount, geneMap, visitedMap)
+			}
+		}
+	}
+}
+
 func testProblem433() {
-	fmt.Println(minMutation("AACCGGTT", "AACCGGTA", []string{"AACCGGTA"}))
-	fmt.Println(minMutation("AACCGGTT", "AAACGGTA", []string{"AACCGGTA", "AACCGCTA", "AAACGGTA"}))
-	fmt.Println(minMutation("AAAAACCC", "AACCCCCC", []string{"AAAACCCC", "AAACCCCC", "AACCCCCC"}))
+	fmt.Println(minMutation2("AACCGGTT", "AACCGGTA", []string{"AACCGGTA"}))
+	fmt.Println(minMutation2("AACCGGTT", "AAACGGTA", []string{"AACCGGTA", "AACCGCTA", "AAACGGTA"}))
+	fmt.Println(minMutation2("AAAAACCC", "AACCCCCC", []string{"AAAACCCC", "AAACCCCC", "AACCCCCC"}))
 }

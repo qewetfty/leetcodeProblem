@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -50,22 +50,19 @@ func largestValues2(root *data.TreeNode) []int {
 	if root == nil {
 		return res
 	}
-	dfs(root, 1, &res)
+	dfs515(root, 1, &res)
 	return res
 }
 
-func dfs(node *data.TreeNode, level int, res *[]int) {
+func dfs515(node *data.TreeNode, level int, res *[]int) {
 	if len(*res) < level {
 		*res = append(*res, math.MinInt32)
 	}
 	(*res)[level-1] = int(math.Max(float64((*res)[level-1]), float64(node.Val)))
 	if node.Left != nil {
-		dfs(node.Left, level+1, res)
+		dfs515(node.Left, level+1, res)
 	}
 	if node.Right != nil {
-		dfs(node.Right, level+1, res)
+		dfs515(node.Right, level+1, res)
 	}
-}
-
-func main() {
 }
