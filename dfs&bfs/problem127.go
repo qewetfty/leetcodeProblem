@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -89,7 +89,7 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 	return 0
 }
 
-func main() {
+func testProblem127() {
 	a := []string{"hot", "dot", "dog", "lot", "log", "cog"}
 	fmt.Println(ladderLength("hit", "cog", a))
 	fmt.Println(ladderLength("a", "c", []string{"a", "b", "c"}))
