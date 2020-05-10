@@ -89,6 +89,90 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 	return 0
 }
 
+// double BFS method
+func ladderLength2(beginWord string, endWord string, wordList []string) int {
+	// judge whether a word is in word list and build search map
+	searchMap := make(map[string][]string, 0)
+	l := len(beginWord)
+	contains := false
+	for _, word := range wordList {
+		if strings.EqualFold(endWord, word) {
+			contains = true
+		}
+		for i := 0; i < l; i++ {
+			pattern := word[:i] + "*" + word[i+1:]
+			if _, ok := searchMap[pattern]; ok {
+				searchList := searchMap[pattern]
+				searchList = append(searchList, word)
+				searchMap[pattern] = searchList
+			} else {
+				searchMap[pattern] = []string{word}
+			}
+		}
+	}
+	if !contains {
+		return 0
+	}
+
+	// BFS search every possible state
+	dequeBegin := new(list.List)
+	dequeBegin.PushBack(beginWord)
+	dequeEnd := new(list.List)
+	dequeEnd.PushBack(endWord)
+	beginVisitedMap := make(map[string]int)
+	beginVisitedMap[beginWord] = 1
+	endVisitedMap := make(map[string]int)
+	endVisitedMap[endWord] = 1
+	beginLevel := 1
+	endLevel := 1
+	for dequeBegin.Len() > 0 && dequeEnd.Len() > 0 {
+		beginLength := dequeBegin.Len()
+		endLength := dequeEnd.Len()
+		// deal begin BFS search
+		for i := 0; i < beginLength; i++ {
+			beginW := dequeBegin.Remove(dequeBegin.Front()).(string)
+			for j := 0; j < l; j++ {
+				pattern := beginW[:j] + "*" + beginW[j+1:]
+				if _, ok := searchMap[pattern]; !ok {
+					continue
+				}
+				words := searchMap[pattern]
+				for _, word := range words {
+					if _, contains := endVisitedMap[word]; contains {
+						return beginLevel + endVisitedMap[word]
+					}
+					if _, visited := beginVisitedMap[word]; !visited {
+						beginVisitedMap[word] = beginLevel + 1
+						dequeBegin.PushBack(word)
+					}
+				}
+			}
+		}
+		for i := 0; i < endLength; i++ {
+			endW := dequeEnd.Remove(dequeEnd.Front()).(string)
+			for j := 0; j < l; j++ {
+				pattern := endW[:j] + "*" + endW[j+1:]
+				if _, ok := searchMap[pattern]; !ok {
+					continue
+				}
+				words := searchMap[pattern]
+				for _, word := range words {
+					if _, contains := beginVisitedMap[word]; contains {
+						return endLevel + beginVisitedMap[word]
+					}
+					if _, visited := endVisitedMap[word]; !visited {
+						endVisitedMap[word] = endLevel + 1
+						dequeEnd.PushBack(word)
+					}
+				}
+			}
+		}
+		beginLevel++
+		endLevel++
+	}
+	return 0
+}
+
 func testProblem127() {
 	a := []string{"hot", "dot", "dog", "lot", "log", "cog"}
 	fmt.Println(ladderLength("hit", "cog", a))

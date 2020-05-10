@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -108,7 +108,7 @@ func findLadders(beginWord string, endWord string, wordList []string) [][]string
 	return res
 }
 
-func main() {
+func testProblem126() {
 	fmt.Println(findLadders("red", "tax", []string{"ted", "tex", "red", "tax", "tad", "den", "rex", "pee"}))
 	a := []string{"hot", "dot", "dog", "lot", "log", "cog"}
 	fmt.Println(findLadders("hit", "cog", a))
