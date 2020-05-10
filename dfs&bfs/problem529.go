@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -121,7 +121,7 @@ func updateBoard2(board [][]byte, click []int) [][]byte {
 	return board
 }
 
-func main() {
+func testProblem529() {
 	fmt.Println('B')
 	fmt.Println('E')
 	fmt.Println('M')
