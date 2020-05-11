@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -50,7 +50,7 @@ func findContentChildren(g []int, s []int) int {
 	return count
 }
 
-func main() {
+func testProblem455() {
 	fmt.Println(findContentChildren([]int{1, 2, 3}, []int{1, 1}))
 	fmt.Println(findContentChildren([]int{1, 2}, []int{1, 2, 3}))
 }
