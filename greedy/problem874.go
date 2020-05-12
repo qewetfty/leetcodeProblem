@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -71,7 +71,7 @@ func robotSim(commands []int, obstacles [][]int) int {
 	return res
 }
 
-func main() {
+func testProblem874() {
 	fmt.Println(robotSim([]int{4, -1, 3}, [][]int{}))
 	fmt.Println(robotSim([]int{4, -1, 4, -2, 4}, [][]int{{2, 4}}))
 }
