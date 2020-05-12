@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -70,7 +70,7 @@ func lemonadeChange(bills []int) bool {
 	return true
 }
 
-func main() {
+func testProblem860() {
 	fmt.Println(lemonadeChange([]int{5, 5, 5, 10, 20}))
 	fmt.Println(lemonadeChange([]int{5, 5, 10}))
 	fmt.Println(lemonadeChange([]int{10, 10}))
