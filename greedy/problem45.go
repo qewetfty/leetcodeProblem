@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -59,6 +59,6 @@ func max(x, y int) int {
 	return y
 }
 
-func main() {
+func testProblem45() {
 	fmt.Println(jump1([]int{2, 3, 1, 1, 4}))
 }
