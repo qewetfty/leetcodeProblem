@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -32,7 +32,7 @@ func mySqrt(x int) int {
 	return hi
 }
 
-func main() {
+func testProblem69() {
 	fmt.Println(mySqrt(4))
 	fmt.Println(mySqrt(2))
 	fmt.Println(mySqrt(8))
