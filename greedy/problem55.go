@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -30,7 +30,7 @@ func canJump(nums []int) bool {
 	return canReachIndex == 0
 }
 
-func main() {
+func testProblem55() {
 	fmt.Println(canJump([]int{2, 3, 1, 1, 4}))
 	fmt.Println(canJump([]int{3, 2, 1, 0, 4}))
 }
