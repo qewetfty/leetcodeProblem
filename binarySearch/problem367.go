@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -28,7 +28,7 @@ func isPerfectSquare(num int) bool {
 	return false
 }
 
-func main() {
+func testProblem367() {
 	fmt.Println(isPerfectSquare(16))
 	fmt.Println(isPerfectSquare(14))
 	fmt.Println(isPerfectSquare(1))
