@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -31,7 +31,7 @@ func search(nums []int, target int) int {
 	return -1
 }
 
-func main() {
+func testProblem33() {
 	nums := []int{4, 5, 6, 7, 0, 1, 2}
 	fmt.Println(search([]int{5, 1, 3}, 5))
 	fmt.Println(search([]int{1, 3, 5}, 1))
