@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -33,7 +33,7 @@ func findMin(nums []int) int {
 	return min
 }
 
-func main() {
+func testProblem153() {
 	fmt.Println(findMin([]int{3, 4, 5, 1, 2}))
 	fmt.Println(findMin([]int{3, 4, 5, 7, 8, 1, 2}))
 	fmt.Println(findMin([]int{4, 5, 6, 7, 0, 1, 2}))
