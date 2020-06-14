@@ -1,8 +1,6 @@
-package main
+package divideAndConquer
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest
 // sum and return its sum.
@@ -23,19 +21,19 @@ func maxSubArray(nums []int) int {
 	dp[0] = nums[0]
 	sum := dp[0]
 	for i := 1; i < l; i++ {
-		dp[i] = max(0, dp[i-1]) + nums[i]
-		sum = max(sum, dp[i])
+		dp[i] = Max(0, dp[i-1]) + nums[i]
+		sum = Max(sum, dp[i])
 	}
 	return sum
 }
 
-func max(x, y int) int {
+func Max(x, y int) int {
 	if x < y {
 		return y
 	}
 	return x
 }
 
-func main() {
+func testProblem53() {
 	fmt.Println(maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
 }
