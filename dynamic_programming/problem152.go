@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -31,7 +31,7 @@ func maxProduct(nums []int) int {
 	return res
 }
 
-func main() {
+func testProblem152() {
 	fmt.Println(maxProduct([]int{2, 3, -2, 4}))
 	fmt.Println(maxProduct([]int{-2, 0, -1}))
 }

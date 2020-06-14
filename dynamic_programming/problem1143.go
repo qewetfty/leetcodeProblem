@@ -48,7 +48,7 @@ func longestCommonSubsequence(text1 string, text2 string) int {
 	return dp[m][n]
 }
 
-func main() {
+func testProblem1143() {
 	fmt.Println(longestCommonSubsequence("abcde", "ace"))
 	fmt.Println(longestCommonSubsequence("abc", "abc"))
 	fmt.Println(longestCommonSubsequence("abc", "def"))
