@@ -1,6 +1,9 @@
-package divideAndConquer
+package dynamic_programming
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/leetcodeProblem/utils"
+)
 
 // Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest
 // sum and return its sum.
@@ -21,17 +24,10 @@ func maxSubArray(nums []int) int {
 	dp[0] = nums[0]
 	sum := dp[0]
 	for i := 1; i < l; i++ {
-		dp[i] = Max(0, dp[i-1]) + nums[i]
-		sum = Max(sum, dp[i])
+		dp[i] = utils.Max(0, dp[i-1]) + nums[i]
+		sum = utils.Max(sum, dp[i])
 	}
 	return sum
-}
-
-func Max(x, y int) int {
-	if x < y {
-		return y
-	}
-	return x
 }
 
 func testProblem53() {

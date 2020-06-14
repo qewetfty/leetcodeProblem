@@ -1,6 +1,9 @@
-package divideAndConquer
+package dynamic_programming
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/leetcodeProblem/utils"
+)
 
 // Given two strings text1 and text2, return the length of their longest common subsequence.
 // A subsequence of a string is a new string generated from the original string with some characters(can be none)
@@ -38,18 +41,11 @@ func longestCommonSubsequence(text1 string, text2 string) int {
 			if text1[i-1] == text2[j-1] {
 				dp[i][j] = 1 + dp[i-1][j-1]
 			} else {
-				dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+				dp[i][j] = utils.Max(dp[i-1][j], dp[i][j-1])
 			}
 		}
 	}
 	return dp[m][n]
-}
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
 }
 
 func main() {

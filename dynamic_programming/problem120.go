@@ -1,6 +1,9 @@
-package divideAndConquer
+package dynamic_programming
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/leetcodeProblem/utils"
+)
 
 // Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
 // For example, given the following triangle
@@ -23,17 +26,10 @@ func minimumTotal(triangle [][]int) int {
 	res := triangle[triLen-1]
 	for i := triLen - 2; i >= 0; i-- {
 		for j := 0; j < len(triangle[i]); j++ {
-			res[j] = min(res[j], res[j+1]) + triangle[i][j]
+			res[j] = utils.Min(res[j], res[j+1]) + triangle[i][j]
 		}
 	}
 	return res[0]
-}
-
-func min(x, y int) int {
-	if x <= y {
-		return x
-	}
-	return y
 }
 
 func testProblem120() {
