@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -35,7 +35,7 @@ func coinChange(coins []int, amount int) int {
 	return dp[amount]
 }
 
-func main() {
+func testProblem322() {
 	fmt.Println(coinChange([]int{1, 2, 5}, 11))
 	fmt.Println(coinChange([]int{2}, 3))
 }
