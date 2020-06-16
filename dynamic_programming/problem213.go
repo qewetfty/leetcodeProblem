@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ import (
 //		Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 //		             Total amount you can rob = 1 + 3 = 4.
 
-func rob(nums []int) int {
+func rob213(nums []int) int {
 	l := len(nums)
 	if l == 0 {
 		return 0
@@ -80,7 +80,7 @@ func helper(nums []int) int {
 	return dp[l-1]
 }
 
-func main() {
+func testProblem213() {
 	fmt.Println(rob2([]int{1, 3, 1, 3, 100}))
 	fmt.Println(rob2([]int{2, 3, 2}))
 	fmt.Println(rob2([]int{1, 2, 3, 1}))
