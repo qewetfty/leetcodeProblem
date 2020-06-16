@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -54,7 +54,7 @@ func maxProfit122Two(prices []int) int {
 	return maxProfit
 }
 
-func main() {
+func testProblem122() {
 	fmt.Println(maxProfit122Two([]int{7, 1, 5, 3, 6, 4}))
 	fmt.Println(maxProfit122Two([]int{1, 2, 3, 4, 5}))
 	fmt.Println(maxProfit122Two([]int{7, 6, 4, 3, 1}))
