@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ import (
 //		Output: 3
 //		Explanation: transactions = [buy, sell, cooldown, buy, sell]
 
-func maxProfit(prices []int) int {
+func maxProfit309(prices []int) int {
 	l := len(prices)
 	if l <= 1 {
 		return 0
@@ -41,7 +41,7 @@ func maxProfit(prices []int) int {
 	return utils.Max(dp[l-1][0][1], dp[l-1][0][0])
 }
 
-func main() {
-	fmt.Println(maxProfit([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 5, 7, 88, 10, 2}))
-	fmt.Println(maxProfit([]int{1, 2, 3, 0, 2}))
+func testProblem309() {
+	fmt.Println(maxProfit309([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 5, 7, 88, 10, 2}))
+	fmt.Println(maxProfit309([]int{1, 2, 3, 0, 2}))
 }
