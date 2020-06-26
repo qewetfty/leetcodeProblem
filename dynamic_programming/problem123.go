@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -26,7 +26,7 @@ import (
 //		Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 // divide method
-func maxProfit(prices []int) int {
+func maxProfit123(prices []int) int {
 	l := len(prices)
 	if l <= 1 {
 		return 0
@@ -52,7 +52,7 @@ func maxProfit(prices []int) int {
 }
 
 // dp method
-func maxProfit123(prices []int) int {
+func maxProfit123Dp(prices []int) int {
 	l := len(prices)
 	if l <= 1 {
 		return 0
@@ -82,7 +82,7 @@ func maxProfit123(prices []int) int {
 	return utils.Max(dp[l-1][0][1], utils.Max(dp[l-1][0][2], 0))
 }
 
-func main() {
+func testProblem123() {
 	fmt.Println(maxProfit123([]int{3, 3, 5, 0, 0, 3, 1, 4}))
 	fmt.Println(maxProfit123([]int{1, 2, 3, 4, 5}))
 	fmt.Println(maxProfit123([]int{7, 6, 4, 3, 1}))
