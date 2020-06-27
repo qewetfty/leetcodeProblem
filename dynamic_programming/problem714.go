@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -25,7 +25,7 @@ import (
 //		0 <= fee < 50000.
 
 // 2-dimension dp method
-func maxProfit(prices []int, fee int) int {
+func maxProfit714Dp(prices []int, fee int) int {
 	l := len(prices)
 	if l <= 1 {
 		return 0
@@ -44,7 +44,7 @@ func maxProfit(prices []int, fee int) int {
 }
 
 // 1-dimension method
-func maxProfit2(prices []int, fee int) int {
+func maxProfit714(prices []int, fee int) int {
 	l := len(prices)
 	if l <= 1 {
 		return 0
@@ -58,6 +58,6 @@ func maxProfit2(prices []int, fee int) int {
 	return dp[0]
 }
 
-func main() {
-	fmt.Println(maxProfit2([]int{1, 3, 2, 8, 4, 9}, 2))
+func testProblem714() {
+	fmt.Println(maxProfit714([]int{1, 3, 2, 8, 4, 9}, 2))
 }
