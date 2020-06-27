@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -45,7 +45,7 @@ func longestValidParentheses(s string) int {
 	return maxLen
 }
 
-func main() {
+func testProblem32() {
 	fmt.Println(longestValidParentheses("(()"))
 	fmt.Println(longestValidParentheses(")()())"))
 	fmt.Println(longestValidParentheses("((((((((())"))
