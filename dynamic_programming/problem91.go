@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -39,7 +39,7 @@ func numDecodings(s string) int {
 	return dp[l]
 }
 
-func main() {
+func testProblem91() {
 	fmt.Println(numDecodings("17"))
 	fmt.Println(numDecodings("101"))
 	fmt.Println(numDecodings("0"))
