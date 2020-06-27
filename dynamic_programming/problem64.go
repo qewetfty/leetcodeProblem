@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -70,7 +70,7 @@ func minPathSum2(grid [][]int) int {
 	return dp[n-1]
 }
 
-func main() {
+func testProblem64() {
 	fmt.Println(minPathSum2([][]int{{1, 2, 5}, {3, 2, 1}}))
 	fmt.Println(minPathSum2([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}))
 }
