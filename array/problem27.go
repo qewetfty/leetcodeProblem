@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -42,7 +42,7 @@ func removeElement(nums []int, val int) int {
 	return a
 }
 
-func main() {
+func testProblem27() {
 	fmt.Println(removeElement([]int{3, 2, 2, 3}, 3))
 	fmt.Println(removeElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
 }
