@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -38,7 +38,7 @@ func maximalSquare(matrix [][]byte) int {
 	return max * max
 }
 
-func main() {
+func testProblem221() {
 	fmt.Println(maximalSquare([][]byte{{'0'}}))
 	fmt.Println(maximalSquare([][]byte{{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'},
 		{'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}}))
