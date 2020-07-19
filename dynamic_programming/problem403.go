@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -50,7 +50,7 @@ func canCross(stones []int) bool {
 	return len(dp[stones[len(stones)-1]]) > 0
 }
 
-func main() {
+func testProblem403() {
 	fmt.Println(canCross([]int{0, 1, 3, 5, 6, 8, 12, 17}))
 	fmt.Println(canCross([]int{0, 1, 2, 3, 4, 8, 9, 11}))
 }
