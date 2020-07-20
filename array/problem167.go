@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -14,7 +14,7 @@ import "fmt"
 //		Output: [1,2]
 //		Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 
-func twoSum(numbers []int, target int) []int {
+func twoSumProblem167(numbers []int, target int) []int {
 	left, right := 0, len(numbers)-1
 	for left < right {
 		if numbers[left]+numbers[right] == target {
@@ -28,6 +28,6 @@ func twoSum(numbers []int, target int) []int {
 	return []int{}
 }
 
-func main() {
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))
+func testProblem167() {
+	fmt.Println(twoSumProblem167([]int{2, 7, 11, 15}, 9))
 }
