@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	list2 "container/list"
@@ -57,8 +57,4 @@ func zigzagLevelOrder(root *data.TreeNode) [][]int {
 		level++
 	}
 	return res
-}
-
-func main() {
-
 }
