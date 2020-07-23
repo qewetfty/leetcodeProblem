@@ -1,4 +1,4 @@
-package main
+package bitmap
 
 import "fmt"
 
@@ -26,7 +26,7 @@ func singleNumber(nums []int) []int {
 	return []int{x, bitmap ^ x}
 }
 
-func main() {
+func testProblem260() {
 	fmt.Println(singleNumber([]int{2, 1, 2, 3, 4, 1}))
 	fmt.Println(singleNumber([]int{1, 2, 1, 3, 2, 5}))
 }
