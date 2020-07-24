@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -22,11 +22,11 @@ func allPathsSourceTarget(graph [][]int) [][]int {
 	res := make([][]int, 0)
 	curResult := make([]int, 0)
 	curResult = append(curResult, 0)
-	backtrack(graph, 0, curResult, &res)
+	backtrack797(graph, 0, curResult, &res)
 	return res
 }
 
-func backtrack(graph [][]int, curPos int, curResult []int, res *[][]int) {
+func backtrack797(graph [][]int, curPos int, curResult []int, res *[][]int) {
 	if curPos == len(graph)-1 {
 		newResult := make([]int, 0)
 		newResult = append(newResult, curResult...)
@@ -35,11 +35,11 @@ func backtrack(graph [][]int, curPos int, curResult []int, res *[][]int) {
 	}
 	for _, node := range graph[curPos] {
 		curResult = append(curResult, node)
-		backtrack(graph, node, curResult, res)
+		backtrack797(graph, node, curResult, res)
 		curResult = curResult[:len(curResult)-1]
 	}
 }
 
-func main() {
+func testProblem797() {
 	fmt.Println(allPathsSourceTarget([][]int{{1, 2}, {3}, {3}, {}}))
 }
