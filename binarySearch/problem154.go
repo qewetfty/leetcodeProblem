@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -16,7 +16,7 @@ import "fmt"
 //		This is a follow up problem to Find Minimum in Rotated Sorted Array.
 //		Would allow duplicates affect the run-time complexity? How and why?
 
-func findMin(nums []int) int {
+func findMin154(nums []int) int {
 	l := len(nums)
 	if l == 0 {
 		return 0
@@ -35,8 +35,8 @@ func findMin(nums []int) int {
 	return nums[lo]
 }
 
-func main() {
-	fmt.Println(findMin([]int{10, 1, 10, 10, 10}))
-	fmt.Println(findMin([]int{2, 2, 2, 0, 1}))
-	fmt.Println(findMin([]int{1, 3, 5}))
+func testProblem154() {
+	fmt.Println(findMin154([]int{10, 1, 10, 10, 10}))
+	fmt.Println(findMin154([]int{2, 2, 2, 0, 1}))
+	fmt.Println(findMin154([]int{1, 3, 5}))
 }
