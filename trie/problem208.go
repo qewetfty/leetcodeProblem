@@ -1,4 +1,4 @@
-package main
+package trie
 
 // Implement a trie with insert, search, and startsWith methods.
 //	Example:
@@ -99,7 +99,7 @@ func (this *Trie) StartsWith(prefix string) bool {
  * param_3 := obj.StartsWith(prefix);
  */
 
-func main() {
+func testProblem208() {
 	trie := Constructor()
 	trie.Insert("apple")
 	trie.Search("apple")
