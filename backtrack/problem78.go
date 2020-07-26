@@ -21,17 +21,17 @@ import "fmt"
 func subsets(nums []int) [][]int {
 	res := make([][]int, 0)
 	data := make([]int, 0)
-	backtrack(nums, 0, data, &res)
+	backtrack78(nums, 0, data, &res)
 	return res
 }
 
-func backtrack(nums []int, lastIndex int, data []int, res *[][]int) {
+func backtrack78(nums []int, lastIndex int, data []int, res *[][]int) {
 	newData := make([]int, 0)
 	newData = append(newData, data...)
 	*res = append(*res, newData)
 	for i := lastIndex; i < len(nums); i++ {
 		data = append(data, nums[i])
-		backtrack(nums, i+1, data, res)
+		backtrack78(nums, i+1, data, res)
 		data = data[:len(data)-1]
 	}
 }

@@ -1,4 +1,4 @@
-package main
+package trie
 
 import "fmt"
 
@@ -25,7 +25,7 @@ var (
 )
 
 func findWords(board [][]byte, words []string) []string {
-	trie := Constructor()
+	trie := constructor()
 	// build trie
 	for _, word := range words {
 		trie.Insert(word)
@@ -67,7 +67,7 @@ func RemoveRepByMap(slc []string) []string {
 	return result
 }
 
-func searchWords(m, n int, board [][]byte, curWord *[]byte, visitMap *[][]bool, node *TrieNode, res *[]string) {
+func searchWords(m, n int, board [][]byte, curWord *[]byte, visitMap *[][]bool, node *trieNode, res *[]string) {
 	curByte := board[m][n]
 	*curWord = append(*curWord, curByte)
 	(*visitMap)[m][n] = true
@@ -85,50 +85,50 @@ func searchWords(m, n int, board [][]byte, curWord *[]byte, visitMap *[][]bool, 
 	(*visitMap)[m][n] = false
 }
 
-type Trie struct {
-	root *TrieNode
+type trie struct {
+	root *trieNode
 }
 
-type TrieNode struct {
-	links []*TrieNode
+type trieNode struct {
+	links []*trieNode
 	isEnd bool
 }
 
-func NewTrieNode() *TrieNode {
-	node := new(TrieNode)
-	node.links = make([]*TrieNode, 26)
+func newTrieNode() *trieNode {
+	node := new(trieNode)
+	node.links = make([]*trieNode, 26)
 	return node
 }
 
-func (node *TrieNode) Contains(char byte) bool {
+func (node *trieNode) Contains(char byte) bool {
 	return node.links[char-'a'] != nil
 }
 
-func (node *TrieNode) get(char byte) *TrieNode {
+func (node *trieNode) get(char byte) *trieNode {
 	return node.links[char-'a']
 }
 
-func (node *TrieNode) put(char byte, trieNode *TrieNode) {
+func (node *trieNode) put(char byte, trieNode *trieNode) {
 	node.links[char-'a'] = trieNode
 }
 
-func (node *TrieNode) SetEnd() {
+func (node *trieNode) SetEnd() {
 	node.isEnd = true
 }
 
 /** Initialize your data structure here. */
-func Constructor() Trie {
-	trie := new(Trie)
-	trie.root = NewTrieNode()
+func constructor() trie {
+	trie := new(trie)
+	trie.root = newTrieNode()
 	return *trie
 }
 
 /** Inserts a word into the trie. */
-func (this *Trie) Insert(word string) {
+func (this *trie) Insert(word string) {
 	node := this.root
 	for i := range word {
 		if !node.Contains(word[i]) {
-			node.put(word[i], NewTrieNode())
+			node.put(word[i], newTrieNode())
 		}
 		node = node.get(word[i])
 	}
@@ -136,7 +136,7 @@ func (this *Trie) Insert(word string) {
 }
 
 /** Returns if the word is in the trie. */
-func (this *Trie) Search(word string) bool {
+func (this *trie) Search(word string) bool {
 	node := this.root
 	for i := range word {
 		if node.Contains(word[i]) {
@@ -150,7 +150,7 @@ func (this *Trie) Search(word string) bool {
 }
 
 /** Returns if there is any word in the trie that starts with the given prefix. */
-func (this *Trie) StartsWith(prefix string) bool {
+func (this *trie) StartsWith(prefix string) bool {
 	node := this.root
 	for i := range prefix {
 		if node.Contains(prefix[i]) {
@@ -163,7 +163,7 @@ func (this *Trie) StartsWith(prefix string) bool {
 	return node != nil
 }
 
-func main() {
+func testProblem212() {
 	fmt.Println(findWords([][]byte{{'o', 'a', 'a', 'n'}, {'e', 't', 'a', 'e'}, {'i', 'h', 'k', 'r'}, {'i', 'f', 'l', 'v'}},
 		[]string{"oath", "pea", "eat", "rain"}))
 	fmt.Println(findWords([][]byte{{'a'}, {'a'}}, []string{"a"}))
