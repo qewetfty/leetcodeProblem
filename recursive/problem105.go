@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import "github.com/leetcodeProblem/data"
 
@@ -16,35 +16,31 @@ import "github.com/leetcodeProblem/data"
 //		   15   7
 
 var (
-	inorderMap map[int]int
-	pre        []int
-	preIndex   int
+	inorderMap105 map[int]int
+	pre           []int
+	preIndex      int
 )
 
-func buildTree(preorder []int, inorder []int) *data.TreeNode {
+func buildTree105(preorder []int, inorder []int) *data.TreeNode {
 	if len(preorder) == 0 || len(inorder) == 0 {
 		return nil
 	}
-	inorderMap, pre, preIndex = make(map[int]int, 0), preorder, 0
+	inorderMap105, pre, preIndex = make(map[int]int, 0), preorder, 0
 	for i, val := range inorder {
-		inorderMap[val] = i
+		inorderMap105[val] = i
 	}
-	return recursive(0, len(inorder)-1)
+	return recursive105(0, len(inorder)-1)
 }
 
-func recursive(left, right int) *data.TreeNode {
+func recursive105(left, right int) *data.TreeNode {
 	if left > right {
 		return nil
 	}
 	val := pre[preIndex]
 	preIndex++
 	root := data.NewTreeNode(val)
-	rootIndex := inorderMap[val]
-	root.Left = recursive(left, rootIndex-1)
-	root.Right = recursive(rootIndex+1, right)
+	rootIndex := inorderMap105[val]
+	root.Left = recursive105(left, rootIndex-1)
+	root.Right = recursive105(rootIndex+1, right)
 	return root
-}
-
-func main() {
-
 }
