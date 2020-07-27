@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import (
 	"fmt"
@@ -53,6 +53,6 @@ func recursive(left, right int) *data.TreeNode {
 	return root
 }
 
-func main() {
+func testProblem106() {
 	fmt.Println(buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}))
 }

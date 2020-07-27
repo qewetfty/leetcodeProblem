@@ -5,3 +5,9 @@ type TreeNode struct {
 	Left  *TreeNode
 	Right *TreeNode
 }
+
+func NewTreeNode(val int) *TreeNode {
+	treeNode := new(TreeNode)
+	treeNode.Val = val
+	return treeNode
+}
