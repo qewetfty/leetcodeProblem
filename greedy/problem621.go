@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -82,7 +82,7 @@ func leastInterval2(tasks []byte, n int) int {
 	return utils.Max((maxTask-1)*n+maxTask+maxTaskNum, len(tasks))
 }
 
-func main() {
+func testProblem621() {
 	fmt.Println(leastInterval2([]byte{'A', 'A', 'A', 'B', 'B', 'B'}, 2))
 	fmt.Println(leastInterval2([]byte{'A', 'A', 'A', 'B', 'B', 'B'}, 0))
 	fmt.Println(leastInterval2([]byte{'A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G'}, 2))
