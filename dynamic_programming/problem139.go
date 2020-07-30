@@ -1,8 +1,6 @@
-package main
+package dynamic_programming
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be
 // segmented into a space-separated sequence of one or more dictionary words.
@@ -40,7 +38,7 @@ func wordBreak(s string, wordDict []string) bool {
 	return dp[len(s)]
 }
 
-func main() {
+func testProblem139() {
 	fmt.Println(wordBreak("catsanddog", []string{"cat", "cats", "and", "sand", "dog"}))
 	fmt.Println(wordBreak("catsandog", []string{"cats", "dog", "sand", "and", "cat"}))
 	fmt.Println(wordBreak("leetcode", []string{"leet", "code"}))
