@@ -1,8 +1,6 @@
-package main
+package dynamic_programming
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to
 // construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
@@ -83,7 +81,7 @@ func judge(s string, wordDict []string) bool {
 	return dp[len(s)]
 }
 
-func main() {
+func testProblem140() {
 	b := wordBreak2("aaaaaaa", []string{"aaaa", "aa", "a"})
 	fmt.Println(b)
 	a := wordBreak2("catsanddog", []string{"cat", "cats", "and", "sand", "dog"})
