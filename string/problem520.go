@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -60,7 +60,7 @@ func isLower(word string) bool {
 	return true
 }
 
-func main() {
+func testProblem520() {
 	fmt.Println(detectCapitalUse2("FlaG"))
 	fmt.Println(detectCapitalUse2("USA"))
 	fmt.Println(detectCapitalUse2("leetcode"))
