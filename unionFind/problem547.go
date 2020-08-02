@@ -1,4 +1,4 @@
-package main
+package unionFind
 
 import "github.com/leetcodeProblem/data"
 
@@ -40,8 +40,4 @@ func findCircleNum(M [][]int) int {
 		}
 	}
 	return unionFind.Count()
-}
-
-func main() {
-
 }

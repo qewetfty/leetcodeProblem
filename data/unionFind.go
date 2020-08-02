@@ -32,5 +32,13 @@ func (u *UnionFind) Parent(p int) int {
 
 func (u *UnionFind) Union(i, j int) {
 	p1, p2 := u.Parent(i), u.Parent(j)
+	if p1 == p2 {
+		return
+	}
 	u.parent[p1] = p2
+	u.count--
+}
+
+func (u *UnionFind) Count() int {
+	return u.count
 }
