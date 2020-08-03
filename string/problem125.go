@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -43,7 +43,7 @@ func dealString(s string) string {
 	return strings.ToLower(string(newByte))
 }
 
-func main() {
+func testProblem125() {
 	fmt.Println(isPalindrome("0P"))
 	fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
 	fmt.Println(isPalindrome("race a car"))
