@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -16,7 +16,7 @@ func isPowerOfFour(num int) bool {
 	return num > 0 && (num&(num-1)) == 0 && (num%3 == 1)
 }
 
-func main() {
+func testProblem342() {
 	fmt.Println(isPowerOfFour(4))
 	fmt.Println(isPowerOfFour(16))
 	fmt.Println(isPowerOfFour(15))
