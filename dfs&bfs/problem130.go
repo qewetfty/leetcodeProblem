@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "fmt"
 
@@ -64,7 +64,7 @@ func dfs(board [][]byte, x, y int) {
 	}
 }
 
-func main() {
+func testProblem130() {
 	a := [][]byte{{'X', 'X', 'X', 'X'}, {'X', 'O', 'O', 'X'}, {'X', 'X', 'O', 'X'}, {'X', 'O', 'X', 'X'}}
 	fmt.Println(a)
 	solve(a)
