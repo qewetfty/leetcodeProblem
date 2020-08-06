@@ -1,4 +1,4 @@
-package main
+package trie
 
 import (
 	"fmt"
@@ -76,7 +76,7 @@ func search(word string, index int, node *data.TrieNode) bool {
  * param_2 := obj.Search(word);
  */
 
-func main() {
+func testProblem211() {
 	obj := Constructor()
 	obj.AddWord("at")
 	obj.AddWord("and")
