@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -27,6 +27,6 @@ func findDuplicates(nums []int) []int {
 	return res
 }
 
-func main() {
+func testProblem442() {
 	fmt.Println(findDuplicates([]int{4, 3, 2, 7, 8, 2, 3, 1}))
 }

@@ -25,7 +25,7 @@ type WordDictionary struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() WordDictionary {
+func WordDictionaryConstructor() WordDictionary {
 	return WordDictionary{
 		trie: data.NewTrie(),
 	}
@@ -71,13 +71,13 @@ func search(word string, index int, node *data.TrieNode) bool {
 
 /**
  * Your WordDictionary object will be instantiated and called as such:
- * obj := Constructor();
+ * obj := WordDictionaryConstructor();
  * obj.AddWord(word);
  * param_2 := obj.Search(word);
  */
 
 func testProblem211() {
-	obj := Constructor()
+	obj := WordDictionaryConstructor()
 	obj.AddWord("at")
 	obj.AddWord("and")
 	obj.AddWord("an")
