@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -31,11 +31,11 @@ func pathSum(root *data.TreeNode, sum int) [][]int {
 		return res
 	}
 	curNumList := make([]int, 0)
-	dfs(root, 0, sum, curNumList)
+	dfsProblem113(root, 0, sum, curNumList)
 	return res
 }
 
-func dfs(node *data.TreeNode, curSum, sum int, curNumList []int) {
+func dfsProblem113(node *data.TreeNode, curSum, sum int, curNumList []int) {
 	nowSum := curSum + node.Val
 	curNumList = append(curNumList, node.Val)
 	if node.Left == nil && node.Right == nil {
@@ -48,15 +48,15 @@ func dfs(node *data.TreeNode, curSum, sum int, curNumList []int) {
 		return
 	}
 	if node.Left != nil {
-		dfs(node.Left, nowSum, sum, curNumList)
+		dfsProblem113(node.Left, nowSum, sum, curNumList)
 	}
 	if node.Right != nil {
-		dfs(node.Right, nowSum, sum, curNumList)
+		dfsProblem113(node.Right, nowSum, sum, curNumList)
 	}
 	curNumList = curNumList[:len(curNumList)-1]
 }
 
-func main() {
+func testProblem113() {
 	a := data.TreeNode{
 		Val: 1,
 	}
