@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -27,11 +27,11 @@ func hasPathSum(root *data.TreeNode, sum int) bool {
 	if root == nil {
 		return false
 	}
-	dfs(root, 0, sum)
+	dfsProblem112(root, 0, sum)
 	return hasPath
 }
 
-func dfs(node *data.TreeNode, curSum, sum int) {
+func dfsProblem112(node *data.TreeNode, curSum, sum int) {
 	// 判断是否是叶子节点
 	nowSum := curSum + node.Val
 	if node.Left == nil && node.Right == nil {
@@ -41,14 +41,14 @@ func dfs(node *data.TreeNode, curSum, sum int) {
 		return
 	}
 	if node.Left != nil {
-		dfs(node.Left, nowSum, sum)
+		dfsProblem112(node.Left, nowSum, sum)
 	}
 	if node.Right != nil {
-		dfs(node.Right, nowSum, sum)
+		dfsProblem112(node.Right, nowSum, sum)
 	}
 }
 
-func main() {
+func testProblem112() {
 	a := data.TreeNode{
 		Val: 1,
 	}
