@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -92,8 +92,4 @@ func verticalTraversal(root *data.TreeNode) [][]int {
 		res = append(res, resMap[i])
 	}
 	return res
-}
-
-func main() {
-
 }
