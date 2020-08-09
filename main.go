@@ -2,92 +2,101 @@ package main
 
 import (
 	"container/list"
-	"fmt"
+	"github.com/leetcodeProblem/data"
 )
 
-// In a given grid, each cell can have one of three values:
-//	the value 0 representing an empty cell;
-//	the value 1 representing a fresh orange;
-//	the value 2 representing a rotten orange.
-//	Every minute, any fresh orange that is adjacent (4-directionally) to a rotten orange becomes rotten.
-// Return the minimum number of minutes that must elapse until no cell has a fresh orange.  If this is impossible,
-// return -1 instead.
-//	Example 1:
-//		Input: [[2,1,1],[1,1,0],[0,1,1]]
-//		Output: 4
-//	Example 2:
-//		Input: [[2,1,1],[0,1,1],[1,0,1]]
-//		Output: -1
-//		Explanation:  The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.
-//	Example 3:
-//		Input: [[0,2]]
-//		Output: 0
-//		Explanation:  Since there are already no fresh oranges at minute 0, the answer is just 0.
-//	Note:
-//		1 <= grid.length <= 10
-//		1 <= grid[0].length <= 10
-//		grid[i][j] is only 0, 1, or 2.
-
-var (
-	dx = []int{-1, 1, 0, 0}
-	dy = []int{0, 0, 1, -1}
-)
-
-type point struct {
-	x int
-	y int
+func pathSum437(root *data.TreeNode, sum int) int {
+	res := 0
+	if root == nil {
+		return res
+	}
+	dfsProblem437(root, &res, sum)
+	return res
 }
 
-func orangesRotting(grid [][]int) int {
-	m, n := len(grid), len(grid[0])
+func dfsProblem437(node *data.TreeNode, res *int, sum int) {
+	*res = *res + hasSumPath(node, sum)
+	if node.Left != nil {
+		dfsProblem437(node.Left, res, sum)
+	}
+	if node.Right != nil {
+		dfsProblem437(node.Right, res, sum)
+	}
+}
+
+type nodeSum struct {
+	node *data.TreeNode
+	sum  int
+}
+
+func hasSumPath(root *data.TreeNode, sum int) int {
+	res := 0
+	if root == nil {
+		return res
+	}
 	deque := new(list.List)
-	// first add rotten orange into deque
-	for i := 0; i < m; i++ {
-		for j := 0; j < n; j++ {
-			if grid[i][j] == 2 {
-				deque.PushFront(point{
-					x: i,
-					y: j,
+	deque.PushFront(nodeSum{
+		node: root,
+		sum:  0,
+	})
+	for deque.Len() > 0 {
+		curLen := deque.Len()
+		for i := 0; i < curLen; i++ {
+			currNodeSum := deque.Remove(deque.Back()).(nodeSum)
+			node, prevSum := currNodeSum.node, currNodeSum.sum
+			curSum := prevSum + node.Val
+			if curSum == sum {
+				res++
+			}
+			if node.Left != nil {
+				deque.PushFront(nodeSum{
+					node: node.Left,
+					sum:  curSum,
+				})
+			}
+			if node.Right != nil {
+				deque.PushFront(nodeSum{
+					node: node.Right,
+					sum:  curSum,
 				})
 			}
 		}
 	}
-	time := 0
-	// bfs rotten orange to make fresh orange rotten
-	for deque.Len() > 0 {
-		curLen := deque.Len()
-		for i := 0; i < curLen; i++ {
-			rottenPoint := deque.Remove(deque.Back()).(point)
-			curX, curY := rottenPoint.x, rottenPoint.y
-			for j := 0; j < 4; j++ {
-				newX, newY := curX+dx[j], curY+dy[j]
-				if newX >= 0 && newX < m && newY >= 0 && newY < n && grid[newX][newY] == 1 {
-					grid[newX][newY] = 2
-					deque.PushFront(point{
-						x: newX,
-						y: newY,
-					})
-				}
-			}
-		}
-		if deque.Len() > 0 {
-			time++
-		}
+	return res
+}
+
+// prefix sum method
+var prefixMap map[int]int
+
+func pathSum(root *data.TreeNode, sum int) int {
+	prefixMap = make(map[int]int)
+	prefixMap[0] = 1
+	return helper(root, sum, 0)
+}
+
+func helper(node *data.TreeNode, target, curSum int) int {
+	if node == nil {
+		return 0
 	}
-	// if there is still fresh orange, return -1. else return time
-	for i := 0; i < m; i++ {
-		for j := 0; j < n; j++ {
-			if grid[i][j] == 1 {
-				return -1
-			}
-		}
+	res := 0
+	curSum = curSum + node.Val
+	remainNumber := 0
+	if _, ok := prefixMap[curSum-target]; ok {
+		remainNumber = prefixMap[curSum-target]
 	}
-	return time
+	res = res + remainNumber
+	curSumPrefixNumber := 0
+	if _, ok := prefixMap[curSum]; ok {
+		curSumPrefixNumber = prefixMap[curSum]
+	}
+	curSumPrefixNumber = curSumPrefixNumber + 1
+	prefixMap[curSum] = curSumPrefixNumber
+	res = res + helper(node.Left, target, curSum)
+	res = res + helper(node.Right, target, curSum)
+	prefixMap[curSum]--
+	return res
 }
 
 func main() {
-	fmt.Println(orangesRotting([][]int{{2, 2}, {1, 1}, {0, 0}, {2, 0}}))
-	fmt.Println(orangesRotting([][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}))
-	fmt.Println(orangesRotting([][]int{{2, 1, 1}, {0, 1, 1}, {1, 0, 1}}))
-	fmt.Println(orangesRotting([][]int{{0, 2}}))
+
 }

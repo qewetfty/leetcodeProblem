@@ -64,3 +64,35 @@ func hasSumPath(root *data.TreeNode, sum int) int {
 	}
 	return res
 }
+
+// prefix sum method
+var prefixMap map[int]int
+
+func pathSumPrefix(root *data.TreeNode, sum int) int {
+	prefixMap = make(map[int]int)
+	prefixMap[0] = 1
+	return helper(root, sum, 0)
+}
+
+func helper(node *data.TreeNode, target, curSum int) int {
+	if node == nil {
+		return 0
+	}
+	res := 0
+	curSum = curSum + node.Val
+	remainNumber := 0
+	if _, ok := prefixMap[curSum-target]; ok {
+		remainNumber = prefixMap[curSum-target]
+	}
+	res = res + remainNumber
+	curSumPrefixNumber := 0
+	if _, ok := prefixMap[curSum]; ok {
+		curSumPrefixNumber = prefixMap[curSum]
+	}
+	curSumPrefixNumber = curSumPrefixNumber + 1
+	prefixMap[curSum] = curSumPrefixNumber
+	res = res + helper(node.Left, target, curSum)
+	res = res + helper(node.Right, target, curSum)
+	prefixMap[curSum]--
+	return res
+}
