@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -28,17 +28,16 @@ import (
 //		1 <= grid[0].length <= 10
 //		grid[i][j] is only 0, 1, or 2.
 
-var (
-	dx = []int{-1, 1, 0, 0}
-	dy = []int{0, 0, 1, -1}
-)
-
 type point struct {
 	x int
 	y int
 }
 
 func orangesRotting(grid [][]int) int {
+	var (
+		dx = []int{-1, 1, 0, 0}
+		dy = []int{0, 0, 1, -1}
+	)
 	m, n := len(grid), len(grid[0])
 	deque := new(list.List)
 	// first add rotten orange into deque
@@ -85,7 +84,7 @@ func orangesRotting(grid [][]int) int {
 	return time
 }
 
-func main() {
+func testProblem994() {
 	fmt.Println(orangesRotting([][]int{{2, 2}, {1, 1}, {0, 0}, {2, 0}}))
 	fmt.Println(orangesRotting([][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}))
 	fmt.Println(orangesRotting([][]int{{2, 1, 1}, {0, 1, 1}, {1, 0, 1}}))
