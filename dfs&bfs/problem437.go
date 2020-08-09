@@ -1,26 +1,26 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
 	"github.com/leetcodeProblem/data"
 )
 
-func pathSum(root *data.TreeNode, sum int) int {
+func pathSum437(root *data.TreeNode, sum int) int {
 	res := 0
 	if root == nil {
 		return res
 	}
-	dfs(root, &res, sum)
+	dfsProblem437(root, &res, sum)
 	return res
 }
 
-func dfs(node *data.TreeNode, res *int, sum int) {
+func dfsProblem437(node *data.TreeNode, res *int, sum int) {
 	*res = *res + hasSumPath(node, sum)
 	if node.Left != nil {
-		dfs(node.Left, res, sum)
+		dfsProblem437(node.Left, res, sum)
 	}
 	if node.Right != nil {
-		dfs(node.Right, res, sum)
+		dfsProblem437(node.Right, res, sum)
 	}
 }
 
@@ -63,8 +63,4 @@ func hasSumPath(root *data.TreeNode, sum int) int {
 		}
 	}
 	return res
-}
-
-func main() {
-
 }
