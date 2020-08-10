@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func titleToNumber2(s string) int {
 	return res
 }
 
-func main() {
+func testProblem171() {
 	fmt.Println(titleToNumber("A"))
 	fmt.Println(titleToNumber("AB"))
 	fmt.Println(titleToNumber("ZY"))
