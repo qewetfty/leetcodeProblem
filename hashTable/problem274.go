@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ func hIndex(citations []int) int {
 	return res
 }
 
-func main() {
+func testProblem274() {
 	fmt.Println(hIndex([]int{3, 0, 6, 1, 5}))
 	fmt.Println(hIndex([]int{1, 1, 1, 1, 1, 1, 1, 1}))
 	fmt.Println(hIndex([]int{0, 0, 0, 0, 0, 0, 0}))
