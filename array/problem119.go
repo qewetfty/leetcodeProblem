@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -25,7 +25,7 @@ func getRow(rowIndex int) []int {
 	return res
 }
 
-func main() {
+func testProblem119() {
 	fmt.Println(getRow(0))
 	fmt.Println(getRow(1))
 	fmt.Println(getRow(2))
