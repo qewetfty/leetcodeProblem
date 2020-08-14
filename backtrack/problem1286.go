@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -27,21 +27,21 @@ type CombinationIterator struct {
 
 func Constructor(characters string, combinationLength int) CombinationIterator {
 	combines := make([]string, 0)
-	backtrack(characters, 0, combinationLength, "", &combines)
+	backtrack1286(characters, 0, combinationLength, "", &combines)
 	return CombinationIterator{
 		combines: combines,
 		index:    0,
 	}
 }
 
-func backtrack(characters string, start, combinationLength int, currStr string, res *[]string) {
+func backtrack1286(characters string, start, combinationLength int, currStr string, res *[]string) {
 	if len(currStr) == combinationLength {
 		*res = append(*res, currStr)
 		return
 	}
 	for i := start; i < len(characters); i++ {
 		currStr = currStr + characters[i:i+1]
-		backtrack(characters, i+1, combinationLength, currStr, res)
+		backtrack1286(characters, i+1, combinationLength, currStr, res)
 		currStr = currStr[:len(currStr)-1]
 	}
 }
@@ -56,7 +56,7 @@ func (this *CombinationIterator) HasNext() bool {
 	return this.index != len(this.combines)
 }
 
-func main() {
+func testProblem1286() {
 	iterator := Constructor("abc", 2)
 	fmt.Println(iterator.Next())
 	fmt.Println(iterator.HasNext())
