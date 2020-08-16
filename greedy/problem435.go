@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -96,7 +96,7 @@ func overlap(i, j []int) bool {
 	return i[1] > j[0]
 }
 
-func main() {
+func testProblem435() {
 	fmt.Println(eraseOverlapIntervals([][]int{{1, 2}, {2, 3}, {1, 3}, {3, 4}}))
 	fmt.Println(eraseOverlapIntervals([][]int{{1, 2}, {1, 2}, {1, 2}}))
 	fmt.Println(eraseOverlapIntervals([][]int{{1, 2}, {2, 3}}))
