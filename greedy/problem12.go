@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -45,6 +45,7 @@ var romanMap = []map[int]string{
 	{1: "M", 2: "MM", 3: "MMM"},
 }
 
+// map method
 func intToRomanMapFunc(num int) string {
 	res, index := "", 0
 	for num != 0 {
@@ -60,6 +61,7 @@ var (
 	characters = []string{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"}
 )
 
+// list method
 func intToRoman(num int) string {
 	res := ""
 	for i := 0; i < len(numbers) && num > 0; i++ {
@@ -71,7 +73,7 @@ func intToRoman(num int) string {
 	return res
 }
 
-func main() {
+func testProblem12() {
 	fmt.Println(intToRoman(3))
 	fmt.Println(intToRoman(4))
 	fmt.Println(intToRoman(9))
