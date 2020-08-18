@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -26,12 +26,12 @@ func numsSameConsecDiff(N int, K int) []int {
 		res = append(res, 0)
 	}
 	for i := 1; i <= 9; i++ {
-		backtrack(N, K, i, &res)
+		backtrack967(N, K, i, &res)
 	}
 	return res
 }
 
-func backtrack(N, K, curNum int, res *[]int) {
+func backtrack967(N, K, curNum int, res *[]int) {
 	if N <= 1 {
 		if visited[curNum] {
 			return
@@ -42,10 +42,10 @@ func backtrack(N, K, curNum int, res *[]int) {
 	}
 	curInt := curNum % 10
 	if curInt+K < 10 {
-		backtrack(N-1, K, curNum*10+curInt+K, res)
+		backtrack967(N-1, K, curNum*10+curInt+K, res)
 	}
 	if curInt-K >= 0 {
-		backtrack(N-1, K, curNum*10+curInt-K, res)
+		backtrack967(N-1, K, curNum*10+curInt-K, res)
 	}
 }
 
@@ -63,7 +63,7 @@ func pow(x, n int) int {
 	return res
 }
 
-func main() {
+func testProblem967() {
 	fmt.Println(numsSameConsecDiff(3, 0))
 	fmt.Println(numsSameConsecDiff(1, 0))
 	fmt.Println(numsSameConsecDiff(3, 7))
