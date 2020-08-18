@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -45,7 +45,7 @@ func distributeCandies(candies int, num_people int) []int {
 	return res
 }
 
-func main() {
+func testProblem1103() {
 	fmt.Println(distributeCandies(7, 4))
 	fmt.Println(distributeCandies(10, 3))
 	fmt.Println(distributeCandies(1000000000, 1000))
