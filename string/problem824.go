@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -43,7 +43,7 @@ func toGoatLatin(S string) string {
 	return strings.Join(resList, " ")
 }
 
-func main() {
+func testProblem824() {
 	fmt.Println(toGoatLatin("I speak Goat Latin"))
 	fmt.Println(toGoatLatin("The quick brown fox jumped over the lazy dog"))
 }
