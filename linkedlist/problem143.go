@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ func reorderList(head *data.ListNode) {
 	}
 }
 
-func main() {
+func testProblem143() {
 	a := data.NewListNode(1)
 	b := data.NewListNode(2)
 	c := data.NewListNode(3)
