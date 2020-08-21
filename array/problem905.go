@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -40,6 +40,6 @@ func sortArrayByParity(A []int) []int {
 	return A
 }
 
-func main() {
+func testProblem905() {
 	fmt.Println(sortArrayByParity([]int{3, 1, 2, 4}))
 }
