@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 // Given a list of non-overlapping axis-aligned rectangles rects, write a function pick which randomly and uniformily
 // picks an integer point in the space covered by the rectangles.
@@ -59,8 +59,4 @@ func (this *Solution) Pick() []int {
 		this.nextPoint = []int{curX + 1, curY}
 	}
 	return point
-}
-
-func main() {
-
 }
