@@ -1,11 +1,9 @@
-package main
+package trie
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Implement the StreamChecker class as follows:
-// StreamChecker(words): Constructor, init the data structure with the given words.
+// StreamChecker(words): Constructor1032, init the data structure with the given words.
 // query(letter): returns true if and only if for some k >= 1, the last k characters queried (in order from oldest to
 // newest, including this letter just queried) spell one of the words in the given list.
 //	Example:
@@ -34,15 +32,15 @@ type StreamChecker struct {
 	charList []byte
 }
 
-func Constructor(words []string) StreamChecker {
+func Constructor1032(words []string) StreamChecker {
 	checker := new(StreamChecker)
-	checker.Root = newTrieNode()
+	checker.Root = newTrieNode1032()
 	// 构建后缀树
 	for _, word := range words {
 		node, curCharList := checker.Root, []byte(word)
 		for i := len(word) - 1; i >= 0; i-- {
 			if !node.Contains(curCharList[i]) {
-				node.Put(curCharList[i], newTrieNode())
+				node.Put(curCharList[i], newTrieNode1032())
 			}
 			node = node.Get(curCharList[i])
 		}
@@ -71,7 +69,7 @@ type trienode struct {
 	isEnd bool
 }
 
-func newTrieNode() *trienode {
+func newTrieNode1032() *trienode {
 	node := new(trienode)
 	node.list = make([]*trienode, 26)
 	return node
@@ -89,8 +87,8 @@ func (t *trienode) Put(char byte, node *trienode) {
 	t.list[char-'a'] = node
 }
 
-func main() {
-	checker := Constructor([]string{"abaa", "abaab", "aabbb", "bab", "ab"})
+func testProblem1032() {
+	checker := Constructor1032([]string{"abaa", "abaab", "aabbb", "bab", "ab"})
 	fmt.Println(checker.Query('a'))
 	fmt.Println(checker.Query('a'))
 	fmt.Println(checker.Query('b'))
