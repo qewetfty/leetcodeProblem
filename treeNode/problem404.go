@@ -1,8 +1,6 @@
-package main
+package treeNode
 
-import (
-	"github.com/leetcodeProblem/data"
-)
+import "github.com/leetcodeProblem/data"
 
 // Find the sum of all left leaves in a given binary tree.
 //	Example:
@@ -20,11 +18,11 @@ func sumOfLeftLeaves(root *data.TreeNode) int {
 	if root == nil {
 		return sum
 	}
-	dfs(root, false)
+	dfs404(root, false)
 	return sum
 }
 
-func dfs(node *data.TreeNode, isLeft bool) {
+func dfs404(node *data.TreeNode, isLeft bool) {
 	if node == nil {
 		return
 	}
@@ -32,10 +30,6 @@ func dfs(node *data.TreeNode, isLeft bool) {
 		sum = sum + node.Val
 		return
 	}
-	dfs(node.Left, true)
-	dfs(node.Right, false)
-}
-
-func main() {
-
+	dfs404(node.Left, true)
+	dfs404(node.Right, false)
 }
