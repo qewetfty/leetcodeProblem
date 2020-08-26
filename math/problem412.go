@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -45,7 +45,7 @@ func fizzBuzz(n int) []string {
 	return res
 }
 
-func main() {
+func testProblem412() {
 	fmt.Println(fizzBuzz(15))
 	fmt.Println(fizzBuzz(1))
 	fmt.Println(fizzBuzz(100))
