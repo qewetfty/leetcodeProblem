@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -84,7 +84,7 @@ func (in *interval) Len() int {
 	return len(in.nums)
 }
 
-func main() {
+func testProblem436() {
 	fmt.Println(findRightInterval([][]int{{1, 2}}))
 	fmt.Println(findRightInterval([][]int{{3, 4}, {2, 3}, {1, 2}}))
 	fmt.Println(findRightInterval([][]int{{1, 4}, {2, 3}, {3, 4}}))
