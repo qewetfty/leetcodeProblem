@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -62,7 +62,7 @@ func pancake(A []int, k int) {
 	}
 }
 
-func main() {
+func testProblem969() {
 	fmt.Println(pancakeSort([]int{3, 2, 4, 1}))
 	fmt.Println(pancakeSort([]int{1, 2, 3}))
 }
