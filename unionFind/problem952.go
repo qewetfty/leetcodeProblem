@@ -1,4 +1,4 @@
-package main
+package unionFind
 
 import (
 	"fmt"
@@ -127,7 +127,7 @@ func (union *unionFind) Count() int {
 	return union.count
 }
 
-func main() {
+func testProblem952() {
 	fmt.Println(largestComponentSize([]int{4, 6, 15, 35}))
 	fmt.Println(largestComponentSize([]int{20, 50, 9, 63}))
 	fmt.Println(largestComponentSize([]int{2, 3, 6, 7, 4, 12, 21, 39}))
