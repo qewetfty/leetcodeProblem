@@ -23,6 +23,7 @@ import (
 //		1 <= A.length <= 20000
 //		1 <= A[i] <= 100000
 
+// 利用因子建立关系，构建并查集
 func largestComponentSize(A []int) int {
 	maxVal := 0
 	for _, num := range A {

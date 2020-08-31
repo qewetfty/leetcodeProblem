@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import "github.com/leetcodeProblem/data"
 
@@ -67,8 +67,4 @@ func predecessor(root *data.TreeNode) int {
 		root = root.Right
 	}
 	return root.Val
-}
-
-func main() {
-
 }
