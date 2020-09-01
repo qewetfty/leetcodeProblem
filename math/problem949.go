@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -44,7 +44,7 @@ func largestTimeFromDigits(A []int) string {
 	return res
 }
 
-func main() {
+func testProblem949() {
 	fmt.Println(largestTimeFromDigits([]int{1, 2, 3, 4}))
 	fmt.Println(largestTimeFromDigits([]int{5, 5, 5, 5}))
 }
