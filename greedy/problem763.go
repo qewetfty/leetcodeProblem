@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -67,7 +67,7 @@ func partitionLabels2(S string) []int {
 	return result
 }
 
-func main() {
+func testProblem763() {
 	fmt.Println(partitionLabels("ababcbacadefegdehijhklij"))
 	fmt.Println(partitionLabels("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"))
 	fmt.Println(partitionLabels("aaaaaaaaaaaabaaaaaaaaaaaaaaaaaacccddawe"))
