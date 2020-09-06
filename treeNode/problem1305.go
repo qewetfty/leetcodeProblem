@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import "github.com/leetcodeProblem/data"
 
@@ -61,8 +61,4 @@ func inorderTree(root *data.TreeNode, res *[]int) {
 	inorderTree(root.Left, res)
 	*res = append(*res, root.Val)
 	inorderTree(root.Right, res)
-}
-
-func main() {
-
 }
