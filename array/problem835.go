@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -51,6 +51,6 @@ func largestOverlap(A [][]int, B [][]int) int {
 	return res
 }
 
-func main() {
+func testProblem835() {
 	fmt.Println(largestOverlap([][]int{{1, 1, 0}, {0, 1, 0}, {0, 1, 0}}, [][]int{{0, 0, 0}, {0, 1, 1}, {0, 0, 1}}))
 }
