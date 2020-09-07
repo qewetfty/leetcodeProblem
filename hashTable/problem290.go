@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -44,7 +44,7 @@ func wordPattern(pattern string, str string) bool {
 	return true
 }
 
-func main() {
+func testProblem290() {
 	fmt.Println(wordPattern("aaa", "aa aa aa aa"))
 	fmt.Println(wordPattern("abba", "dog cat cat dog"))
 	fmt.Println(wordPattern("abba", "dog cat cat fish"))
