@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"container/list"
@@ -47,25 +47,25 @@ func sumRootToLeafBfs(root *data.TreeNode) int {
 	return sum
 }
 
-// dfs method
+// dfs1022 method
 func sumRootToLeafDfs(root *data.TreeNode) int {
 	if root == nil {
 		return 0
 	}
-	return dfs(root, 0)
+	return dfs1022(root, 0)
 }
 
-func dfs(node *data.TreeNode, value int) int {
+func dfs1022(node *data.TreeNode, value int) int {
 	currentValue := (value << 1) + node.Val
 	if node.Left == nil && node.Right == nil {
 		return currentValue
 	}
 	sum := 0
 	if node.Left != nil {
-		sum = sum + dfs(node.Left, currentValue)
+		sum = sum + dfs1022(node.Left, currentValue)
 	}
 	if node.Right != nil {
-		sum = sum + dfs(node.Right, currentValue)
+		sum = sum + dfs1022(node.Right, currentValue)
 	}
 	return sum
 }
@@ -73,8 +73,4 @@ func dfs(node *data.TreeNode, value int) int {
 type rootToLeaf struct {
 	node      *data.TreeNode
 	curNumber int
-}
-
-func main() {
-
 }
