@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -59,7 +59,7 @@ func compareVersion(version1 string, version2 string) int {
 	return 0
 }
 
-func main() {
+func testProblem165() {
 	fmt.Println(compareVersion("0.1", "1.1"))
 	fmt.Println(compareVersion("1.0.1", "1"))
 	fmt.Println(compareVersion("1.01", "1.001"))
