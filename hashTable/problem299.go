@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -49,7 +49,7 @@ func getHint(secret string, guess string) string {
 	return resultStr
 }
 
-func main() {
+func testProblem299() {
 	fmt.Println(getHint("1807", "7810"))
 	fmt.Println(getHint("1123", "0111"))
 	fmt.Println(getHint("1122", "1222"))
