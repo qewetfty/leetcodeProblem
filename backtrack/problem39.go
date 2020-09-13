@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -31,11 +31,11 @@ import "fmt"
 
 func combinationSum(candidates []int, target int) [][]int {
 	res, curList := make([][]int, 0), make([]int, 0)
-	backtrack(candidates, target, 0, &curList, &res)
+	backtrack39(candidates, target, 0, &curList, &res)
 	return res
 }
 
-func backtrack(candidates []int, target, curSum int, curList *[]int, res *[][]int) {
+func backtrack39(candidates []int, target, curSum int, curList *[]int, res *[][]int) {
 	if curSum > target {
 		return
 	}
@@ -52,12 +52,12 @@ func backtrack(candidates []int, target, curSum int, curList *[]int, res *[][]in
 			continue
 		}
 		*curList, curSum = append(*curList, candidates[i]), curSum+candidates[i]
-		backtrack(candidates, target, curSum, curList, res)
+		backtrack39(candidates, target, curSum, curList, res)
 		*curList, curSum = (*curList)[:(len(*curList))-1], curSum-candidates[i]
 	}
 }
 
-func main() {
+func testProblem39() {
 	fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
 	fmt.Println(combinationSum([]int{2, 3, 5}, 8))
 }
