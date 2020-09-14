@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import (
 	"fmt"
@@ -48,11 +48,11 @@ func combinationSum2(candidates []int, target int) [][]int {
 	}
 	candidates = candidates[:i+1]
 	l = len(candidates)
-	backtrack(candidates, 0, 0, target)
+	backtrack40(candidates, 0, 0, target)
 	return result
 }
 
-func backtrack(candidates []int, curIndex, curSum, target int) {
+func backtrack40(candidates []int, curIndex, curSum, target int) {
 	if curSum > target {
 		return
 	}
@@ -65,12 +65,12 @@ func backtrack(candidates []int, curIndex, curSum, target int) {
 			continue
 		}
 		curList, curSum = append(curList, candidates[i]), curSum+candidates[i]
-		backtrack(candidates, i+1, curSum, target)
+		backtrack40(candidates, i+1, curSum, target)
 		curList, curSum = curList[:len(curList)-1], curSum-candidates[i]
 	}
 }
 
-func main() {
+func testProblem40() {
 	fmt.Println(combinationSum2([]int{3, 1, 3, 5, 1, 1}, 8))
 	fmt.Println(combinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
 	fmt.Println(combinationSum2([]int{2, 5, 2, 1, 2}, 5))
