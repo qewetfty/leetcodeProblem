@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -23,6 +23,6 @@ func lengthOfLastWord(s string) int {
 	return len(strings.TrimSpace(lastWord))
 }
 
-func main() {
+func testProblem58() {
 	fmt.Println(lengthOfLastWord("Hello World"))
 }
