@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -49,7 +49,7 @@ func isRobotBounded(instructions string) bool {
 	return false
 }
 
-func main() {
+func testProblem1041() {
 	fmt.Println(isRobotBounded("GGLLGG"))
 	fmt.Println(isRobotBounded("GG"))
 	fmt.Println(isRobotBounded("GL"))
