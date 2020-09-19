@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "sort"
 
@@ -42,8 +42,4 @@ func sequentialDigits2(low int, high int) []int {
 	}
 	sort.Ints(res)
 	return res
-}
-
-func main() {
-
 }
