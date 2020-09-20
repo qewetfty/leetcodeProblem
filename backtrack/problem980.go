@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -37,7 +37,7 @@ var (
 	m          int
 	n          int
 	validPaths int
-	result     int
+	result980  int
 	startX     int
 	startY     int
 )
@@ -50,7 +50,7 @@ func uniquePathsIII(grid [][]int) int {
 		return 0
 	}
 	m, n = len(grid), len(grid[0])
-	validPaths, views, result = 0, make([][]bool, m), 0
+	validPaths, views, result980 = 0, make([][]bool, m), 0
 	for i := 0; i < m; i++ {
 		views[i] = make([]bool, n)
 	}
@@ -65,14 +65,14 @@ func uniquePathsIII(grid [][]int) int {
 		}
 	}
 	views[startX][startY] = true
-	backtrack(grid, startX, startY)
-	return result
+	backtrack980(grid, startX, startY)
+	return result980
 }
 
-func backtrack(grid [][]int, x, y int) {
+func backtrack980(grid [][]int, x, y int) {
 	if grid[x][y] == 2 {
 		if validPaths == 0 {
-			result++
+			result980++
 		}
 		return
 	}
@@ -83,17 +83,17 @@ func backtrack(grid [][]int, x, y int) {
 				continue
 			}
 			if grid[newX][newY] == 2 {
-				backtrack(grid, newX, newY)
+				backtrack980(grid, newX, newY)
 				continue
 			}
 			views[newX][newY], validPaths = true, validPaths-1
-			backtrack(grid, newX, newY)
+			backtrack980(grid, newX, newY)
 			views[newX][newY], validPaths = false, validPaths+1
 		}
 	}
 }
 
-func main() {
+func testProblem980() {
 	fmt.Println(uniquePathsIII([][]int{{1, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 2, -1}}))
 	fmt.Println(uniquePathsIII([][]int{{1, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 2}}))
 	fmt.Println(uniquePathsIII([][]int{{0, 1}, {2, 0}}))
