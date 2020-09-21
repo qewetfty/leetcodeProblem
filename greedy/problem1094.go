@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -68,7 +68,7 @@ func carPooling(trips [][]int, capacity int) bool {
 	return true
 }
 
-func main() {
+func testProblem1094() {
 	fmt.Println(carPooling([][]int{{2, 1, 5}, {3, 3, 7}}, 4))
 	fmt.Println(carPooling([][]int{{2, 1, 5}, {3, 3, 7}}, 5))
 	fmt.Println(carPooling([][]int{{2, 1, 5}, {3, 5, 7}}, 3))
