@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -71,8 +71,4 @@ func getIntersectionNode(headA, headB *data.ListNode) *data.ListNode {
 		i++
 	}
 	return nil
-}
-
-func main() {
-
 }
