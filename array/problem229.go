@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -61,7 +61,7 @@ func majorityElement(nums []int) []int {
 	return res
 }
 
-func main() {
+func testProblem229() {
 	fmt.Println(majorityElement([]int{3, 2, 3}))
 	fmt.Println(majorityElement([]int{1, 1, 1, 3, 3, 2, 2, 2}))
 }
