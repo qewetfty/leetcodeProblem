@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -42,6 +42,6 @@ func findTheDifference2(s string, t string) byte {
 	return byte(sum)
 }
 
-func main() {
+func testProblem389() {
 	fmt.Println(findTheDifference2("abcd", "abcde"))
 }
