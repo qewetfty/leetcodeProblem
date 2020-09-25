@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func (n numbers) Swap(i, j int) {
 	n.num[i], n.num[j] = n.num[j], n.num[i]
 }
 
-func main() {
+func testProblem179() {
 	fmt.Println(largestNumber([]int{824, 938, 1399, 5607, 6973, 5703, 8247, 9609, 4398}))
 	fmt.Println(largestNumber([]int{10, 2}))
 	fmt.Println(largestNumber([]int{0, 0}))
