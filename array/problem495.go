@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -42,7 +42,7 @@ func findPoisonedDuration(timeSeries []int, duration int) int {
 	return res + duration
 }
 
-func main() {
+func testProblem495() {
 	fmt.Println(findPoisonedDuration([]int{1, 4}, 2))
 	fmt.Println(findPoisonedDuration([]int{1, 2}, 2))
 }
