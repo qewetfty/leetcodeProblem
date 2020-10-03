@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import "fmt"
 
@@ -47,7 +47,7 @@ func (this *RecentCounter) Ping(t int) int {
 	return len(this.requests) - this.lastIndex
 }
 
-func main() {
+func testProblem933() {
 	rec := Constructor()
 	fmt.Println(rec.Ping(1))
 	fmt.Println(rec.Ping(100))
