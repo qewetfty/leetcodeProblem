@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func removeCoveredIntervals(intervals [][]int) int {
 	return count
 }
 
-func main() {
+func testProblem1288() {
 	fmt.Println(removeCoveredIntervals([][]int{{66672, 75156}, {59890, 65654}, {92950, 95965}, {9103, 31953},
 		{54869, 69855}, {33272, 92693}, {52631, 65356}, {43332, 89722}, {4218, 57729}, {20993, 92876}}))
 	fmt.Println(removeCoveredIntervals([][]int{{1, 4}, {3, 6}, {2, 8}}))
