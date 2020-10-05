@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -56,7 +56,7 @@ func bitwiseComplement2(N int) int {
 	return i - N - 1
 }
 
-func main() {
+func testProblem1099() {
 	fmt.Println(bitwiseComplement2(0))
 	fmt.Println(bitwiseComplement2(1))
 	fmt.Println(bitwiseComplement2(5))
