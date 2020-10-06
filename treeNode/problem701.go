@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import "github.com/leetcodeProblem/data"
 
@@ -43,8 +43,4 @@ func insertIntoBST(root *data.TreeNode, val int) *data.TreeNode {
 		prev.Right = &data.TreeNode{Val: val}
 	}
 	return root
-}
-
-func main() {
-
 }
