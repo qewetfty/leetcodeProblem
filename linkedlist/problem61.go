@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -44,7 +44,7 @@ func rotateRight(head *data.ListNode, k int) *data.ListNode {
 	return dummy.Next
 }
 
-func main() {
+func testProblem61() {
 	node5 := &data.ListNode{Val: 5}
 	node4 := &data.ListNode{Val: 4, Next: node5}
 	node3 := &data.ListNode{Val: 3, Next: node4}
