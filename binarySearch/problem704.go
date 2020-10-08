@@ -1,8 +1,8 @@
-package main
+package binarySearch
 
 import "fmt"
 
-// Given a sorted (in ascending order) integer array nums of n elements and a target value, write a function to search
+// Given a sorted (in ascending order) integer array nums of n elements and a target value, write a function to search704
 // target in nums. If target exists, then return its index, otherwise return -1.
 //	Example 1:
 //		Input: nums = [-1,0,3,5,9,12], target = 9
@@ -17,7 +17,7 @@ import "fmt"
 //		n will be in the range [1, 10000].
 //		The value of each element in nums will be in the range [-9999, 9999].
 
-func search(nums []int, target int) int {
+func search704(nums []int, target int) int {
 	lo, hi := 0, len(nums)-1
 	for lo <= hi {
 		mid := (lo + hi) / 2
@@ -32,6 +32,6 @@ func search(nums []int, target int) int {
 	return -1
 }
 
-func main() {
-	fmt.Println(search([]int{-1, 0, 3, 5, 9, 12}, 9))
+func testProblem704() {
+	fmt.Println(search704([]int{-1, 0, 3, 5, 9, 12}, 9))
 }
