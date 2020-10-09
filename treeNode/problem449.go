@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -84,7 +84,3 @@ func (this *Codec) buildTreeNode(valueList []string, pos *int) *data.TreeNode {
  * ans := deser.deserialize(tree)
  * return ans
  */
-
-func main() {
-
-}
