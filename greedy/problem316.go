@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"container/list"
@@ -42,7 +42,7 @@ func removeDuplicateLetters(s string) string {
 	return string(res)
 }
 
-func main() {
+func testProblem316() {
 	fmt.Println(removeDuplicateLetters("bcabc"))
 	fmt.Println(removeDuplicateLetters("cbacdcbc"))
 }

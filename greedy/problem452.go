@@ -55,7 +55,7 @@ func findMinArrowShots(points [][]int) int {
 	return res
 }
 
-// 按第一个排序，击败37.5%
+// 按第一个排序
 func findMinArrowShots2(points [][]int) int {
 	l := len(points)
 	if l == 0 {
