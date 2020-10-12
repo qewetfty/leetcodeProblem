@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -65,7 +65,7 @@ func buddyStrings(A string, B string) bool {
 	return false
 }
 
-func main() {
+func testProblem859() {
 	fmt.Println(buddyStrings("ab", "ba"))
 	fmt.Println(buddyStrings("ab", "ab"))
 	fmt.Println(buddyStrings("aa", "aa"))
