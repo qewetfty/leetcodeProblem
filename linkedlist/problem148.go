@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -80,10 +80,10 @@ func sortList2(head *data.ListNode) *data.ListNode {
 	}
 	mid := getMid(head)
 	left, right := sortList2(head), sortList2(mid)
-	return merge(left, right)
+	return merge148(left, right)
 }
 
-func merge(l1, l2 *data.ListNode) *data.ListNode {
+func merge148(l1, l2 *data.ListNode) *data.ListNode {
 	dummy := &data.ListNode{}
 	node := dummy
 	for l1 != nil && l2 != nil {
@@ -118,8 +118,4 @@ func getMid(head *data.ListNode) *data.ListNode {
 	mid := midPre.Next
 	midPre.Next = nil
 	return mid
-}
-
-func main() {
-
 }
