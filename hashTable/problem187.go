@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func findRepeatedDnaSequences(s string) []string {
 	return res
 }
 
-func main() {
+func testProblem187() {
 	fmt.Println(findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))
 	fmt.Println(findRepeatedDnaSequences("AAAAAAAAAAAAA"))
 }
