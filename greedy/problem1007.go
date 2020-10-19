@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -106,7 +106,7 @@ func minDominoRotations2(A []int, B []int) int {
 	}
 }
 
-func main() {
+func testProblem1007() {
 	fmt.Println(minDominoRotations([]int{2, 1, 2, 4, 2, 2}, []int{5, 2, 6, 2, 3, 2}))
 	fmt.Println(minDominoRotations([]int{3, 5, 1, 2, 3}, []int{3, 6, 3, 3, 4}))
 	fmt.Println(minDominoRotations([]int{1, 1, 1, 1, 1}, []int{3, 6, 3, 3, 4}))
