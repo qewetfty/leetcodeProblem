@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import "fmt"
 
@@ -57,7 +57,7 @@ func asteroidCollision(asteroids []int) []int {
 	return stack
 }
 
-func main() {
+func testProblem735() {
 	fmt.Println(asteroidCollision([]int{-2, -2, 1, -2}))
 	fmt.Println(asteroidCollision([]int{10, 2, -5}))
 	fmt.Println(asteroidCollision([]int{5, 10, -5}))
