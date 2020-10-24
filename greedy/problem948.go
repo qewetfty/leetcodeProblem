@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -53,7 +53,7 @@ func bagOfTokensScore(tokens []int, P int) int {
 	return score
 }
 
-func main() {
+func testProblem948() {
 	fmt.Println(bagOfTokensScore([]int{71, 55, 82}, 54))
 	fmt.Println(bagOfTokensScore([]int{100}, 50))
 	fmt.Println(bagOfTokensScore([]int{}, 50))
