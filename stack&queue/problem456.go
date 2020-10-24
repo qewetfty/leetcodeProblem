@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -51,7 +51,7 @@ func find132pattern(nums []int) bool {
 	return false
 }
 
-func main() {
+func testProblem456() {
 	fmt.Println(find132pattern([]int{1, 2, 3, 4}))
 	fmt.Println(find132pattern([]int{3, 1, 4, 2}))
 }
