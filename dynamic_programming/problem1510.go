@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -52,7 +52,7 @@ func winnerSquareGame(n int) bool {
 	return dp[n]
 }
 
-func main() {
+func testProblem1510() {
 	fmt.Println(winnerSquareGame(1))
 	fmt.Println(winnerSquareGame(2))
 	fmt.Println(winnerSquareGame(4))
