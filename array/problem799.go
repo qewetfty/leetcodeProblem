@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -55,7 +55,7 @@ func champagneTower(poured int, query_row int, query_glass int) float64 {
 	return math.Min(1, glasses[query_row][query_glass])
 }
 
-func main() {
+func testProblem799() {
 	fmt.Println(champagneTower(2, 1, 1))
 	fmt.Println(champagneTower(1, 1, 1))
 	fmt.Println(champagneTower(100000009, 33, 17))
