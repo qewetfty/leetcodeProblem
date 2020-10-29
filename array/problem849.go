@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -50,7 +50,7 @@ func maxDistToClosest(seats []int) int {
 	return utils.Max(maxDist, l-lastOccupied-1)
 }
 
-func main() {
+func testProblem849() {
 	fmt.Println(maxDistToClosest([]int{1, 0, 0, 0, 1, 0, 1}))
 	fmt.Println(maxDistToClosest([]int{1, 0, 0, 0}))
 	fmt.Println(maxDistToClosest([]int{0, 1}))
