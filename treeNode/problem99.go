@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import "github.com/leetcodeProblem/data"
 
@@ -128,8 +128,4 @@ func recoverTreeWithList(root *data.TreeNode) {
 	x, y := findSwapRoot()
 	// 3.交换节点值
 	x.Val, y.Val = y.Val, x.Val
-}
-
-func main() {
-
 }
