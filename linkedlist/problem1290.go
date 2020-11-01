@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -34,8 +34,4 @@ func getDecimalValue(head *data.ListNode) int {
 		head = head.Next
 	}
 	return res
-}
-
-func main() {
-
 }
