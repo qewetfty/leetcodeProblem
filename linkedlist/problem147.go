@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -77,7 +77,7 @@ func insertionSortList2(head *data.ListNode) *data.ListNode {
 	return dummy.Next
 }
 
-func main() {
+func testProblem147() {
 	listnode4 := &data.ListNode{Val: 3}
 	listnode3 := &data.ListNode{Val: 1, Next: listnode4}
 	listnode2 := &data.ListNode{Val: 2, Next: listnode3}
