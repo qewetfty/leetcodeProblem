@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func maxPower(s string) int {
 	return res
 }
 
-func main() {
+func testProblem1446() {
 	fmt.Println(maxPower("leetcode"))
 	fmt.Println(maxPower("abbcccddddeeeeedcba"))
 	fmt.Println(maxPower("triplepillooooow"))
