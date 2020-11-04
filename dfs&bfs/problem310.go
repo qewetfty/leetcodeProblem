@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -119,7 +119,7 @@ func findMinHeightTrees2(n int, edges [][]int) []int {
 	return res
 }
 
-func main() {
+func testProblem310() {
 	fmt.Println(findMinHeightTrees(4, [][]int{{1, 0}, {1, 2}, {1, 3}}))
 	fmt.Println(findMinHeightTrees(6, [][]int{{3, 0}, {3, 1}, {3, 2}, {3, 4}, {5, 4}}))
 	fmt.Println(findMinHeightTrees(1, [][]int{}))
