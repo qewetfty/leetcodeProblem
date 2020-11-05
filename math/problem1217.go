@@ -1,4 +1,4 @@
-package main
+package math
 
 import "github.com/leetcodeProblem/utils"
 
@@ -35,8 +35,4 @@ func minCostToMoveChips(position []int) int {
 		}
 	}
 	return utils.Min(odd, even)
-}
-
-func main() {
-
 }
