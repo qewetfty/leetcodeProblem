@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -52,7 +52,7 @@ func findMaxNumInList(nums []int) int {
 	return max
 }
 
-func main() {
+func testProblem1283() {
 	fmt.Println(smallestDivisor([]int{1, 2, 5, 9}, 6))
 	fmt.Println(smallestDivisor([]int{2, 3, 5, 7, 11}, 11))
 	fmt.Println(smallestDivisor([]int{19}, 5))
