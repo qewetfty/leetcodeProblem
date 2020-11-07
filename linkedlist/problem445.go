@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ import (
 //		Output: 7 -> 8 -> 0 -> 7
 
 // 使用栈，从后向前进行加法计算
-func addTwoNumbers(l1 *data.ListNode, l2 *data.ListNode) *data.ListNode {
+func addTwoNumbers445(l1 *data.ListNode, l2 *data.ListNode) *data.ListNode {
 	stack1, stack2 := make([]*data.ListNode, 0), make([]*data.ListNode, 0)
 	for l1 != nil {
 		stack1 = append(stack1, l1)
@@ -98,7 +98,7 @@ func add(l1, l2 *data.ListNode) int {
 	}
 }
 
-func main() {
+func testProblem445() {
 	listnode4 := &data.ListNode{Val: 3}
 	listnode3 := &data.ListNode{Val: 4, Next: listnode4}
 	listnode2 := &data.ListNode{Val: 2, Next: listnode3}
@@ -108,6 +108,6 @@ func main() {
 	listnode6 := &data.ListNode{Val: 6, Next: listnode7}
 	listnode5 := &data.ListNode{Val: 5, Next: listnode6}
 
-	numbers := addTwoNumbers(listnode1, listnode5)
+	numbers := addTwoNumbers445(listnode1, listnode5)
 	fmt.Println(numbers.ToString())
 }
