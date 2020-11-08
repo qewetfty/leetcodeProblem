@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -41,20 +41,20 @@ var result int
 
 func findTilt(root *data.TreeNode) int {
 	result = 0
-	dfs(root)
+	dfs563(root)
 	return result
 }
 
-func dfs(node *data.TreeNode) int {
+func dfs563(node *data.TreeNode) int {
 	if node == nil {
 		return 0
 	}
-	left, right := dfs(node.Left), dfs(node.Right)
+	left, right := dfs563(node.Left), dfs563(node.Right)
 	result += int(math.Abs(float64(left - right)))
 	return left + right + node.Val
 }
 
-func main() {
+func testProblem563() {
 	treeNode2 := &data.TreeNode{Val: 2}
 	treeNode3 := &data.TreeNode{Val: 3}
 	treeNode1 := &data.TreeNode{Val: 1, Left: treeNode2, Right: treeNode3}
