@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -33,7 +33,7 @@ func flipAndInvertImage(A [][]int) [][]int {
 	return A
 }
 
-func main() {
+func testProblem832() {
 	fmt.Println(flipAndInvertImage([][]int{{1, 1, 0}, {1, 0, 1}, {0, 0, 0}}))
 	fmt.Println(flipAndInvertImage([][]int{{1, 1, 0, 0}, {1, 0, 0, 1}, {0, 1, 1, 1}, {1, 0, 1, 0}}))
 }
