@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 // You are given a perfect binary tree where all leaves are on the same level,
 // and every parent has two children. The binary tree has the following
@@ -76,8 +76,4 @@ func connectBfs(root *Node) *Node {
 		queue = queue[l:]
 	}
 	return root
-}
-
-func main() {
-
 }
