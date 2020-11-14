@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -33,7 +33,7 @@ func poorPigs(buckets int, minutesToDie int, minutesToTest int) int {
 	return int(math.Ceil(math.Log(float64(buckets)) / math.Log(float64(states))))
 }
 
-func main() {
+func testProblem458() {
 	fmt.Println(poorPigs(1000, 15, 60))
 	fmt.Println(poorPigs(4, 15, 15))
 }
