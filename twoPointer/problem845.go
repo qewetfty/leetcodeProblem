@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 import "fmt"
 
@@ -76,7 +76,7 @@ func longestMountain2(A []int) int {
 	return res
 }
 
-func main() {
+func testProblem845() {
 	fmt.Println(longestMountain([]int{2, 1, 4, 7, 3, 2, 5}))
 	fmt.Println(longestMountain([]int{2, 2, 2}))
 }
