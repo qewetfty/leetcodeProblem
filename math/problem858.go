@@ -1,4 +1,4 @@
-package main
+package math
 
 // There is a special square room with mirrors on each of the four walls. Except
 // for the southwest corner, there are receptors on each of the remaining
@@ -27,8 +27,4 @@ func mirrorReflection(p int, q int) int {
 		return 0
 	}
 	return 1
-}
-
-func main() {
-
 }
