@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -62,7 +62,7 @@ func decodeString(s string) string {
 	return strings.Join(stack, "")
 }
 
-func main() {
+func testProblem394() {
 	fmt.Println(decodeString("100[leetcode]"))
 	fmt.Println(decodeString("3[a]2[bc]"))
 	fmt.Println(decodeString("3[a2[c]]"))
