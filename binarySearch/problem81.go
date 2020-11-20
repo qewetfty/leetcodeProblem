@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -15,7 +15,7 @@ import "fmt"
 //		This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
 //		Would this affect the run-time complexity? How and why?
 
-func search(nums []int, target int) bool {
+func search81(nums []int, target int) bool {
 	l := len(nums)
 	if l == 0 {
 		return false
@@ -59,9 +59,9 @@ func searchWithCycle(nums []int, target int) bool {
 	return false
 }
 
-func main() {
-	fmt.Println(search([]int{1, 3, 1, 1, 1}, 3))
-	fmt.Println(search([]int{3, 1}, 1))
-	fmt.Println(search([]int{2, 5, 6, 0, 0, 1, 2}, 0))
-	fmt.Println(search([]int{2, 5, 6, 0, 0, 1, 2}, 3))
+func testProblem81() {
+	fmt.Println(search81([]int{1, 3, 1, 1, 1}, 3))
+	fmt.Println(search81([]int{3, 1}, 1))
+	fmt.Println(search81([]int{2, 5, 6, 0, 0, 1, 2}, 0))
+	fmt.Println(search81([]int{2, 5, 6, 0, 0, 1, 2}, 3))
 }
