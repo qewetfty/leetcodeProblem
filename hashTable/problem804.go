@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -42,6 +42,6 @@ func uniqueMorseRepresentations(words []string) int {
 	return len(codeMap)
 }
 
-func main() {
+func testProblem804() {
 	fmt.Println(uniqueMorseRepresentations([]string{"gin", "zen", "gig", "msg"}))
 }
