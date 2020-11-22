@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -85,7 +85,7 @@ func atMostNGivenDigitSet(digits []string, n int) int {
 	return res
 }
 
-func main() {
+func testProblem902() {
 	fmt.Println(atMostNGivenDigitSet([]string{"1"}, 834))
 	fmt.Println(atMostNGivenDigitSet([]string{"9"}, 55))
 	fmt.Println(atMostNGivenDigitSet([]string{"1", "2", "4"}, 247))
