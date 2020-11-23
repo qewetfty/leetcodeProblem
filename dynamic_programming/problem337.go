@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -36,7 +36,7 @@ import (
 
 var dp map[*data.TreeNode]int
 
-func rob(root *data.TreeNode) int {
+func rob337(root *data.TreeNode) int {
 	if root == nil {
 		return 0
 	}
@@ -59,8 +59,4 @@ func dfs(node *data.TreeNode) {
 		nextNextLeval = nextNextLeval + dp[node.Right.Left] + dp[node.Right.Right]
 	}
 	dp[node] = utils.Max(dp[node.Left]+dp[node.Right], nextNextLeval)
-}
-
-func main() {
-
 }
