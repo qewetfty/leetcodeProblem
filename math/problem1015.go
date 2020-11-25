@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func smallestRepunitDivByK(K int) int {
 	return result
 }
 
-func main() {
+func testProblem1015() {
 	fmt.Println(smallestRepunitDivByK(1))
 	fmt.Println(smallestRepunitDivByK(2))
 	fmt.Println(smallestRepunitDivByK(3))
