@@ -1,4 +1,4 @@
-package main
+package divideAndConquer
 
 import (
 	"fmt"
@@ -99,7 +99,7 @@ func longestSubstring2(s string, k int) int {
 	return max
 }
 
-func main() {
+func testProblem395() {
 	fmt.Println(longestSubstring("aaabb", 3))
 	fmt.Println(longestSubstring("ababbc", 2))
 	fmt.Println(longestSubstring("bbaaacbd", 3))
