@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -115,10 +115,10 @@ func canPartition3(nums []int) bool {
 	for i := range memories {
 		memories[i] = make([]*bool, target+1)
 	}
-	return dfs(nums, l-1, target)
+	return dfs416(nums, l-1, target)
 }
 
-func dfs(nums []int, n, target int) bool {
+func dfs416(nums []int, n, target int) bool {
 	if target == 0 {
 		return true
 	}
@@ -128,12 +128,12 @@ func dfs(nums []int, n, target int) bool {
 	if memories[n][target] != nil {
 		return *memories[n][target]
 	}
-	result := dfs(nums, n-1, target-nums[n-1]) || dfs(nums, n-1, target)
+	result := dfs416(nums, n-1, target-nums[n-1]) || dfs416(nums, n-1, target)
 	memories[n][target] = &result
 	return result
 }
 
-func main() {
+func testProblem416() {
 	fmt.Println(canPartition3([]int{1, 5, 11, 5}))
 	fmt.Println(canPartition3([]int{1, 2, 3, 5}))
 }
