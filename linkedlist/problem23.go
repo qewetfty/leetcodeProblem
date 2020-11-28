@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -80,8 +80,4 @@ func merge2List(node1, node2 *data.ListNode) *data.ListNode {
 		tail.Next = a
 	}
 	return dummy.Next
-}
-
-func main() {
-
 }
