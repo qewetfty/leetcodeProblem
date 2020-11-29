@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "fmt"
 
@@ -49,7 +49,7 @@ func canReach(arr []int, start int) bool {
 	return false
 }
 
-func main() {
+func testProblem1306() {
 	fmt.Println(canReach([]int{4, 2, 3, 0, 3, 1, 2}, 5))
 	fmt.Println(canReach([]int{4, 2, 3, 0, 3, 1, 2}, 0))
 	fmt.Println(canReach([]int{3, 0, 2, 1, 2}, 2))
