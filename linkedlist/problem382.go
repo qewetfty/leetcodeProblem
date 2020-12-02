@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -32,7 +32,7 @@ type Solution struct {
 
 /** @param head The linked list's head.
   Note that the head is guaranteed to be not null, so it contains at least one node. */
-func Constructor(head *data.ListNode) Solution {
+func Constructor382(head *data.ListNode) Solution {
 	return Solution{
 		node: head,
 	}
@@ -54,14 +54,4 @@ func (this *Solution) GetRandom() int {
 		node = node.Next
 	}
 	return res
-}
-
-/**
- * Your Solution object will be instantiated and called as such:
- * obj := Constructor(head);
- * param_1 := obj.GetRandom();
- */
-
-func main() {
-
 }
