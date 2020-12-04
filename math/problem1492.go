@@ -1,8 +1,6 @@
-package main
+package math
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Given two positive integers n and k.
 // A factor of an integer n is defined as an integer i where n % i == 0.
@@ -52,7 +50,7 @@ func kthFactor(n int, k int) int {
 	return -1
 }
 
-func main() {
+func testProblem1492() {
 	fmt.Println(kthFactor(24, 6))
 	fmt.Println(kthFactor(9, 2))
 	fmt.Println(kthFactor(7, 2))
