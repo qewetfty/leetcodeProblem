@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -38,7 +38,7 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
 	return canPlaceNumber >= n
 }
 
-func main() {
+func testProblem605() {
 	fmt.Println(canPlaceFlowers([]int{0, 0}, 2))
 	fmt.Println(canPlaceFlowers([]int{1, 0, 0, 0, 1, 0, 0}, 2))
 	fmt.Println(canPlaceFlowers([]int{0}, 1))
