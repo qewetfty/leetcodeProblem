@@ -1,13 +1,6 @@
-package main
+package dfs_bfs
 
-type Node struct {
-	Val   int
-	Left  *Node
-	Right *Node
-	Next  *Node
-}
-
-func connect(root *Node) *Node {
+func connect117(root *Node) *Node {
 	start := root
 	for start != nil {
 		var nextStart, last *Node
@@ -30,8 +23,4 @@ func connect(root *Node) *Node {
 		start = nextStart
 	}
 	return root
-}
-
-func main() {
-
 }
