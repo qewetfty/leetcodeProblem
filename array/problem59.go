@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -44,7 +44,7 @@ func generateMatrix(n int) [][]int {
 	return res
 }
 
-func main() {
+func testProblem59() {
 	fmt.Println(generateMatrix(1))
 	fmt.Println(generateMatrix(2))
 	fmt.Println(generateMatrix(3))
