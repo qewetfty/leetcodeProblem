@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -54,7 +54,7 @@ func validMountainArray(arr []int) bool {
 	return true
 }
 
-func main() {
+func testProblem941() {
 	fmt.Println(validMountainArray([]int{2, 1}))
 	fmt.Println(validMountainArray([]int{3, 5, 5}))
 	fmt.Println(validMountainArray([]int{0, 3, 2, 1}))
