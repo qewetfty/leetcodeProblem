@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -44,8 +44,4 @@ func dfs865(node *data.TreeNode) (*data.TreeNode, int) {
 		return rNode, rDepth + 1
 	}
 	return node, lDepth + 1
-}
-
-func main() {
-
 }
