@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -80,7 +80,7 @@ func solve(left, right int, nums []int) int {
 	return midResult[left][right]
 }
 
-func main() {
+func testProblem312() {
 	fmt.Println(maxCoins([]int{3, 1, 5, 8}))
 	fmt.Println(maxCoins([]int{1, 2, 3, 4, 5, 6, 7, 8}))
 	fmt.Println(maxCoins([]int{1}))
