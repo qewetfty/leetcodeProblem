@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -80,7 +80,7 @@ func isPalindrome(s string, start, end int) bool {
 	return true
 }
 
-func main() {
+func testProblem131() {
 	fmt.Println(partition("aab"))
 	fmt.Println(partition("a"))
 	fmt.Println(partition("abba"))
