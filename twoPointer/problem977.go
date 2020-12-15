@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 import (
 	"fmt"
@@ -37,7 +37,7 @@ func sortedSquares(nums []int) []int {
 	return result
 }
 
-func main() {
+func testProblem977() {
 	fmt.Println(sortedSquares([]int{-4, -1, 0, 3, 10}))
 	fmt.Println(sortedSquares([]int{-7, -3, 2, 3, 11}))
 }
