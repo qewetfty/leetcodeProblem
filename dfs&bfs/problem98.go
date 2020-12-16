@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -22,19 +22,15 @@ import (
 //		-231 <= Node.val <= 231 - 1
 
 func isValidBST(root *data.TreeNode) bool {
-	return dfs(root, math.MinInt64, math.MaxInt64)
+	return dfs98(root, math.MinInt64, math.MaxInt64)
 }
 
-func dfs(node *data.TreeNode, leftBound, rightBound int) bool {
+func dfs98(node *data.TreeNode, leftBound, rightBound int) bool {
 	if node == nil {
 		return true
 	}
 	if node.Val <= leftBound || node.Val >= rightBound {
 		return false
 	}
-	return dfs(node.Left, leftBound, node.Val) && dfs(node.Right, node.Val, rightBound)
-}
-
-func main() {
-
+	return dfs98(node.Left, leftBound, node.Val) && dfs98(node.Right, node.Val, rightBound)
 }
