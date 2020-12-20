@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -84,7 +84,7 @@ func decodeAtIndex2(S string, K int) string {
 	return str[K-1 : K]
 }
 
-func main() {
+func testProblem880() {
 	fmt.Println(decodeAtIndex("leet2code3", 10))
 	fmt.Println(decodeAtIndex("a2345678999999999999999", 1))
 	fmt.Println(decodeAtIndex("ha22", 5))
