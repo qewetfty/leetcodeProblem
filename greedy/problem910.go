@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -41,7 +41,7 @@ func smallestRangeII(A []int, K int) int {
 	return result
 }
 
-func main() {
+func testProblem910() {
 	fmt.Println(smallestRangeII([]int{1}, 0))
 	fmt.Println(smallestRangeII([]int{0, 10}, 2))
 	fmt.Println(smallestRangeII([]int{1, 3, 6}, 3))
