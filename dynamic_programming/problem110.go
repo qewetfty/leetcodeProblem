@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -34,8 +34,4 @@ func treeHeight(node *data.TreeNode) int {
 		return -1
 	}
 	return utils.Max(leftHeight, rightHeight) + 1
-}
-
-func main() {
-
 }
