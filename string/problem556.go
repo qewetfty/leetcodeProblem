@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -48,7 +48,7 @@ func nextGreaterElement(n int) int {
 	return res
 }
 
-func main() {
+func testProblem556() {
 	fmt.Println(nextGreaterElement(12))
 	fmt.Println(nextGreaterElement(21))
 	fmt.Println(nextGreaterElement(math.MaxInt32))
