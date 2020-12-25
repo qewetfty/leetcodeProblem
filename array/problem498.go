@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -51,7 +51,7 @@ func findDiagonalOrder(matrix [][]int) []int {
 	return result
 }
 
-func main() {
+func testProblem498() {
 	fmt.Println(findDiagonalOrder([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}))
 	fmt.Println(findDiagonalOrder([][]int{{1, 2}, {4, 5}, {7, 8}}))
 	fmt.Println(findDiagonalOrder([][]int{{1}}))
