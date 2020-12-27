@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "fmt"
 
@@ -92,7 +92,7 @@ func minJumps(arr []int) int {
 	return step
 }
 
-func main() {
+func testProblem1345() {
 	fmt.Println(minJumps([]int{100, -23, -23, 404, 100, 23, 23, 23, 3, 404}))
 	fmt.Println(minJumps([]int{7}))
 	fmt.Println(minJumps([]int{7, 6, 9, 6, 9, 6, 9, 7}))
