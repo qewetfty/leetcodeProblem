@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ func reachNumber(target int) int {
 	return i
 }
 
-func main() {
+func testProblem754() {
 	fmt.Println(reachNumber(3))
 	fmt.Println(reachNumber(2))
 	fmt.Println(reachNumber(4))
