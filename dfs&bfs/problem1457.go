@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -26,16 +26,16 @@ import "github.com/leetcodeProblem/data"
 //		The given binary tree will have between 1 and 10^5 nodes.
 //		Node values are digits from 1 to 9.
 
-var result int
+var result1457 int
 
 func pseudoPalindromicPaths(root *data.TreeNode) int {
-	result = 0
+	result1457 = 0
 	numberMap := make(map[int]int)
-	dfs(root, numberMap)
-	return result
+	dfs1457(root, numberMap)
+	return result1457
 }
 
-func dfs(node *data.TreeNode, numberMap map[int]int) {
+func dfs1457(node *data.TreeNode, numberMap map[int]int) {
 	if node == nil {
 		return
 	}
@@ -49,16 +49,12 @@ func dfs(node *data.TreeNode, numberMap map[int]int) {
 			}
 		}
 		if oddNumber <= 1 {
-			result++
+			result1457++
 		}
 		numberMap[node.Val]--
 		return
 	}
-	dfs(node.Left, numberMap)
-	dfs(node.Right, numberMap)
+	dfs1457(node.Left, numberMap)
+	dfs1457(node.Right, numberMap)
 	numberMap[node.Val]--
-}
-
-func main() {
-
 }
