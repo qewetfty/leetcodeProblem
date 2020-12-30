@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -45,8 +45,8 @@ import "fmt"
 // 这样大于等于1则表示原始状态为1。
 // 最终通过判断每个格子的数值来确认最终的结果
 
-var dx = []int{1, 1, 0, -1, -1, -1, 0, 1}
-var dy = []int{0, 1, 1, 1, 0, -1, -1, -1}
+var dx289 = []int{1, 1, 0, -1, -1, -1, 0, 1}
+var dy289 = []int{0, 1, 1, 1, 0, -1, -1, -1}
 
 func gameOfLife(board [][]int) {
 	m, n := len(board), len(board[0])
@@ -70,7 +70,7 @@ func gameOfLife(board [][]int) {
 func judge(board [][]int, m, n, i, j int) int {
 	one := 0
 	for k := 0; k < 8; k++ {
-		newI, newJ := i+dx[k], j+dy[k]
+		newI, newJ := i+dx289[k], j+dy289[k]
 		if newI >= 0 && newI < m && newJ >= 0 && newJ < n {
 			if board[newI][newJ] >= 1 {
 				one++
@@ -94,7 +94,7 @@ func judge(board [][]int, m, n, i, j int) int {
 	return 1
 }
 
-func main() {
+func testProblem289() {
 	a := [][]int{{0, 1, 0}, {0, 0, 1}, {1, 1, 1}, {0, 0, 0}}
 	gameOfLife(a)
 	fmt.Println(a)
