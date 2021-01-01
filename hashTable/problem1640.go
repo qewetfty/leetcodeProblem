@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -55,7 +55,7 @@ func canFormArray(arr []int, pieces [][]int) bool {
 	return true
 }
 
-func main() {
+func testProblem1640() {
 	fmt.Println(canFormArray([]int{85}, [][]int{{85}}))
 	fmt.Println(canFormArray([]int{15, 88}, [][]int{{88}, {15}}))
 	fmt.Println(canFormArray([]int{49, 18, 16}, [][]int{{16, 18, 49}}))
