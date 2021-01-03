@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -27,11 +27,11 @@ import "fmt"
 func countArrangement(n int) int {
 	numberList, curList := make([]bool, n), make([]int, 0)
 	result := 0
-	backtrack(n, numberList, curList, &result)
+	backtrack526(n, numberList, curList, &result)
 	return result
 }
 
-func backtrack(n int, numberList []bool, curList []int, result *int) {
+func backtrack526(n int, numberList []bool, curList []int, result *int) {
 	if len(curList) == n {
 		*result++
 		return
@@ -45,14 +45,14 @@ func backtrack(n int, numberList []bool, curList []int, result *int) {
 		if number%listPosition == 0 || listPosition%number == 0 {
 			numberList[i] = true
 			curList = append(curList, number)
-			backtrack(n, numberList, curList, result)
+			backtrack526(n, numberList, curList, result)
 			numberList[i] = false
 			curList = curList[:len(curList)-1]
 		}
 	}
 }
 
-func main() {
+func testProblem526() {
 	fmt.Println(countArrangement(2))
 	fmt.Println(countArrangement(1))
 	fmt.Println(countArrangement(15))
