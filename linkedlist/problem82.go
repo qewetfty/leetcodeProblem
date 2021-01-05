@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -34,8 +34,4 @@ func deleteDuplicates(head *data.ListNode) *data.ListNode {
 		}
 	}
 	return dummy.Next
-}
-
-func main() {
-
 }
