@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -53,7 +53,7 @@ func findKthPositive3(arr []int, k int) int {
 	return arr[len(arr)-1] + k - missingNumber
 }
 
-func main() {
+func testProblem1539() {
 	fmt.Println(findKthPositive([]int{2, 3, 4, 7, 11}, 5))
 	fmt.Println(findKthPositive([]int{1, 2, 3, 4}, 2))
 }
