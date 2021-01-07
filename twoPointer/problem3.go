@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 import (
 	"fmt"
@@ -69,7 +69,7 @@ func lengthOfLongestSubstring2(s string) int {
 	return res
 }
 
-func main() {
+func testProblem3() {
 	fmt.Println(lengthOfLongestSubstring("abcabcbb"))
 	fmt.Println(lengthOfLongestSubstring("bbbbb"))
 	fmt.Println(lengthOfLongestSubstring("pwwkew"))
