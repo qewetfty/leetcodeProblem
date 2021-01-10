@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -100,7 +100,7 @@ func findBiggerAndSmallerNumber(numberMap map[int]int, target int) int {
 	return more
 }
 
-func main() {
+func testProblem1649() {
 	fmt.Println(createSortedArray([]int{1, 5, 6, 2}))
 	fmt.Println(createSortedArray([]int{1, 2, 3, 6, 5, 4}))
 	fmt.Println(createSortedArray([]int{1, 3, 3, 3, 2, 4, 2, 1, 2}))
