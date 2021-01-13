@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 import (
 	"fmt"
@@ -45,7 +45,7 @@ func numRescueBoats(people []int, limit int) int {
 	return result
 }
 
-func main() {
+func testProblem881() {
 	fmt.Println(numRescueBoats([]int{3, 2, 2, 1}, 3))
 	fmt.Println(numRescueBoats([]int{1, 2}, 3))
 	fmt.Println(numRescueBoats([]int{3, 5, 3, 4}, 3))
