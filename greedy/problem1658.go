@@ -1,8 +1,6 @@
-package main
+package greedy
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // You are given an integer array nums and an integer x. In one operation, you
 // can either remove the leftmost or the rightmost element from the array nums
@@ -84,7 +82,7 @@ func minOperations2(nums []int, x int) int {
 	return length
 }
 
-func main() {
+func testProblem1658() {
 	fmt.Println(minOperations([]int{1}, 1))
 	fmt.Println(minOperations([]int{1, 1, 4, 2, 3}, 5))
 	fmt.Println(minOperations([]int{5, 6, 7, 8, 9}, 4))
