@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -53,7 +53,7 @@ func getMaximumGenerated(n int) int {
 	return result
 }
 
-func main() {
+func testProblem1646() {
 	fmt.Println(getMaximumGenerated(1))
 	fmt.Println(getMaximumGenerated(2))
 	fmt.Println(getMaximumGenerated(3))
