@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -43,7 +43,7 @@ func backtrack(n, i int, char int) int {
 	return number
 }
 
-func main() {
+func testProblem1641() {
 	fmt.Println(countVowelStrings(1))
 	fmt.Println(countVowelStrings(2))
 	fmt.Println(countVowelStrings(3))
