@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -90,7 +90,7 @@ func maxOperations3(nums []int, k int) int {
 	return result
 }
 
-func main() {
+func testProblem1679() {
 	fmt.Println(maxOperations([]int{1, 2, 3, 4}, 5))
 	fmt.Println(maxOperations([]int{3, 1, 3, 4, 3}, 6))
 }
