@@ -1,8 +1,6 @@
-package main
+package dynamic_programming
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Given a string s, return the longest palindromic substring in s.
 //	Example 1:
@@ -114,7 +112,7 @@ func findPalindrome(s string, memory [][]int, i, j int) int {
 	}
 }
 
-func main() {
+func testProblem5() {
 	fmt.Println(longestPalindrome("cbbdcbbd"))
 	fmt.Println(longestPalindrome("babad"))
 	fmt.Println(longestPalindrome("cbbd"))
