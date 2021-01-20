@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -39,7 +39,7 @@ func countGoodRectangles(rectangles [][]int) int {
 	return lengthMap[maxLen]
 }
 
-func main() {
+func testProblem1725() {
 	fmt.Println(countGoodRectangles([][]int{{5, 8}, {3, 9}, {5, 12}, {16, 5}}))
 	fmt.Println(countGoodRectangles([][]int{{2, 3}, {3, 7}, {4, 3}, {3, 7}}))
 }
