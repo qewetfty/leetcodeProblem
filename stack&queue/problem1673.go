@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func mostCompetitive(nums []int, k int) []int {
 	return stack
 }
 
-func main() {
+func testProblem1673() {
 	fmt.Println(mostCompetitive([]int{3, 5, 2, 6}, 2))
 	fmt.Println(mostCompetitive([]int{2, 4, 3, 3, 5, 4, 9, 6}, 4))
 }
