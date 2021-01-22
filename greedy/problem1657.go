@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -71,7 +71,7 @@ func closeStrings(word1 string, word2 string) bool {
 	return true
 }
 
-func main() {
+func testProblem1657() {
 	fmt.Println(closeStrings("abc", "bca"))
 	fmt.Println(closeStrings("a", "aa"))
 	fmt.Println(closeStrings("cabbba", "abbccc"))
