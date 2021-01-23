@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -45,6 +45,6 @@ func diagonalSort(mat [][]int) [][]int {
 	return mat
 }
 
-func main() {
+func testProblem1329() {
 	fmt.Println(diagonalSort([][]int{{3, 3, 1, 1}, {2, 2, 1, 2}, {1, 1, 1, 2}}))
 }
