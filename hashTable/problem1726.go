@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -50,7 +50,7 @@ func tupleSameProduct(nums []int) int {
 	return result
 }
 
-func main() {
+func testProblem1726() {
 	fmt.Println(tupleSameProduct([]int{2, 3, 4, 6}))
 	fmt.Println(tupleSameProduct([]int{1, 2, 4, 5, 10}))
 	fmt.Println(tupleSameProduct([]int{2, 3, 4, 6, 8, 12}))
