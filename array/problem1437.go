@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -44,7 +44,7 @@ func kLengthApart(nums []int, k int) bool {
 	return true
 }
 
-func main() {
+func testProblem1437() {
 	fmt.Println(kLengthApart([]int{1, 0, 0, 0, 1, 0, 0, 1}, 2))
 	fmt.Println(kLengthApart([]int{1, 0, 0, 1, 0, 1}, 2))
 	fmt.Println(kLengthApart([]int{1, 1, 1, 1, 1}, 0))
