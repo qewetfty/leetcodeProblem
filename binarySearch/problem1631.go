@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -64,7 +64,7 @@ func minimumEffortPath(heights [][]int) int {
 	return result
 }
 
-func main() {
+func testProblem1631() {
 	fmt.Println(minimumEffortPath([][]int{{1, 2, 2}, {3, 8, 2}, {5, 3, 5}}))
 	fmt.Println(minimumEffortPath([][]int{{1, 2, 3}, {3, 8, 4}, {5, 3, 5}}))
 	fmt.Println(minimumEffortPath([][]int{{1, 2, 1, 1, 1}, {1, 2, 1, 2, 1}, {1, 2, 1, 2, 1}, {1, 2, 1, 2, 1}, {1, 1, 1, 2, 1}}))
