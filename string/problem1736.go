@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -50,7 +50,7 @@ func maximumTime(time string) string {
 	return result
 }
 
-func main() {
+func testProblem1736() {
 	fmt.Println(maximumTime("2?:?0"))
 	fmt.Println(maximumTime("0?:3?"))
 	fmt.Println(maximumTime("1?:22"))
