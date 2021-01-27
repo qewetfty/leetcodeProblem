@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -49,7 +49,7 @@ func concatenatedBinary2(n int) int {
 	return int(result)
 }
 
-func main() {
+func testProblem1680() {
 	fmt.Println(concatenatedBinary(3))
 	fmt.Println(concatenatedBinary(1))
 	fmt.Println(concatenatedBinary(2))
