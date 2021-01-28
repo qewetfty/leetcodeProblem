@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -70,7 +70,7 @@ func findChangeStep(aMap, bMap []int) int {
 	return result
 }
 
-func main() {
+func testProblem1737() {
 	fmt.Println(minCharacters("a", "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"))
 	fmt.Println(minCharacters("aba", "caa"))
 	fmt.Println(minCharacters("dabadd", "cda"))
