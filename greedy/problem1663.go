@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -38,7 +38,7 @@ func getSmallestString(n int, k int) string {
 	return string(resultByte)
 }
 
-func main() {
+func testProblem1663() {
 	fmt.Println(getSmallestString(3, 27))
 	fmt.Println(getSmallestString(5, 73))
 	fmt.Println(getSmallestString(5, 5))
