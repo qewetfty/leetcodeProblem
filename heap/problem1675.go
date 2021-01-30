@@ -1,4 +1,4 @@
-package main
+package heap
 
 import (
 	"container/heap"
@@ -81,7 +81,7 @@ func (b *bigIntHeap) Pop() interface{} {
 	return x
 }
 
-func main() {
+func testProblem1675() {
 	fmt.Println(minimumDeviation([]int{2, 10, 8}))
 	fmt.Println(minimumDeviation([]int{1, 2, 3, 4}))
 	fmt.Println(minimumDeviation([]int{4, 1, 5, 20, 3}))
