@@ -32,7 +32,7 @@ import (
 //		1 <= nums[i] <= 109
 
 func minimumDeviation(nums []int) int {
-	intHeap := new(bigIntHeap)
+	intHeap := new(bigIntHeap1675)
 	heap.Init(intHeap)
 	min := math.MaxInt32
 	for _, num := range nums {
@@ -55,25 +55,25 @@ func minimumDeviation(nums []int) int {
 	return result
 }
 
-type bigIntHeap []int
+type bigIntHeap1675 []int
 
-func (b bigIntHeap) Len() int {
+func (b bigIntHeap1675) Len() int {
 	return len(b)
 }
 
-func (b bigIntHeap) Less(i, j int) bool {
+func (b bigIntHeap1675) Less(i, j int) bool {
 	return b[j] < b[i]
 }
 
-func (b bigIntHeap) Swap(i, j int) {
+func (b bigIntHeap1675) Swap(i, j int) {
 	b[i], b[j] = b[j], b[i]
 }
 
-func (b *bigIntHeap) Push(x interface{}) {
+func (b *bigIntHeap1675) Push(x interface{}) {
 	*b = append(*b, x.(int))
 }
 
-func (b *bigIntHeap) Pop() interface{} {
+func (b *bigIntHeap1675) Pop() interface{} {
 	old := *b
 	n := len(old)
 	x := old[n-1]
