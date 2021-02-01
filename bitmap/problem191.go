@@ -1,4 +1,4 @@
-package main
+package bitmap
 
 import "fmt"
 
@@ -48,7 +48,7 @@ func hammingWeight2(num uint32) int {
 	return result
 }
 
-func main() {
+func testProblem191() {
 	fmt.Println(hammingWeight(00000000000000000000000000001011))
 	fmt.Println(hammingWeight(00000000000000000000000010000000))
 }
