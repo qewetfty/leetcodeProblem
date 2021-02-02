@@ -1,4 +1,4 @@
-package main
+package recursive
 
 import "github.com/leetcodeProblem/data"
 
@@ -43,8 +43,4 @@ func trimBST(root *data.TreeNode, low int, high int) *data.TreeNode {
 	root.Left = trimBST(root.Left, low, high)
 	root.Right = trimBST(root.Right, low, high)
 	return root
-}
-
-func main() {
-
 }
