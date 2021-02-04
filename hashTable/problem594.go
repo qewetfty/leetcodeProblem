@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -40,7 +40,7 @@ func findLHS(nums []int) int {
 	return result
 }
 
-func main() {
+func testProblem594() {
 	fmt.Println(findLHS([]int{1, 3, 2, 2, 5, 2, 3, 7}))
 	fmt.Println(findLHS([]int{1, 2, 3, 4}))
 	fmt.Println(findLHS([]int{1, 1, 1, 1}))
