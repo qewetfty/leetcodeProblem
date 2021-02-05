@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -59,7 +59,7 @@ func simplifyPath(path string) string {
 	return result
 }
 
-func main() {
+func testProblem71() {
 	fmt.Println(simplifyPath("/../"))
 	fmt.Println(simplifyPath("/home"))
 	fmt.Println(simplifyPath("/home//foo/"))
