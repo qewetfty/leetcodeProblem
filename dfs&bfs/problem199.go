@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -37,8 +37,4 @@ func rightSideView(root *data.TreeNode) []int {
 		queue = queue[curLen:]
 	}
 	return result
-}
-
-func main() {
-
 }
