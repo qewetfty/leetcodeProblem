@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -45,7 +45,7 @@ func shortestToChar(s string, c byte) []int {
 	return result
 }
 
-func main() {
+func testProblem821() {
 	fmt.Println(shortestToChar("loveleetcode", 'e'))
 	fmt.Println(shortestToChar("aaab", 'b'))
 }
