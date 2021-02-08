@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 // Given an Iterator class interface with methods: next() and hasNext(), design
 // and implement a PeekingIterator that support the peek() operation -- it
@@ -18,7 +18,7 @@ type PeekingIterator struct {
 	cur       int
 }
 
-func Constructor(iter *Iterator) *PeekingIterator {
+func Constructor284(iter *Iterator) *PeekingIterator {
 	var curNumber int
 	exist := iter.hasNext()
 	if iter.hasNext() {
@@ -61,8 +61,4 @@ func (this *Iterator) hasNext() bool {
 func (this *Iterator) next() int {
 	return 1
 	// Returns the next element in the iteration.
-}
-
-func main() {
-
 }
