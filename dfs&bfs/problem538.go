@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -30,20 +30,16 @@ import "github.com/leetcodeProblem/data"
 
 func convertBST(root *data.TreeNode) *data.TreeNode {
 	sum := 0
-	dfs(root, &sum)
+	dfs538(root, &sum)
 	return root
 }
 
-func dfs(node *data.TreeNode, sum *int) {
+func dfs538(node *data.TreeNode, sum *int) {
 	if node == nil {
 		return
 	}
-	dfs(node.Right, sum)
+	dfs538(node.Right, sum)
 	*sum = *sum + node.Val
 	node.Val = *sum
-	dfs(node.Left, sum)
-}
-
-func main() {
-
+	dfs538(node.Left, sum)
 }
