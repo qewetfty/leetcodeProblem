@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "fmt"
 
@@ -19,8 +19,8 @@ import "fmt"
 //		1 <= grid.length == grid[0].length <= 100
 //		grid[r][c] is 0 or 1
 
-var dx = []int{1, 1, 0, -1, -1, -1, 0, 1}
-var dy = []int{0, 1, 1, 1, 0, -1, -1, -1}
+var dx1091 = []int{1, 1, 0, -1, -1, -1, 0, 1}
+var dy1091 = []int{0, 1, 1, 1, 0, -1, -1, -1}
 
 func shortestPathBinaryMatrix(grid [][]int) int {
 	if grid[0][0] == 1 {
@@ -44,7 +44,7 @@ func shortestPathBinaryMatrix(grid [][]int) int {
 				return path
 			}
 			for j := 0; j < 8; j++ {
-				newX, newY := x+dx[j], y+dy[j]
+				newX, newY := x+dx1091[j], y+dy1091[j]
 				if newX >= 0 && newX < m && newY >= 0 && newY < n && !visited[newX][newY] {
 					visited[newX][newY] = true
 					if grid[newX][newY] == 0 {
@@ -58,7 +58,7 @@ func shortestPathBinaryMatrix(grid [][]int) int {
 	return -1
 }
 
-func main() {
+func testProblem1091() {
 	fmt.Println(shortestPathBinaryMatrix([][]int{{0, 1}, {1, 0}}))
 	fmt.Println(shortestPathBinaryMatrix([][]int{{0, 0, 0}, {1, 1, 0}, {1, 1, 0}}))
 }
