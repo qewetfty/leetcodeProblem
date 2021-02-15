@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -91,7 +91,7 @@ type soldier struct {
 	count int
 }
 
-func main() {
+func testProblem1337() {
 	fmt.Println(kWeakestRows([][]int{{1, 1, 0, 0, 0}, {1, 1, 1, 1, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 0, 0}, {1, 1, 1, 1, 1}}, 3))
 	fmt.Println(kWeakestRows([][]int{{1, 0, 0, 0}, {1, 1, 1, 1}, {1, 0, 0, 0}, {1, 0, 0, 0}}, 2))
 }
