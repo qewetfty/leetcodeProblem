@@ -1,97 +1,56 @@
 package main
 
-import (
-	"fmt"
-	"sort"
-)
+import "fmt"
 
-// Given a m * n matrix mat of ones (representing soldiers) and zeros
-// (representing civilians), return the indexes of the k weakest rows in the
-// matrix ordered from the weakest to the strongest.
-// A row i is weaker than row j, if the number of soldiers in row i is less than
-// the number of soldiers in row j, or they have the same number of soldiers but
-// i is less than j. Soldiers are always stand in the frontier of a row, that is,
-// always ones may appear first and then zeros.
+// Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.
+// Return a list of all possible strings we could create. You can return the output in any order.
 //	Example 1:
-//		Input: mat =
-//			[[1,1,0,0,0],
-//			 [1,1,1,1,0],
-//			 [1,0,0,0,0],
-//			 [1,1,0,0,0],
-//			 [1,1,1,1,1]],
-//			k = 3
-//		Output: [2,0,3]
-//		Explanation:
-//			The number of soldiers for each row is:
-//			row 0 -> 2
-//			row 1 -> 4
-//			row 2 -> 1
-//			row 3 -> 2
-//			row 4 -> 5
-//			Rows ordered from the weakest to the strongest are [2,0,3,1,4]
+//		Input: S = "a1b2"
+//		Output: ["a1b2","a1B2","A1b2","A1B2"]
 //	Example 2:
-//		Input: mat =
-//			[[1,0,0,0],
-//			 [1,1,1,1],
-//			 [1,0,0,0],
-//			 [1,0,0,0]],
-//			k = 2
-//		Output: [0,2]
-//		Explanation:
-//			The number of soldiers for each row is:
-//			row 0 -> 1
-//			row 1 -> 4
-//			row 2 -> 1
-//			row 3 -> 1
-//			Rows ordered from the weakest to the strongest are [0,2,3,1]
+//		Input: S = "3z4"
+//		Output: ["3z4","3Z4"]
+//	Example 3:
+//		Input: S = "12345"
+//		Output: ["12345"]
+//	Example 4:
+//		Input: S = "0"
+//		Output: ["0"]
 //	Constraints:
-//		m == mat.length
-//		n == mat[i].length
-//		2 <= n, m <= 100
-//		1 <= k <= m
-//		matrix[i][j] is either 0 or 1.
+//		S will be a string with length between 1 and 12.
+//		S will consist only of letters or digits.
 
-func kWeakestRows(mat [][]int, k int) []int {
-	soldiers := make([]soldier, 0)
-	for i, row := range mat {
-		s := soldier{index: i, count: findSoldierCount(row)}
-		soldiers = append(soldiers, s)
-	}
-	sort.Slice(soldiers, func(i, j int) bool {
-		if soldiers[i].count != soldiers[j].count {
-			return soldiers[i].count < soldiers[j].count
-		}
-		return soldiers[i].index < soldiers[j].index
-	})
-	result := make([]int, 0)
-	for i := 0; i < k; i++ {
-		result = append(result, soldiers[i].index)
-	}
+func letterCasePermutation(S string) []string {
+	result := make([]string, 0)
+	backtrack784(S, "", &result)
 	return result
 }
 
-func findSoldierCount(soldiers []int) int {
-	lo, hi := 0, len(soldiers)-1
-	for lo <= hi {
-		mid := (lo + hi) >> 1
-		if soldiers[mid] == 1 {
-			if mid+1 == len(soldiers) || soldiers[mid+1] == 0 {
-				return mid + 1
-			}
-			lo = mid + 1
-		} else {
-			hi = mid - 1
-		}
+func backtrack784(s, curStr string, result *[]string) {
+	strLen, curLen := len(s), len(curStr)
+	if curLen == strLen {
+		*result = append(*result, curStr)
+		return
 	}
-	return 0
-}
-
-type soldier struct {
-	index int
-	count int
+	char := s[curLen]
+	curStr = curStr + string(char)
+	backtrack784(s, curStr, result)
+	if 'a' <= char && char <= 'z' {
+		// 增加大写的
+		curStr = curStr[:curLen]
+		curStr = curStr + string(char-32)
+		backtrack784(s, curStr, result)
+	} else if 'A' <= char && char <= 'Z' {
+		// 增加小写的
+		curStr = curStr[:curLen]
+		curStr = curStr + string(char+32)
+		backtrack784(s, curStr, result)
+	}
 }
 
 func main() {
-	fmt.Println(kWeakestRows([][]int{{1, 1, 0, 0, 0}, {1, 1, 1, 1, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 0, 0}, {1, 1, 1, 1, 1}}, 3))
-	fmt.Println(kWeakestRows([][]int{{1, 0, 0, 0}, {1, 1, 1, 1}, {1, 0, 0, 0}, {1, 0, 0, 0}}, 2))
+	fmt.Println(letterCasePermutation("a1b2"))
+	fmt.Println(letterCasePermutation("3z4"))
+	fmt.Println(letterCasePermutation("12345"))
+	fmt.Println(letterCasePermutation("0"))
 }
