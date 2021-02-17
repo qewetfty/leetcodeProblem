@@ -1,56 +1,91 @@
 package main
 
-import "fmt"
+import (
+	"container/heap"
+	"fmt"
+)
 
-// Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.
-// Return a list of all possible strings we could create. You can return the output in any order.
+// You are given a 2D matrix of size m x n, consisting of non-negative integers. You are also given an integer k.
+// The value of coordinate (a, b) of the matrix is the XOR of all matrix[i][j] where 0 <= i <= a < m and 0 <= j <= b < n (0-indexed).
+// Find the kth largest value (1-indexed) of all the coordinates of matrix.
 //	Example 1:
-//		Input: S = "a1b2"
-//		Output: ["a1b2","a1B2","A1b2","A1B2"]
+//		Input: matrix = [[5,2],[1,6]], k = 1
+//		Output: 7
+//		Explanation: The value of coordinate (0,1) is 5 XOR 2 = 7, which is the largest value.
 //	Example 2:
-//		Input: S = "3z4"
-//		Output: ["3z4","3Z4"]
+//		Input: matrix = [[5,2],[1,6]], k = 2
+//		Output: 5
+//		Explanation: The value of coordinate (0,0) is 5 = 5, which is the 2nd largest value.
 //	Example 3:
-//		Input: S = "12345"
-//		Output: ["12345"]
+//		Input: matrix = [[5,2],[1,6]], k = 3
+//		Output: 4
+//		Explanation: The value of coordinate (1,0) is 5 XOR 1 = 4, which is the 3rd largest value.
 //	Example 4:
-//		Input: S = "0"
-//		Output: ["0"]
+//		Input: matrix = [[5,2],[1,6]], k = 4
+//		Output: 0
+//		Explanation: The value of coordinate (1,1) is 5 XOR 2 XOR 1 XOR 6 = 0, which is the 4th largest value.
 //	Constraints:
-//		S will be a string with length between 1 and 12.
-//		S will consist only of letters or digits.
+//		m == matrix.length
+//		n == matrix[i].length
+//		1 <= m, n <= 1000
+//		0 <= matrix[i][j] <= 106
+//		1 <= k <= m * n
 
-func letterCasePermutation(S string) []string {
-	result := make([]string, 0)
-	backtrack784(S, "", &result)
-	return result
+func kthLargestValue(matrix [][]int, k int) int {
+	m, n := len(matrix), len(matrix[0])
+	h := new(heap1738)
+	xorMatrix := make([][]int, m)
+	for i := 0; i < m; i++ {
+		xorMatrix[i] = make([]int, n)
+	}
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			xorMatrix[i][j] = xorMatrix[i][j] ^ matrix[i][j]
+			if i > 0 && j > 0 {
+				xorMatrix[i][j] = xorMatrix[i][j] ^ xorMatrix[i-1][j-1] ^ xorMatrix[i-1][j] ^ xorMatrix[i][j-1]
+			} else if i > 0 {
+				xorMatrix[i][j] = xorMatrix[i][j] ^ xorMatrix[i-1][j]
+			} else if j > 0 {
+				xorMatrix[i][j] = xorMatrix[i][j] ^ xorMatrix[i][j-1]
+			}
+			heap.Push(h, xorMatrix[i][j])
+			if h.Len() > k {
+				heap.Pop(h)
+			}
+		}
+	}
+	return heap.Pop(h).(int)
 }
 
-func backtrack784(s, curStr string, result *[]string) {
-	strLen, curLen := len(s), len(curStr)
-	if curLen == strLen {
-		*result = append(*result, curStr)
-		return
-	}
-	char := s[curLen]
-	curStr = curStr + string(char)
-	backtrack784(s, curStr, result)
-	if 'a' <= char && char <= 'z' {
-		// 增加大写的
-		curStr = curStr[:curLen]
-		curStr = curStr + string(char-32)
-		backtrack784(s, curStr, result)
-	} else if 'A' <= char && char <= 'Z' {
-		// 增加小写的
-		curStr = curStr[:curLen]
-		curStr = curStr + string(char+32)
-		backtrack784(s, curStr, result)
-	}
+type heap1738 []int
+
+func (h heap1738) Len() int {
+	return len(h)
+}
+
+func (h heap1738) Less(i, j int) bool {
+	return h[i] < h[j]
+}
+
+func (h heap1738) Swap(i, j int) {
+	h[i], h[j] = h[j], h[i]
+}
+
+func (h *heap1738) Push(x interface{}) {
+	*h = append(*h, x.(int))
+}
+
+func (h *heap1738) Pop() interface{} {
+	old := *h
+	l := len(old)
+	x := old[l-1]
+	*h = old[:l-1]
+	return x
 }
 
 func main() {
-	fmt.Println(letterCasePermutation("a1b2"))
-	fmt.Println(letterCasePermutation("3z4"))
-	fmt.Println(letterCasePermutation("12345"))
-	fmt.Println(letterCasePermutation("0"))
+	fmt.Println(kthLargestValue([][]int{{5, 2}, {1, 6}}, 1))
+	fmt.Println(kthLargestValue([][]int{{5, 2}, {1, 6}}, 2))
+	fmt.Println(kthLargestValue([][]int{{5, 2}, {1, 6}}, 3))
+	fmt.Println(kthLargestValue([][]int{{5, 2}, {1, 6}}, 4))
 }
