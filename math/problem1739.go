@@ -1,8 +1,6 @@
-package main
+package math
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // You have a cubic storeroom where the width, length, and height of the room are
 // all equal to n units. You are asked to place n boxes in this room where each
@@ -48,7 +46,7 @@ func minimumBoxes(n int) int {
 	return level*(level+1)/2 + i
 }
 
-func main() {
+func testProblem1739() {
 	fmt.Println(minimumBoxes(3))
 	fmt.Println(minimumBoxes(4))
 	fmt.Println(minimumBoxes(10))
