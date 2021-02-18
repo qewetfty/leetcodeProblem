@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -44,7 +44,7 @@ func numberOfArithmeticSlices(A []int) int {
 	return result
 }
 
-func main() {
+func testProblem413() {
 	fmt.Println(numberOfArithmeticSlices([]int{1, 2, 3, 4}))
 	fmt.Println(numberOfArithmeticSlices([]int{1, 2, 3, 4, 5}))
 	fmt.Println(numberOfArithmeticSlices([]int{1}))
