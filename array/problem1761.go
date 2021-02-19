@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -58,7 +58,7 @@ func minTrioDegree(n int, edges [][]int) int {
 	return result
 }
 
-func main() {
+func testProblem1761() {
 	fmt.Println(minTrioDegree(6, [][]int{{1, 2}, {1, 3}, {3, 2}, {4, 1}, {5, 2}, {3, 6}}))
 	fmt.Println(minTrioDegree(7, [][]int{{1, 3}, {4, 1}, {4, 3}, {2, 5}, {5, 6}, {6, 7}, {7, 5}, {2, 6}}))
 }
