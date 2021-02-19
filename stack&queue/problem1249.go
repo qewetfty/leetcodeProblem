@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import "fmt"
 
@@ -55,7 +55,7 @@ func minRemoveToMakeValid(s string) string {
 	return string(resultByte)
 }
 
-func main() {
+func testProblem1249() {
 	fmt.Println(minRemoveToMakeValid("lee(t(c)o)de)"))
 	fmt.Println(minRemoveToMakeValid("a)b(c)d"))
 	fmt.Println(minRemoveToMakeValid("(a(b(c)d)"))
