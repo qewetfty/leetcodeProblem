@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -62,7 +62,7 @@ func romanToInt(s string) int {
 	return result
 }
 
-func main() {
+func testProblem13() {
 	fmt.Println(romanToInt("III"))
 	fmt.Println(romanToInt("IV"))
 	fmt.Println(romanToInt("IX"))
