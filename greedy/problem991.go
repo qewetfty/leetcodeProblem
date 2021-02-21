@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import "fmt"
 
@@ -40,7 +40,7 @@ func brokenCalc(X int, Y int) int {
 	return result + X - Y
 }
 
-func main() {
+func testProblem991() {
 	fmt.Println(brokenCalc(2, 3))
 	fmt.Println(brokenCalc(5, 8))
 	fmt.Println(brokenCalc(3, 10))
