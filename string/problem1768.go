@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -51,7 +51,7 @@ func mergeAlternately(word1 string, word2 string) string {
 	return result
 }
 
-func main() {
+func testProblem1768() {
 	fmt.Println(mergeAlternately("abc", "pqr"))
 	fmt.Println(mergeAlternately("ab", "pqrs"))
 	fmt.Println(mergeAlternately("abcd", "pq"))
