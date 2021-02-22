@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -57,7 +57,7 @@ func findLongestWord(s string, d []string) string {
 	return result
 }
 
-func main() {
+func testProblem524() {
 	fmt.Println(findLongestWord("abpcplea", []string{"ale", "apple", "monkey", "plea"}))
 	fmt.Println(findLongestWord("abpcplea", []string{"a", "b", "c"}))
 }
