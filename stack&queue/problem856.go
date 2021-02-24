@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -58,7 +58,7 @@ func scoreOfParentheses(S string) int {
 	return result
 }
 
-func main() {
+func testProblem856() {
 	fmt.Println(scoreOfParentheses("(()(()))"))
 	fmt.Println(scoreOfParentheses("()"))
 	fmt.Println(scoreOfParentheses("(())"))
