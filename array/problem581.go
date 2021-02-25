@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -98,7 +98,7 @@ func findUnsortedSubarray3(nums []int) int {
 	return endPoint - startPoint + 1
 }
 
-func main() {
+func testProblem581() {
 	fmt.Println(findUnsortedSubarray([]int{2, 6, 4, 8, 10, 9, 15}))
 	fmt.Println(findUnsortedSubarray([]int{1, 2, 3, 4}))
 	fmt.Println(findUnsortedSubarray([]int{1}))
