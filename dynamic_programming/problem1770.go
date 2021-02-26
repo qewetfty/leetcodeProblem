@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -62,7 +62,7 @@ func maximumScore(nums []int, multipliers []int) int {
 	return result
 }
 
-func main() {
+func testProblem1770() {
 	fmt.Println(maximumScore([]int{-5, -3, -3, -2, 7, 1}, []int{-10, -5, 3, 4, 6}))
 	fmt.Println(maximumScore([]int{1, 2, 3}, []int{3, 2, 1}))
 }
