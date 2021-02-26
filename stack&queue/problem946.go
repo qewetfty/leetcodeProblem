@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import "fmt"
 
@@ -49,7 +49,7 @@ func validateStackSequences(pushed []int, popped []int) bool {
 	return len(stack) == 0
 }
 
-func main() {
+func testProblem946() {
 	fmt.Println(validateStackSequences([]int{1, 2, 3, 4, 5}, []int{4, 5, 3, 2, 1}))
 	fmt.Println(validateStackSequences([]int{1, 2, 3, 4, 5}, []int{4, 3, 5, 1, 2}))
 }
