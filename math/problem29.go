@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -61,7 +61,7 @@ func div(a, b int) int {
 	return count + div(a-tb, b)
 }
 
-func main() {
+func testProblem29() {
 	fmt.Println(divide(10, 3))
 	fmt.Println(divide(7, -3))
 	fmt.Println(divide(0, 1))
