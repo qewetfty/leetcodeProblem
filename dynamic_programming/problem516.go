@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -40,7 +40,7 @@ func longestPalindromeSubseq(s string) int {
 	return dp[0][l-1]
 }
 
-func main() {
+func testProblem516() {
 	fmt.Println(longestPalindromeSubseq("bbbab"))
 	fmt.Println(longestPalindromeSubseq("cbbd"))
 }
