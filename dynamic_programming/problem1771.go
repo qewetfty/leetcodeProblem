@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -30,7 +30,7 @@ import (
 //		1 <= word1.length, word2.length <= 1000
 //		word1 and word2 consist of lowercase English letters.
 
-func longestPalindrome(word1 string, word2 string) int {
+func longestPalindrome1771(word1 string, word2 string) int {
 	word := word1 + word2
 	l1, l2 := len(word1), len(word2)
 	dp, l := make([][]int, l1+l2), l1+l2
@@ -54,8 +54,8 @@ func longestPalindrome(word1 string, word2 string) int {
 	return result
 }
 
-func main() {
-	fmt.Println(longestPalindrome("aa", "bb"))
-	fmt.Println(longestPalindrome("cacb", "cbba"))
-	fmt.Println(longestPalindrome("ab", "ab"))
+func testProblem1771() {
+	fmt.Println(longestPalindrome1771("aa", "bb"))
+	fmt.Println(longestPalindrome1771("cacb", "cbba"))
+	fmt.Println(longestPalindrome1771("ab", "ab"))
 }
