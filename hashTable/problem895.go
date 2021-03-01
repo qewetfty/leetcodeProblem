@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "github.com/leetcodeProblem/utils"
 
@@ -53,8 +53,4 @@ func (this *FreqStack) Pop() int {
 		this.maxFreq--
 	}
 	return x
-}
-
-func main() {
-
 }
