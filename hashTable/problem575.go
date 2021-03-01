@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -39,7 +39,7 @@ func distributeCandies(candyType []int) int {
 	return utils.Min(len(candyType)>>1, len(candyMap))
 }
 
-func main() {
+func testProblem575() {
 	fmt.Println(distributeCandies([]int{1, 1, 2, 2, 3, 3}))
 	fmt.Println(distributeCandies([]int{1, 1, 2, 3}))
 	fmt.Println(distributeCandies([]int{6, 6, 6, 6}))
