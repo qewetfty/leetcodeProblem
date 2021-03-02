@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func findErrorNums(nums []int) []int {
 	return result
 }
 
-func main() {
+func testProblem645() {
 	fmt.Println(findErrorNums([]int{1, 2, 2, 4}))
 	fmt.Println(findErrorNums([]int{1, 1}))
 }
