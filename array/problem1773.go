@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -37,7 +37,7 @@ func countMatches(items [][]string, ruleKey string, ruleValue string) int {
 	return result
 }
 
-func main() {
+func testProblem1773() {
 	fmt.Println(countMatches([][]string{{"phone", "blue", "pixel"}, {"computer", "silver", "lenovo"}, {"phone", "gold", "iphone"}}, "color", "silver"))
 	fmt.Println(countMatches([][]string{{"phone", "blue", "pixel"}, {"computer", "silver", "phone"}, {"phone", "gold", "iphone"}}, "type", "phone"))
 }
