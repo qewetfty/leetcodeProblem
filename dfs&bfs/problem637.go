@@ -1,8 +1,6 @@
-package main
+package dfs_bfs
 
-import (
-	"github.com/leetcodeProblem/data"
-)
+import "github.com/leetcodeProblem/data"
 
 // Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
 //	Example 1:
@@ -41,7 +39,4 @@ func averageOfLevels(root *data.TreeNode) []float64 {
 		result = append(result, sum)
 	}
 	return result
-}
-
-func main() {
 }
