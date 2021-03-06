@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -56,7 +56,7 @@ func minimumLengthEncoding(words []string) int {
 	return result
 }
 
-func main() {
+func testProblem820() {
 	fmt.Println(minimumLengthEncoding([]string{"time", "me", "bell"}))
 	fmt.Println(minimumLengthEncoding([]string{"t"}))
 }
