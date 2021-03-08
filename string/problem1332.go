@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -43,7 +43,7 @@ func removePalindromeSub(s string) int {
 	return 1
 }
 
-func main() {
+func testProblem1332() {
 	fmt.Println(removePalindromeSub("ababa"))
 	fmt.Println(removePalindromeSub("abb"))
 	fmt.Println(removePalindromeSub("baabb"))
