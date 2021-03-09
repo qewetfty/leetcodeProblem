@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -86,8 +86,4 @@ func addOneRow(root *data.TreeNode, v int, d int) *data.TreeNode {
 		queue = queue[l:]
 	}
 	return root
-}
-
-func main() {
-
 }
