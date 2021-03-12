@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -42,7 +42,7 @@ func hasAllCodes(s string, k int) bool {
 	return int(math.Pow(2, float64(k))) == len(subMap)
 }
 
-func main() {
+func testProblem1461() {
 	fmt.Println(hasAllCodes("00110110", 2))
 	fmt.Println(hasAllCodes("00110", 2))
 	fmt.Println(hasAllCodes("0110", 1))
