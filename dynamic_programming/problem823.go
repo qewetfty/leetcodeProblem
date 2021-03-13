@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -53,7 +53,7 @@ func numFactoredBinaryTrees(arr []int) int {
 	return res
 }
 
-func main() {
+func testProblem823() {
 	fmt.Println(numFactoredBinaryTrees([]int{2, 4}))
 	fmt.Println(numFactoredBinaryTrees([]int{2, 4, 5, 10}))
 }
