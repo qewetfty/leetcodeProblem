@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"crypto/md5"
@@ -20,7 +20,7 @@ type Codec struct {
 	prefix  string
 }
 
-func Constructor() Codec {
+func Constructor535() Codec {
 	return Codec{
 		h:       md5.New(),
 		tinyMap: make(map[string]string),
@@ -40,8 +40,4 @@ func (this *Codec) encode(longUrl string) string {
 func (this *Codec) decode(shortUrl string) string {
 	tinyStr := shortUrl[len(shortUrl)-8:]
 	return this.tinyMap[tinyStr]
-}
-
-func main() {
-
 }
