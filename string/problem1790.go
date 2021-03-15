@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -49,7 +49,7 @@ func areAlmostEqual(s1 string, s2 string) bool {
 	return (swapPosition < 0 && !swap) || (swapPosition >= 0 && swap)
 }
 
-func main() {
+func testProblem1790() {
 	fmt.Println(areAlmostEqual("bank", "kanb"))
 	fmt.Println(areAlmostEqual("attack", "defend"))
 	fmt.Println(areAlmostEqual("kelb", "kelb"))
