@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"math"
@@ -50,8 +50,4 @@ func (this *Solution) RandPoint() []float64 {
 			return []float64{xg, yg}
 		}
 	}
-}
-
-func main() {
-
 }
