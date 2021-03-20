@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 // Implement the UndergroundSystem class:
 //	void checkIn(int id, string stationName, int t)
@@ -72,7 +72,7 @@ type stationStatistic struct {
 	count int
 }
 
-func Constructor() UndergroundSystem {
+func Constructor1396() UndergroundSystem {
 	return UndergroundSystem{
 		customers: make(map[int]customerStatistic),
 		stations:  make(map[string]stationStatistic),
@@ -108,8 +108,4 @@ func (this *UndergroundSystem) GetAverageTime(startStation string, endStation st
 	station := startStation + "_" + endStation
 	stationStat := this.stations[station]
 	return float64(stationStat.time) / float64(stationStat.count)
-}
-
-func main() {
-
 }
