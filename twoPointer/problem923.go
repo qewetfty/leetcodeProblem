@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 import (
 	"fmt"
@@ -95,7 +95,7 @@ func threeSumMulti(arr []int, target int) int {
 	return result
 }
 
-func main() {
+func testProblem923() {
 	fmt.Println(threeSumMulti([]int{1, 1, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8}, 12))
 	fmt.Println(threeSumMulti([]int{1, 1, 2, 2, 3, 3, 4, 4, 5, 5}, 8))
 	fmt.Println(threeSumMulti([]int{1, 1, 2, 2, 2, 2}, 5))
