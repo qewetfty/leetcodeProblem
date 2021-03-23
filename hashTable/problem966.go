@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -88,6 +88,6 @@ func isVowel(b byte) bool {
 	return b == 'a' || b == 'e' || b == 'i' || b == 'o' || b == 'u'
 }
 
-func main() {
+func testProblem966() {
 	fmt.Println(spellchecker([]string{"KiTe", "kite", "hare", "Hare"}, []string{"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"}))
 }
