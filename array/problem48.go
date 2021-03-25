@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -35,7 +35,7 @@ func rotate(matrix [][]int) {
 	}
 }
 
-func main() {
+func testProblem48() {
 	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
 	rotate(matrix)
 	fmt.Println(matrix)
