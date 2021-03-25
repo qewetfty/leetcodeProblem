@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "fmt"
 
@@ -72,6 +72,6 @@ func dfs417(matrix [][]int, visited *[][]bool, x, y int) {
 	}
 }
 
-func main() {
+func testProblem417() {
 	fmt.Println(pacificAtlantic([][]int{{1, 2, 2, 3, 5}, {3, 2, 3, 4, 4}, {2, 4, 5, 3, 1}, {6, 7, 1, 4, 5}, {5, 1, 1, 2, 4}}))
 }
