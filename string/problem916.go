@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -100,7 +100,7 @@ func wordSubsets2(A []string, B []string) []string {
 	return result
 }
 
-func main() {
+func testProblem916() {
 	fmt.Println(wordSubsets([]string{"amazon", "apple", "facebook", "google", "leetcode"}, []string{"e", "o"}))
 	fmt.Println(wordSubsets([]string{"amazon", "apple", "facebook", "google", "leetcode"}, []string{"l", "e"}))
 	fmt.Println(wordSubsets([]string{"amazon", "apple", "facebook", "google", "leetcode"}, []string{"e", "oo"}))

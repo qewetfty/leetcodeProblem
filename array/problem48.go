@@ -24,7 +24,7 @@ import "fmt"
 //		1 <= n <= 20
 //		-1000 <= matrix[i][j] <= 1000
 
-func rotate(matrix [][]int) {
+func rotate48(matrix [][]int) {
 	n := len(matrix)
 	// 由外向内进行遍历
 	for i := 0; i < n/2; i++ {
@@ -37,6 +37,6 @@ func rotate(matrix [][]int) {
 
 func testProblem48() {
 	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
-	rotate(matrix)
+	rotate48(matrix)
 	fmt.Println(matrix)
 }
