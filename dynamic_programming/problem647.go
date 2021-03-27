@@ -1,8 +1,6 @@
-package main
+package dynamic_programming
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Given a string, your task is to count how many palindromic substrings in this string.
 // The substrings with different start indexes or end indexes are counted as
@@ -42,7 +40,7 @@ func countSubstrings(s string) int {
 	return result
 }
 
-func main() {
+func testProblem647() {
 	fmt.Println(countSubstrings("abc"))
 	fmt.Println(countSubstrings("aaa"))
 }
