@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -74,7 +74,7 @@ func originalDigits(s string) string {
 	return result
 }
 
-func main() {
+func testProblem423() {
 	fmt.Println(originalDigits("nnei"))
 	fmt.Println(originalDigits("owoztneoer"))
 	fmt.Println(originalDigits("fviefuro"))
