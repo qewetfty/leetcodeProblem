@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -73,7 +73,7 @@ func dfs971(node *data.TreeNode, voyage []int, result *[]int) {
 	}
 }
 
-func main() {
+func testProblem971() {
 	node1 := &data.TreeNode{Val: 3}
 	node2 := &data.TreeNode{Val: 2, Left: node1}
 	node3 := &data.TreeNode{Val: 1, Left: node2}
