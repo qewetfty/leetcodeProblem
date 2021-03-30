@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -67,7 +67,7 @@ func findKthNumber(nums1, nums2 []int, k int) int {
 	}
 }
 
-func main() {
+func testProblem4() {
 	fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))
 	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4}))
 	fmt.Println(findMedianSortedArrays([]int{0, 0}, []int{0, 0}))
