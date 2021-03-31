@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"bytes"
@@ -84,7 +84,7 @@ func compare(src, tar []byte) bool {
 	return true
 }
 
-func main() {
+func testProblem936() {
 	fmt.Println(movesToStamp("abc", "ababc"))
 	fmt.Println(movesToStamp("abca", "aabcaca"))
 }
