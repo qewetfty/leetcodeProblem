@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -53,7 +53,7 @@ func maxEnvelopes(envelopes [][]int) int {
 	return result
 }
 
-func main() {
+func testProblem354() {
 	fmt.Println(maxEnvelopes([][]int{{46, 89}, {50, 53}, {52, 68}, {72, 45}, {77, 81}}))
 	fmt.Println(maxEnvelopes([][]int{{1, 3}, {3, 5}, {6, 7}, {6, 8}, {8, 4}, {9, 5}}))
 	fmt.Println(maxEnvelopes([][]int{{5, 4}, {6, 4}, {6, 7}, {2, 3}}))
