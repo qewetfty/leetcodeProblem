@@ -33,6 +33,7 @@ import (
 //		1 <= stamp.length <= target.length <= 1000
 //		stamp and target only contain lowercase letters.
 
+// 逆推法，从最后邮票贴上的位置逆推判断
 func movesToStamp(stamp string, target string) []int {
 	sLen, tLen := len(stamp), len(target)
 	bTarget, bStamp := make([]byte, tLen), []byte(stamp)

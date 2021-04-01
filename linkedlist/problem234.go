@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -61,8 +61,4 @@ func isPalindrome(head *data.ListNode) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-
 }
