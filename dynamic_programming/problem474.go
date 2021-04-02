@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -53,7 +53,7 @@ func findZeroAndOneNumber(s string) (int, int) {
 	return zero, one
 }
 
-func main() {
+func testProblem474() {
 	fmt.Println(findMaxForm([]string{"001", "110", "0000", "0000"}, 9, 2))
 	fmt.Println(findMaxForm([]string{"10", "0001", "111001", "1", "0"}, 5, 3))
 	fmt.Println(findMaxForm([]string{"10", "0", "1"}, 1, 1))
