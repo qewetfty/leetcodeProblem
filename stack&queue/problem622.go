@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 // Design your implementation of the circular queue. The circular queue is a
 // linear data structure in which the operations are performed based on FIFO
@@ -41,7 +41,7 @@ type MyCircularQueue struct {
 	full  bool
 }
 
-func Constructor(k int) MyCircularQueue {
+func Constructor622(k int) MyCircularQueue {
 	return MyCircularQueue{
 		queue: make([]int, k),
 		start: 0,
@@ -102,8 +102,4 @@ func (this *MyCircularQueue) IsEmpty() bool {
 
 func (this *MyCircularQueue) IsFull() bool {
 	return this.start == this.end && this.full
-}
-
-func main() {
-
 }
