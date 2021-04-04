@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -63,7 +63,7 @@ func convert(s string, numRows int) string {
 	return string(resultByte)
 }
 
-func main() {
+func testProblem6() {
 	fmt.Println(convert("PAYPALISHIRING", 3))
 	fmt.Println(convert("PAYPALISHIRING", 4))
 	fmt.Println(convert("A", 1))
