@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -30,7 +30,7 @@ func strStr(haystack string, needle string) int {
 	return -1
 }
 
-func main() {
+func testProblem28() {
 	fmt.Println(strStr("hello", "ll"))
 	fmt.Println(strStr("aaaaa", "bba"))
 	fmt.Println(strStr("", ""))
