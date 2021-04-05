@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -31,7 +31,7 @@ func isIdealPermutation(A []int) bool {
 	return true
 }
 
-func main() {
+func testProblem775() {
 	fmt.Println(isIdealPermutation([]int{1, 0, 2}))
 	fmt.Println(isIdealPermutation([]int{1, 2, 0}))
 	fmt.Println(isIdealPermutation([]int{0, 2, 1, 4, 3}))
