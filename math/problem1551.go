@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -31,7 +31,7 @@ func minOperations(n int) int {
 	}
 }
 
-func main() {
+func testProblem1551() {
 	fmt.Println(minOperations(1))
 	fmt.Println(minOperations(2))
 	fmt.Println(minOperations(3))
