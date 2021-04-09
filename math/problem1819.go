@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -56,7 +56,7 @@ func gcd(x, y int) int {
 	return gcd(y%x, x)
 }
 
-func main() {
+func testProblem1819() {
 	fmt.Println(countDifferentSubsequenceGCDs([]int{6, 10, 3}))
 	fmt.Println(countDifferentSubsequenceGCDs([]int{5, 15, 40, 5, 6}))
 }
