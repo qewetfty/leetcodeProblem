@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -61,7 +61,7 @@ func dfs329(matrix [][]int, i, j int, paths [][]int) int {
 	return paths[i][j]
 }
 
-func main() {
+func testProblem329() {
 	fmt.Println(longestIncreasingPath([][]int{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}}))
 	fmt.Println(longestIncreasingPath([][]int{{3, 4, 5}, {3, 2, 6}, {2, 2, 1}}))
 	fmt.Println(longestIncreasingPath([][]int{{1}}))
