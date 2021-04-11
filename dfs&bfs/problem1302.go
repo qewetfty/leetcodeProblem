@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -57,8 +57,4 @@ func deepestLeavesSumBFS(root *data.TreeNode) int {
 		result = curSum
 	}
 	return result
-}
-
-func main() {
-
 }
