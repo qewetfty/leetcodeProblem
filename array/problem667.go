@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -44,7 +44,7 @@ func constructArray(n int, k int) []int {
 	return result
 }
 
-func main() {
+func testProblem667() {
 	fmt.Println(constructArray(3, 1))
 	fmt.Println(constructArray(3, 2))
 }
