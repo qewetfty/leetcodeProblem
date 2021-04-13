@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 // You are given a nested list of integers nestedList. Each element is either an
 // integer or a list whose elements may also be integers or other lists.
@@ -23,7 +23,7 @@ type NestedIterator struct {
 	stack []*NestedInteger
 }
 
-func Constructor(nestedList []*NestedInteger) *NestedIterator {
+func Constructor341(nestedList []*NestedInteger) *NestedIterator {
 	l := len(nestedList)
 	stack := make([]*NestedInteger, 0)
 	for i := l - 1; i >= 0; i-- {
@@ -90,7 +90,3 @@ func (this *NestedInteger) Add(elem NestedInteger) {}
 // The list length is zero if this NestedInteger holds a single integer
 // You can access NestedInteger's List element directly if you want to modify it
 func (this NestedInteger) GetList() []*NestedInteger { return []*NestedInteger{} }
-
-func main() {
-
-}
