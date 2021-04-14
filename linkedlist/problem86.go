@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "github.com/leetcodeProblem/data"
 
@@ -40,8 +40,4 @@ func partition(head *data.ListNode, x int) *data.ListNode {
 		prev = prev.Next
 	}
 	return dummy.Next
-}
-
-func main() {
-
 }
