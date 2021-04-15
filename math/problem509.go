@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -37,7 +37,7 @@ func fib(n int) int {
 	return b
 }
 
-func main() {
+func testProblem509() {
 	fmt.Println(fib(1))
 	fmt.Println(fib(2))
 	fmt.Println(fib(3))
