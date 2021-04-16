@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import "fmt"
 
@@ -46,7 +46,7 @@ func removeDuplicates(s string, k int) string {
 	return s
 }
 
-func main() {
+func testProblem1209() {
 	fmt.Println(removeDuplicates("abcd", 2))
 	fmt.Println(removeDuplicates("deeedbbcccbdaa", 3))
 	fmt.Println(removeDuplicates("pbbcggttciiippooaais", 2))
