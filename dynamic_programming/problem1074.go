@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -51,7 +51,7 @@ func numSubmatrixSumTarget(matrix [][]int, target int) int {
 	return result
 }
 
-func main() {
+func testProblem1074() {
 	fmt.Println(numSubmatrixSumTarget([][]int{{0, 1, 0}, {1, 1, 1}, {0, 1, 0}}, 0))
 	fmt.Println(numSubmatrixSumTarget([][]int{{1, -1}, {-1, 1}}, 0))
 	fmt.Println(numSubmatrixSumTarget([][]int{{111}}, 0))
