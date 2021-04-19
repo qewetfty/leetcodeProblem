@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 // Given an array of distinct integers nums and a target integer target, return
 // the number of possible combinations that add up to target.
@@ -43,7 +43,7 @@ func combinationSum4(nums []int, target int) int {
 	return dp[target]
 }
 
-func main() {
+func testProblem377() {
 	fmt.Println(combinationSum4([]int{1, 2, 3}, 4))
 	fmt.Println(combinationSum4([]int{9}, 3))
 }
