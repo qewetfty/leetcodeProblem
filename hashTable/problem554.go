@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -55,6 +55,6 @@ func leastBricks(wall [][]int) int {
 	return result
 }
 
-func main() {
+func testProblem554() {
 	fmt.Println(leastBricks([][]int{{1, 2, 2, 1}, {3, 1, 2}, {1, 3, 2}, {2, 4}, {3, 1, 2}, {1, 3, 1, 1}}))
 }
