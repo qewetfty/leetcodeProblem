@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -73,7 +73,7 @@ func minSideJumps(obstacles []int) int {
 	return utils.Min(dp[n-1][0], utils.Min(dp[n-1][1], dp[n-1][2]))
 }
 
-func main() {
+func testProblem1824() {
 	fmt.Println(minSideJumps([]int{0, 0, 3, 1, 0, 1, 0, 2, 3, 1, 0}))
 	fmt.Println(minSideJumps([]int{0, 1, 2, 3, 0}))
 	fmt.Println(minSideJumps([]int{0, 1, 1, 3, 3, 0}))
