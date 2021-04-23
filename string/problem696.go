@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func countBinarySubstrings(s string) int {
 	return result
 }
 
-func main() {
+func testProblem696() {
 	fmt.Println(countBinarySubstrings("00110011"))
 	fmt.Println(countBinarySubstrings("10101"))
 }
