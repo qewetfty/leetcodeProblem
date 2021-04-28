@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -45,7 +45,7 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	return dp[n-1]
 }
 
-func main() {
+func testProblem63() {
 	fmt.Println(uniquePathsWithObstacles([][]int{{0, 1}}))
 	fmt.Println(uniquePathsWithObstacles([][]int{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}))
 	fmt.Println(uniquePathsWithObstacles([][]int{{0, 1}, {0, 0}}))
