@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -73,7 +73,7 @@ func searchRange(nums []int, target int) []int {
 	return []int{findLowPos(nums, target), findHighPos(nums, target)}
 }
 
-func main() {
+func testProblem34() {
 	fmt.Println(searchRange([]int{5, 7, 7, 8, 8, 10}, 8))
 	fmt.Println(searchRange([]int{5, 7, 7, 8, 8, 10}, 6))
 	fmt.Println(searchRange([]int{}, 0))
