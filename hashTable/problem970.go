@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -61,7 +61,7 @@ func powerfulIntegers(x int, y int, bound int) []int {
 	return result
 }
 
-func main() {
+func testProblem970() {
 	fmt.Println(powerfulIntegers(2, 3, 10))
 	fmt.Println(powerfulIntegers(3, 5, 15))
 	fmt.Println(powerfulIntegers(1, 4, 7))
