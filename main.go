@@ -1,69 +1,132 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/leetcodeProblem/utils"
+)
 
-// Given three integers x, y, and bound, return a list of all the powerful
-// integers that have a value less than or equal to bound.
-// An integer is powerful if it can be represented as xi + yj for some integers i >= 0 and j >= 0.
-// You may return the answer in any order. In your answer, each value should occur at most once.
-//	Example 1:
-//		Input: x = 2, y = 3, bound = 10
-//		Output: [2,3,4,5,7,9,10]
-//		Explanation:
-//			2 = 20 + 30
-//			3 = 21 + 30
-//			4 = 20 + 31
-//			5 = 21 + 31
-//			7 = 22 + 31
-//			9 = 23 + 30
-//			10 = 20 + 32
-//	Example 2:
-//		Input: x = 3, y = 5, bound = 15
-//		Output: [2,4,6,8,10,14]
-//	Constraints:
-//		1 <= x, y <= 100
-//		0 <= bound <= 106
+// 超时
+type WordFilter struct {
+	prefixTrie *trie
+	suffixTrie *trie
+}
 
-func powerfulIntegers(x int, y int, bound int) []int {
-	xPowerList, yPowerList := make([]int, 0), make([]int, 0)
-	if x == 1 {
-		xPowerList = append(xPowerList, 1)
-	} else {
-		start := 1
-		for start <= bound {
-			xPowerList = append(xPowerList, start)
-			start *= x
-		}
+func Constructor(words []string) WordFilter {
+	w := WordFilter{
+		prefixTrie: NewTrie(),
+		suffixTrie: NewTrie(),
 	}
-	if y == 1 {
-		yPowerList = append(yPowerList, 1)
-	} else {
-		start := 1
-		for start <= bound {
-			yPowerList = append(yPowerList, start)
-			start *= y
-		}
+	for i, word := range words {
+		w.prefixTrie.Insert(word, i)
+		reverseWord := ReverseString(word)
+		w.suffixTrie.Insert(reverseWord, i)
 	}
+	return w
+}
 
-	resultMap := make(map[int]bool)
-	for _, xPower := range xPowerList {
-		for _, yPower := range yPowerList {
-			answer := xPower + yPower
-			if answer <= bound {
-				resultMap[answer] = true
-			}
-		}
+func (this *WordFilter) F(prefix string, suffix string) int {
+	findPrefix, prefixIndex := this.prefixTrie.StartWith(prefix)
+	if !findPrefix {
+		return -1
 	}
-	result := make([]int, 0)
-	for key := range resultMap {
-		result = append(result, key)
+	reverseSuffix := ReverseString(suffix)
+	findSuffix, suffixIndex := this.suffixTrie.StartWith(reverseSuffix)
+	if !findSuffix {
+		return -1
+	}
+	// 遍历其中一个map，如果所有的都不在另一个map，直接返回-1
+	result := -1
+	for i := range prefixIndex {
+		if suffixIndex[i] {
+			result = utils.Max(result, i)
+		}
 	}
 	return result
 }
 
-func main() {
-	fmt.Println(powerfulIntegers(2, 3, 10))
-	fmt.Println(powerfulIntegers(3, 5, 15))
-	fmt.Println(powerfulIntegers(1, 4, 7))
-	fmt.Println(powerfulIntegers(1, 1, 1000000))
+func ReverseString(s string) string {
+	r := []rune(s)
+	for from, to := 0, len(r)-1; from < to; from, to = from+1, to-1 {
+		r[from], r[to] = r[to], r[from]
+	}
+	return string(r)
+}
+
+type trie struct {
+	t *trieNode
+}
+
+func NewTrie() *trie {
+	return &trie{
+		t: MakeNewTrieNode(),
+	}
+}
+
+func (t *trie) Insert(s string, index int) {
+	node := t.t
+	l := len(s)
+	for i := 0; i < l; i++ {
+		char := s[i]
+		if !node.Contains(char) {
+			node.Put(char, MakeNewTrieNode(), index)
+		}
+		node.PutIndex(index)
+		node = node.Get(char)
+	}
+	node.isEnd = true
+	node.PutIndex(index)
+}
+
+func (t *trie) StartWith(prefix string) (bool, map[int]bool) {
+	node := t.t
+	l := len(prefix)
+	for i := 0; i < l; i++ {
+		char := prefix[i]
+		if node.Contains(char) {
+			node = node.Get(char)
+		} else {
+			node = nil
+			break
+		}
+	}
+	if node == nil {
+		return false, map[int]bool{}
+	}
+	return true, node.indexes
+}
+
+func MakeNewTrieNode() *trieNode {
+	return &trieNode{
+		charMap: make(map[byte]*trieNode),
+		indexes: make(map[int]bool),
+	}
+}
+
+type trieNode struct {
+	charMap map[byte]*trieNode
+	isEnd   bool
+	indexes map[int]bool
+}
+
+func (t *trieNode) Contains(char byte) bool {
+	return t.charMap[char] != nil
+}
+
+func (t *trieNode) Get(char byte) *trieNode {
+	return t.charMap[char]
+}
+
+func (t *trieNode) Put(char byte, node *trieNode, index int) {
+	t.charMap[char] = node
+	t.indexes[index] = true
+}
+
+func (t *trieNode) PutIndex(index int) {
+	t.indexes[index] = true
+}
+
+func test() {
+	w := Constructor([]string{"cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba"})
+	fmt.Println(w.F("bccbacbcba", "a"))
+	fmt.Println(w.F("ab", "abcaccbcaa"))
 }
