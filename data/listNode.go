@@ -13,6 +13,15 @@ func NewListNode(val int) *ListNode {
 	return l
 }
 
+func GetNodeLength(head *ListNode) int {
+	length := 0
+	for head != nil {
+		length++
+		head = head.Next
+	}
+	return length
+}
+
 func (l *ListNode) ToString() string {
 	head := l
 	resultStr := ""
