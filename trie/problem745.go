@@ -1,4 +1,4 @@
-package main
+package trie
 
 import (
 	"fmt"
@@ -29,10 +29,10 @@ import (
 //		At most 15000 calls will be made to the function f.
 
 type WordFilter struct {
-	t *trie
+	t *trie745
 }
 
-func Constructor(words []string) WordFilter {
+func Constructor745(words []string) WordFilter {
 	wordFilter := WordFilter{t: newTrie()}
 	for i, word := range words {
 		wordFilter.t.Insert("#"+word, i)
@@ -53,23 +53,23 @@ func (this *WordFilter) F(prefix string, suffix string) int {
 	return index
 }
 
-type trie struct {
-	node *trieNode
+type trie745 struct {
+	node *trieNode745
 }
 
-func newTrie() *trie {
-	return &trie{
-		node: newTrieNode(),
+func newTrie() *trie745 {
+	return &trie745{
+		node: newTrieNode745(),
 	}
 }
 
-func (t *trie) Insert(s string, index int) {
+func (t *trie745) Insert(s string, index int) {
 	n := t.node
 	l := len(s)
 	for i := 0; i < l; i++ {
 		char := s[i]
 		if !n.Contains(char) {
-			n.Put(char, newTrieNode(), index)
+			n.Put(char, newTrieNode745(), index)
 		}
 		n, _ = n.Get(char)
 		n.index = utils.Max(index, n.index)
@@ -77,7 +77,7 @@ func (t *trie) Insert(s string, index int) {
 	n.isEnd = true
 }
 
-func (t *trie) Prefix(prefix string) (bool, int) {
+func (t *trie745) Prefix(prefix string) (bool, int) {
 	n := t.node
 	l := len(prefix)
 	for i := 0; i < l; i++ {
@@ -93,7 +93,7 @@ func (t *trie) Prefix(prefix string) (bool, int) {
 	return true, n.index
 }
 
-func (t *trie) Search(word string) (bool, int) {
+func (t *trie745) Search(word string) (bool, int) {
 	n := t.node
 	l := len(word)
 	for i := 0; i < l; i++ {
@@ -110,31 +110,31 @@ func (t *trie) Search(word string) (bool, int) {
 	return find, -1
 }
 
-type trieNode struct {
-	node  map[byte]*trieNode
+type trieNode745 struct {
+	node  map[byte]*trieNode745
 	isEnd bool
 	index int
 }
 
-func newTrieNode() *trieNode {
-	return &trieNode{node: make(map[byte]*trieNode)}
+func newTrieNode745() *trieNode745 {
+	return &trieNode745{node: make(map[byte]*trieNode745)}
 }
 
-func (n *trieNode) Contains(char byte) bool {
+func (n *trieNode745) Contains(char byte) bool {
 	return n.node[char] != nil
 }
 
-func (n *trieNode) Get(char byte) (*trieNode, int) {
+func (n *trieNode745) Get(char byte) (*trieNode745, int) {
 	return n.node[char], n.index
 }
 
-func (n *trieNode) Put(char byte, node *trieNode, index int) {
+func (n *trieNode745) Put(char byte, node *trieNode745, index int) {
 	node.index = index
 	n.node[char] = node
 }
 
-func main() {
-	w := Constructor([]string{"cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba"})
+func testProblem745() {
+	w := Constructor745([]string{"cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba"})
 	fmt.Println(w.F("a", "aa"))
 	fmt.Println(w.F("ab", "abcaccbcaa"))
 	fmt.Println(w.F("bccbacbcba", "a"))
