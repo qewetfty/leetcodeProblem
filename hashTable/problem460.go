@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 // Design and implement a data structure for a Least Frequently Used (LFU) cache.
 //	Implement the LFUCache class:
@@ -46,7 +46,7 @@ type LFUCache struct {
 	freqMap  map[int]*linkedList
 }
 
-func Constructor(capacity int) LFUCache {
+func Constructor460(capacity int) LFUCache {
 	return LFUCache{
 		capacity: capacity,
 		size:     0,
@@ -159,8 +159,4 @@ func createDulNode(key, value, freq int) *dulNode {
 		value: value,
 		freq:  freq,
 	}
-}
-
-func main() {
-
 }

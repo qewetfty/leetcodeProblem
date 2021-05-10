@@ -1,11 +1,5 @@
 package linkedlist
 
-import (
-	"fmt"
-	"github.com/leetcodeProblem/data"
-	"strconv"
-)
-
 // Design and implement a data structure for Least Recently Used (LRU) cache. It should support
 // the following operations: get and put.
 //
@@ -17,97 +11,91 @@ import (
 //
 // The cache is initialized with a positive capacity.
 
+type dulNode struct {
+	key   int
+	value int
+	prev  *dulNode
+	next  *dulNode
+}
+
+func initDulNode(key, value int) *dulNode {
+	return &dulNode{
+		key:   key,
+		value: value,
+	}
+}
+
 type LRUCache struct {
+	size     int
 	capacity int
-	count    int
-	dataMap  map[int]*data.DulNode
-	head     *data.DulNode
-	tail     *data.DulNode
+	head     *dulNode
+	tail     *dulNode
+	cache    map[int]*dulNode
 }
 
 func Constructor(capacity int) LRUCache {
-	cache := new(LRUCache)
-	cache.capacity = capacity
-	cache.count = 0
-	cache.dataMap = make(map[int]*data.DulNode, 0)
-	cache.head = new(data.DulNode)
-	cache.tail = cache.head
-	return *cache
-}
-
-func (this *LRUCache) Insert(node *data.DulNode) {
-	if node == nil {
-		return
+	head := initDulNode(0, 0)
+	tail := initDulNode(0, 0)
+	head.next = tail
+	tail.prev = head
+	return LRUCache{
+		size:     0,
+		capacity: capacity,
+		cache:    make(map[int]*dulNode),
+		head:     head,
+		tail:     tail,
 	}
-	next := this.head.Next
-	this.head.Next = node
-	node.Prev = this.head
-	node.Next = next
-	if this.tail == this.head {
-		this.tail = node
-	} else {
-		next.Prev = node
-	}
-	this.count++
-}
-
-func (this *LRUCache) Delete(node *data.DulNode) {
-	prev := node.Prev
-	next := node.Next
-	if prev != nil {
-		prev.Next = next
-	}
-	if next != nil {
-		next.Prev = prev
-	} else {
-		this.tail = prev
-	}
-	this.count--
 }
 
 func (this *LRUCache) Get(key int) int {
-	if node, ok := this.dataMap[key]; ok {
-		this.Delete(node)
-		this.Insert(node)
-		return node.Value
+	if _, ok := this.cache[key]; ok {
+		curNode := this.cache[key]
+		this.moveToHead(curNode)
+		return curNode.value
 	} else {
 		return -1
 	}
 }
 
-func (this *LRUCache) ToString() string {
-	resultStr := ""
-	current := this.head.Next
-	for current != nil {
-		resultStr += strconv.Itoa(current.Value)
-		if current != this.tail {
-			resultStr += "->"
+func (this *LRUCache) Put(key int, value int) {
+	if _, ok := this.cache[key]; ok {
+		curNode := this.cache[key]
+		curNode.value = value
+		this.moveToHead(curNode)
+	} else {
+		newNode := initDulNode(key, value)
+		this.cache[key] = newNode
+		this.addToHead(newNode)
+		this.size++
+		if this.size > this.capacity {
+			removeNode := this.removeTail()
+			this.size--
+			delete(this.cache, removeNode.key)
 		}
-		current = current.Next
 	}
-	return resultStr
 }
 
-func (this *LRUCache) Put(key int, value int) {
-	if node, ok := this.dataMap[key]; ok {
-		node.Value = value
-		this.Delete(node)
-		this.Insert(node)
-		return
-	}
-	newNode := new(data.DulNode)
-	newNode.Key = key
-	newNode.Value = value
-	if this.count < this.capacity {
-		this.Insert(newNode)
-		this.dataMap[key] = newNode
-		return
-	}
-	delNode := this.tail
-	this.Delete(delNode)
-	delete(this.dataMap, delNode.Key)
-	this.dataMap[key] = newNode
-	this.Insert(newNode)
+func (this *LRUCache) addToHead(node *dulNode) {
+	node.prev = this.head
+	node.next = this.head.next
+	this.head.next.prev = node
+	this.head.next = node
+}
+
+func (this *LRUCache) removeNode(node *dulNode) {
+	node.prev.next = node.next
+	node.next.prev = node.prev
+}
+
+func (this *LRUCache) moveToHead(node *dulNode) {
+	this.removeNode(node)
+	this.addToHead(node)
+}
+
+func (this *LRUCache) removeTail() *dulNode {
+	node := this.tail.prev
+	this.removeNode(node)
+	return node
 }
 
 /**
@@ -116,26 +104,3 @@ func (this *LRUCache) Put(key int, value int) {
  * param_1 := obj.Get(key);
  * obj.Put(key,value);
  */
-
-func testProblem146() {
-	obj := Constructor(2)
-	fmt.Println(obj.Get(2))
-	obj.Put(2, 6)
-	fmt.Println(obj.ToString())
-
-	fmt.Println(obj.Get(1))
-
-	fmt.Println(obj.ToString())
-	obj.Put(1, 5)
-	fmt.Println(obj.ToString())
-
-	obj.Put(1, 2)
-
-	fmt.Println(obj.Get(1))
-
-	fmt.Println(obj.ToString())
-
-	fmt.Println(obj.Get(2))
-
-	fmt.Println(obj.ToString())
-}
