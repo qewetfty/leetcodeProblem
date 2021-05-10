@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -38,7 +38,7 @@ func countPrimes(n int) int {
 	return result
 }
 
-func main() {
+func testProblem204() {
 	fmt.Println(countPrimes(10))
 	fmt.Println(countPrimes(0))
 	fmt.Println(countPrimes(1))
