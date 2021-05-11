@@ -1,4 +1,4 @@
-package main
+package sliding_window
 
 import (
 	"fmt"
@@ -52,7 +52,7 @@ func maxScore(cardPoints []int, k int) int {
 	return result
 }
 
-func main() {
+func testProblem1423() {
 	fmt.Println(maxScore([]int{1, 2, 3, 4, 5, 6, 1}, 3))
 	fmt.Println(maxScore([]int{2, 2, 2}, 2))
 	fmt.Println(maxScore([]int{9, 7, 7, 9, 7, 7, 9}, 7))
