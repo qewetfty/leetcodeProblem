@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 // Given a 2D matrix matrix, handle multiple queries of the following type:
 // Calculate the sum of the elements of matrix inside the rectangle defined by
@@ -32,7 +32,7 @@ type NumMatrix struct {
 	sumMatrix [][]int
 }
 
-func Constructor(matrix [][]int) NumMatrix {
+func Constructor304(matrix [][]int) NumMatrix {
 	m, n := len(matrix), len(matrix[0])
 	preMatrix := make([][]int, m)
 	for i := 0; i < m; i++ {
@@ -68,8 +68,4 @@ func (this *NumMatrix) SumRegion(row1 int, col1 int, row2 int, col2 int) int {
 		result = result - this.sumMatrix[row1-1][col2]
 	}
 	return result
-}
-
-func main() {
-
 }
