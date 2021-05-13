@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -76,7 +76,7 @@ func getValidNumberList(s string) []string {
 	return result
 }
 
-func main() {
+func testProblem816() {
 	fmt.Println(ambiguousCoordinates("(123)"))
 	fmt.Println(ambiguousCoordinates("(00011)"))
 	fmt.Println(ambiguousCoordinates("(0123)"))
