@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -99,7 +99,7 @@ func isSignedFloat(s string) bool {
 	return isFloat(s)
 }
 
-func main() {
+func testProblem65() {
 	fmt.Println(isNumber("1234"))
 	fmt.Println(isNumber("09413"))
 	fmt.Println(isNumber("+0"))
