@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"github.com/leetcodeProblem/data"
@@ -23,25 +23,21 @@ import (
 
 // dfs动态规划解法
 func minCameraCover(root *data.TreeNode) int {
-	_, result, _ := dfs(root)
+	_, result, _ := dfs968(root)
 	return result
 }
 
 // a: node放置摄像头的情况下，覆盖到整棵树需要的摄像头的数目
 // b: 覆盖到整棵树需要的摄像头的数目。（不论root是否有摄像头）
 // c: 覆盖到node的两个叶子节点时，需要的摄像头的数目（不论root是否有摄像头）。
-func dfs(node *data.TreeNode) (int, int, int) {
+func dfs968(node *data.TreeNode) (int, int, int) {
 	if node == nil {
 		return math.MaxInt32 >> 1, 0, 0
 	}
-	la, lb, lc := dfs(node.Left)
-	ra, rb, rc := dfs(node.Right)
+	la, lb, lc := dfs968(node.Left)
+	ra, rb, rc := dfs968(node.Right)
 	a := lc + rc + 1
 	b := utils.Min(a, utils.Min(la+rb, lb+ra))
 	c := utils.Min(a, lb+rb)
 	return a, b, c
-}
-
-func main() {
-
 }
