@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -48,7 +48,7 @@ func longestStrChain(words []string) int {
 	return result
 }
 
-func main() {
+func testProblem1048() {
 	fmt.Println(longestStrChain([]string{"abcd", "dbqca"}))
 	fmt.Println(longestStrChain([]string{"a", "b", "ba", "bca", "bda", "bdca"}))
 	fmt.Println(longestStrChain([]string{"xbc", "pcxbcf", "xb", "cxbc", "pcxbc"}))
