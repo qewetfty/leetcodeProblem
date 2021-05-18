@@ -1,8 +1,6 @@
-package main
+package hashTable
 
-import (
-	"strings"
-)
+import "strings"
 
 // Given a list paths of directory info, including the directory path, and all
 // the files with contents in this directory, return all the duplicate files in
@@ -59,8 +57,4 @@ func findDuplicate(paths []string) [][]string {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }
