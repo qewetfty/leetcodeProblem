@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -32,7 +32,7 @@ func minMoves2(nums []int) int {
 	return result
 }
 
-func main() {
+func testProblem462() {
 	fmt.Println(minMoves2([]int{1, 10, 2, 9}))
 	fmt.Println(minMoves2([]int{1, 0, 2, 9}))
 	fmt.Println(minMoves2([]int{1, 2, 3}))
