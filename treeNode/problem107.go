@@ -1,4 +1,4 @@
-package main
+package treeNode
 
 import "github.com/leetcodeProblem/data"
 
@@ -42,8 +42,4 @@ func levelOrderBottom(root *data.TreeNode) [][]int {
 		result = append([][]int{curResult}, result...)
 	}
 	return result
-}
-
-func main() {
-
 }
