@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -64,7 +64,7 @@ func findAndReplacePattern(words []string, pattern string) []string {
 	return result
 }
 
-func main() {
+func testProblem890() {
 	fmt.Println(findAndReplacePattern([]string{"abc", "deq", "mee", "aqq", "dkd", "ccc"}, "abb"))
 	fmt.Println(findAndReplacePattern([]string{"a", "b", "c"}, "a"))
 }
