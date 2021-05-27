@@ -1,4 +1,4 @@
-package main
+package bitmap
 
 import (
 	"fmt"
@@ -54,7 +54,7 @@ type wordCount struct {
 	charBit int
 }
 
-func main() {
+func testProblem318() {
 	fmt.Println(maxProduct([]string{"abcw", "baz", "foo", "bar", "xtfn", "abcdef"}))
 	fmt.Println(maxProduct([]string{"a", "ab", "abc", "d", "cd", "bcd", "abcd"}))
 	fmt.Println(maxProduct([]string{"a", "aa", "aaa", "aaaa"}))
