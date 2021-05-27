@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"container/heap"
@@ -57,7 +57,7 @@ func scheduleCourse(courses [][]int) int {
 	return priorityQueue.Len()
 }
 
-func main() {
+func testProblem630() {
 	fmt.Println(scheduleCourse([][]int{{100, 200}, {200, 1300}, {1000, 1250}, {2000, 3200}}))
 	fmt.Println(scheduleCourse([][]int{{1, 2}}))
 	fmt.Println(scheduleCourse([][]int{{3, 2}, {4, 3}}))
