@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -90,7 +90,7 @@ func maximumGap2(nums []int) int {
 	return result
 }
 
-func main() {
+func testProblem164() {
 	fmt.Println(maximumGap([]int{3, 6, 9, 1}))
 	fmt.Println(maximumGap([]int{10}))
 }
