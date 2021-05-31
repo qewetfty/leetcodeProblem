@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -76,7 +76,7 @@ func binarySearchString(words []string, word string) int {
 	return lo
 }
 
-func main() {
+func testProblem1268() {
 	fmt.Println(suggestedProducts([]string{"mobile", "mouse", "moneypot", "monitor", "mousepad"}, "mouse"))
 	fmt.Println(suggestedProducts([]string{"havana"}, "havana"))
 	fmt.Println(suggestedProducts([]string{"bags", "baggage", "banner", "box", "cloths"}, "bags"))
