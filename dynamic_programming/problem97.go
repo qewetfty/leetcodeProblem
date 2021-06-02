@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -45,7 +45,7 @@ func isInterleave(s1 string, s2 string, s3 string) bool {
 	return dp[l1]
 }
 
-func main() {
+func testProblem97() {
 	fmt.Println(isInterleave("aabcc", "dbbca", "aadbbbaccc"))
 	fmt.Println(isInterleave("", "", ""))
 }
