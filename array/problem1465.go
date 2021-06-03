@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ import (
 //		It is guaranteed that all elements in horizontalCuts are distinct.
 //		It is guaranteed that all elements in verticalCuts are distinct.
 
-func maxArea(h int, w int, horizontalCuts []int, verticalCuts []int) int {
+func maxArea1465(h int, w int, horizontalCuts []int, verticalCuts []int) int {
 	sort.Ints(horizontalCuts)
 	sort.Ints(verticalCuts)
 	m, n := len(horizontalCuts), len(verticalCuts)
@@ -48,8 +48,8 @@ func maxArea(h int, w int, horizontalCuts []int, verticalCuts []int) int {
 	return (maxH * maxV) % 1000000007
 }
 
-func main() {
-	fmt.Println(maxArea(5, 4, []int{1, 2, 4}, []int{1, 3}))
-	fmt.Println(maxArea(5, 4, []int{3, 1}, []int{1}))
-	fmt.Println(maxArea(5, 4, []int{3}, []int{3}))
+func testProblem1465() {
+	fmt.Println(maxArea1465(5, 4, []int{1, 2, 4}, []int{1, 3}))
+	fmt.Println(maxArea1465(5, 4, []int{3, 1}, []int{1}))
+	fmt.Println(maxArea1465(5, 4, []int{3}, []int{3}))
 }
