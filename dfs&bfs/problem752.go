@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -99,7 +99,7 @@ func openLock(deadends []string, target string) int {
 	return -1
 }
 
-func main() {
+func testProblem752() {
 	fmt.Println(openLock([]string{"0201", "0101", "0102", "1212", "2002"}, "0202"))
 	fmt.Println(openLock([]string{"8888"}, "0009"))
 	fmt.Println(openLock([]string{"8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"}, "8888"))
