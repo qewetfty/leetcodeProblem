@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -32,7 +32,7 @@ func minCostClimbingStairs(cost []int) int {
 	return dp[l-1]
 }
 
-func main() {
+func testProblem746() {
 	fmt.Println(minCostClimbingStairs([]int{10, 15, 20}))
 	fmt.Println(minCostClimbingStairs([]int{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}))
 }
