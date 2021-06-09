@@ -1,4 +1,4 @@
-package main
+package sliding_window
 
 import "fmt"
 
@@ -42,7 +42,7 @@ func maxResult(nums []int, k int) int {
 	return dp[l-1]
 }
 
-func main() {
+func testProblem1696() {
 	fmt.Println(maxResult([]int{1, -1, -2, 4, -7, 3}, 2))
 	fmt.Println(maxResult([]int{10, -5, -2, 4, 0, 3}, 3))
 	fmt.Println(maxResult([]int{1, -5, -20, 4, -1, 3, -6, -3}, 2))
