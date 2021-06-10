@@ -1,4 +1,4 @@
-package main
+package array
 
 // Implement a MyCalendar class to store your events. A new event can be added if
 // adding the event will not cause a double booking.
@@ -41,8 +41,4 @@ func (this *MyCalendar) Book(start int, end int) bool {
 	}
 	this.calendar = append(this.calendar, []int{start, end})
 	return true
-}
-
-func main() {
-
 }
