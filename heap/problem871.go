@@ -1,4 +1,4 @@
-package main
+package heap
 
 import (
 	"container/heap"
@@ -90,7 +90,7 @@ func minRefuelStops2(target int, tank int, stations [][]int) int {
 	return result
 }
 
-func main() {
+func testProblem871() {
 	fmt.Println(minRefuelStops2(1, 1, [][]int{}))
 	fmt.Println(minRefuelStops2(100, 1, [][]int{{10, 100}}))
 	fmt.Println(minRefuelStops2(100, 10, [][]int{{10, 60}, {20, 30}, {30, 30}, {60, 40}}))
