@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -69,7 +69,7 @@ func findWord(s string, left, right int, reverseWordMap map[string]int) int {
 	return -1
 }
 
-func main() {
+func testProblem336() {
 	fmt.Println(palindromePairs([]string{"abcd", "dcba", "lls", "s", "sssll"}))
 	fmt.Println(palindromePairs([]string{"bat", "tab", "cat"}))
 	fmt.Println(palindromePairs([]string{"a", ""}))
