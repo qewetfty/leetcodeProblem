@@ -1,4 +1,4 @@
-package main
+package greedy
 
 import (
 	"fmt"
@@ -46,7 +46,7 @@ func maximumUnits(boxTypes [][]int, truckSize int) int {
 	return result
 }
 
-func main() {
+func testProblem1710() {
 	fmt.Println(maximumUnits([][]int{{1, 3}, {2, 2}, {3, 1}}, 4))
 	fmt.Println(maximumUnits([][]int{{5, 10}, {2, 5}, {4, 7}, {3, 9}}, 10))
 }
