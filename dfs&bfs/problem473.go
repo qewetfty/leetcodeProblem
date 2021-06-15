@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "fmt"
 
@@ -61,7 +61,7 @@ func checkCanBeSquare(avg int) bool {
 	return true
 }
 
-func main() {
+func testProblem473() {
 	fmt.Println(makesquare([]int{1, 1, 2, 2, 2}))
 	fmt.Println(makesquare([]int{3, 3, 3, 3, 4}))
 	fmt.Println(makesquare([]int{5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3}))
