@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -33,6 +33,6 @@ func countNumber(nums []int, bound int) int {
 	return result
 }
 
-func main() {
+func testProblem795() {
 	fmt.Println(numSubarrayBoundedMax([]int{2, 1, 4, 3}, 2, 3))
 }
