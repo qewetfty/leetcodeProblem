@@ -1,4 +1,4 @@
-package main
+package binaryIndexedTree
 
 // Given an integer array nums, handle multiple queries of the following types:
 //	Update the value of an element in nums.
@@ -77,8 +77,4 @@ func (b *bit307) getSum(index int) int {
 		result += b.nums[i]
 	}
 	return result
-}
-
-func main() {
-
 }
