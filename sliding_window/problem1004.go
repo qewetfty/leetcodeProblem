@@ -1,4 +1,4 @@
-package main
+package sliding_window
 
 import (
 	"fmt"
@@ -45,7 +45,7 @@ func longestOnes(nums []int, k int) int {
 	return result
 }
 
-func main() {
+func testProblem1004() {
 	fmt.Println(longestOnes([]int{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}, 2))
 	fmt.Println(longestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3))
 }
