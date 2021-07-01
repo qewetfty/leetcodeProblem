@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -41,7 +41,7 @@ func grayCode(n int) []int {
 	return result
 }
 
-func main() {
+func testProblem89() {
 	fmt.Println(grayCode(1))
 	fmt.Println(grayCode(2))
 	fmt.Println(grayCode(3))
