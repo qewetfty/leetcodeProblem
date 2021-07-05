@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -43,7 +43,7 @@ func countVowelPermutation(n int) int {
 	return (dp[n][0] + dp[n][1] + dp[n][2] + dp[n][3] + dp[n][4]) % 1000000007
 }
 
-func main() {
+func testProblem1220() {
 	fmt.Println(countVowelPermutation(1))
 	fmt.Println(countVowelPermutation(2))
 	fmt.Println(countVowelPermutation(3))
