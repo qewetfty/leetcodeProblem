@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -38,7 +38,7 @@ func matrixReshape(mat [][]int, r int, c int) [][]int {
 	return result
 }
 
-func main() {
+func testProblem566() {
 	fmt.Println(matrixReshape([][]int{{1, 2}, {3, 4}}, 1, 4))
 	fmt.Println(matrixReshape([][]int{{1, 2}, {3, 4}}, 2, 4))
 }
