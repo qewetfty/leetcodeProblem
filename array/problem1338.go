@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -56,7 +56,7 @@ func minSetSize(arr []int) int {
 	return result
 }
 
-func main() {
+func testProblem1338() {
 	fmt.Println(minSetSize([]int{3, 3, 3, 3, 5, 5, 5, 2, 2, 7}))
 	fmt.Println(minSetSize([]int{7, 7, 7, 7, 7, 7}))
 	fmt.Println(minSetSize([]int{1, 9}))
