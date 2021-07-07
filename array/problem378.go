@@ -1,4 +1,4 @@
-package main
+package array
 
 import "sort"
 
@@ -30,8 +30,4 @@ func kthSmallest(matrix [][]int, k int) int {
 	}
 	sort.Ints(num)
 	return num[k-1]
-}
-
-func main() {
-
 }
