@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -58,7 +58,7 @@ func backtrack60(n, k int, result []byte) (string, bool) {
 	return "", false
 }
 
-func main() {
+func testProblem60() {
 	fmt.Println(getPermutation(3, 3))
 	fmt.Println(getPermutation(4, 9))
 	fmt.Println(getPermutation(3, 1))
