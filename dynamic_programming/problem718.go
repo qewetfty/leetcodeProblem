@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import "fmt"
 
@@ -36,7 +36,7 @@ func findLength(nums1 []int, nums2 []int) int {
 	return result
 }
 
-func main() {
+func testProblem718() {
 	fmt.Println(findLength([]int{1, 2, 3, 2, 1}, []int{3, 2, 1, 4, 7}))
 	fmt.Println(findLength([]int{0, 0, 0, 0, 0}, []int{0, 0, 0, 0, 0}))
 }
