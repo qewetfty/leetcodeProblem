@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "fmt"
 
@@ -43,7 +43,7 @@ func isIsomorphic(s string, t string) bool {
 	return true
 }
 
-func main() {
+func testProblem205() {
 	fmt.Println(isIsomorphic("egg", "foo"))
 	fmt.Println(isIsomorphic("foo", "bar"))
 	fmt.Println(isIsomorphic("paper", "title"))
