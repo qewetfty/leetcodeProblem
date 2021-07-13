@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 // A peak element is an element that is strictly greater than its neighbors.
 // Given an integer array nums, find a peak element, and return its index. If the
@@ -29,8 +29,4 @@ func findPeakElement(nums []int) int {
 		}
 	}
 	return l
-}
-
-func main() {
-
 }
