@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 import (
 	"fmt"
@@ -37,7 +37,7 @@ func triangleNumber(nums []int) int {
 	return result
 }
 
-func main() {
+func testProblem611() {
 	fmt.Println(triangleNumber([]int{2, 2, 3, 4}))
 	fmt.Println(triangleNumber([]int{4, 2, 3, 4}))
 }
