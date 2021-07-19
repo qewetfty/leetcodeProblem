@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -32,7 +32,4 @@ func lowestCommonAncestor(root, p, q *data.TreeNode) *data.TreeNode {
 		return lowestCommonAncestor(root.Left, p, q)
 	}
 	return lowestCommonAncestor(root.Right, p, q)
-}
-
-func main() {
 }
