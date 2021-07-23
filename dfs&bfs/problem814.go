@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -23,16 +23,16 @@ import "github.com/leetcodeProblem/data"
 
 func pruneTree(root *data.TreeNode) *data.TreeNode {
 	dummyNode := &data.TreeNode{Left: root}
-	dfs(root, dummyNode, true)
+	dfs814(root, dummyNode, true)
 	return dummyNode.Left
 }
 
-func dfs(node *data.TreeNode, parentNode *data.TreeNode, left bool) {
+func dfs814(node *data.TreeNode, parentNode *data.TreeNode, left bool) {
 	if node.Left != nil {
-		dfs(node.Left, node, true)
+		dfs814(node.Left, node, true)
 	}
 	if node.Right != nil {
-		dfs(node.Right, node, false)
+		dfs814(node.Right, node, false)
 	}
 
 	if node.Left == nil && node.Right == nil && node.Val == 0 {
@@ -42,8 +42,4 @@ func dfs(node *data.TreeNode, parentNode *data.TreeNode, left bool) {
 			parentNode.Right = nil
 		}
 	}
-}
-
-func main() {
-
 }
