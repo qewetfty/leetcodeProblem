@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -40,7 +40,7 @@ func partitionDisjoint(nums []int) int {
 	return left + 1
 }
 
-func main() {
+func testProblem915() {
 	fmt.Println(partitionDisjoint([]int{5, 0, 3, 8, 6}))
 	fmt.Println(partitionDisjoint([]int{1, 1, 1, 0, 6, 12}))
 }
