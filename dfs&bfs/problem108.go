@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "github.com/leetcodeProblem/data"
 
@@ -32,8 +32,4 @@ func dfs108(nums []int, left, right int) *data.TreeNode {
 	midNode.Left = dfs108(nums, left, mid-1)
 	midNode.Right = dfs108(nums, mid+1, right)
 	return midNode
-}
-
-func main() {
-
 }
