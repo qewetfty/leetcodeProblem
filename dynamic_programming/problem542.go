@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -61,7 +61,7 @@ func updateMatrix(mat [][]int) [][]int {
 	return distance
 }
 
-func main() {
+func testProblem542() {
 	fmt.Println(updateMatrix([][]int{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}))
 	fmt.Println(updateMatrix([][]int{{0, 0, 0}, {0, 1, 0}, {1, 1, 1}}))
 }
