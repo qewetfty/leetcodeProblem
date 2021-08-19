@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"fmt"
@@ -29,13 +29,13 @@ import (
 //		The number of nodes in the tree is in the range [2, 5 * 104].
 //		1 <= Node.val <= 104
 
-var result int
+var result1339 int
 
 func maxProduct(root *data.TreeNode) int {
-	result = 0
+	result1339 = 0
 	sum := getSumOfTree(root)
 	getMaxProduct(root, sum)
-	return result % 1000000007
+	return result1339 % 1000000007
 }
 
 func getSumOfTree(root *data.TreeNode) int {
@@ -60,16 +60,16 @@ func getMaxProduct(root *data.TreeNode, sum int) {
 	if root.Left != nil {
 		getMaxProduct(root.Left, sum)
 		curProduct := root.Left.Val * (sum - root.Left.Val)
-		result = utils.Max(curProduct, result)
+		result1339 = utils.Max(curProduct, result1339)
 	}
 	if root.Right != nil {
 		getMaxProduct(root.Right, sum)
 		curProduct := root.Right.Val * (sum - root.Right.Val)
-		result = utils.Max(curProduct, result)
+		result1339 = utils.Max(curProduct, result1339)
 	}
 }
 
-func main() {
+func testProblem1339() {
 	node2 := &data.TreeNode{Val: 3}
 	node1 := &data.TreeNode{Val: 2, Left: node2}
 	node3 := &data.TreeNode{Val: 1, Right: node1}
