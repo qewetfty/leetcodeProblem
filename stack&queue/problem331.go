@@ -1,4 +1,4 @@
-package main
+package stack_queue
 
 import (
 	"fmt"
@@ -44,7 +44,7 @@ func isValidSerialization(preorder string) bool {
 	return slot == 0
 }
 
-func main() {
+func testProblem331() {
 	fmt.Println(isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"))
 	fmt.Println(isValidSerialization("1,#"))
 	fmt.Println(isValidSerialization("9,#,#,1"))
