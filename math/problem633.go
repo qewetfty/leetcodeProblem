@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -40,7 +40,7 @@ func judgeSquareSum(c int) bool {
 	return false
 }
 
-func main() {
+func testProblem633() {
 	fmt.Println(judgeSquareSum(1))
 	fmt.Println(judgeSquareSum(2))
 	fmt.Println(judgeSquareSum(3))
