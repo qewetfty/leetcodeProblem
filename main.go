@@ -1,52 +1,41 @@
 package main
 
 import (
-	"fmt"
-	"strings"
+	"github.com/leetcodeProblem/utils"
+	"sort"
 )
 
-// One way to serialize a binary tree is to use preorder traversal. When we
-// encounter a non-null node, we record the node's value. If it is a null node,
-// we record using a sentinel value such as '#'.
-// For example, the above binary tree can be serialized to the string "9,3,4,#,#,1,#,#,2,#,6,#,#", where '#' represents a null node.
-// Given a string of comma-separated values preorder, return true if it is a correct preorder traversal serialization of a binary tree.
-// It is guaranteed that each comma-separated value in the string must be either an integer or a character '#' representing null pointer.
-// You may assume that the input format is always valid.
-// For example, it could never contain two consecutive commas, such as "1,,3".
-//	Note: You are not allowed to reconstruct the tree.
-//	Example 1:
-//		Input: preorder = "9,3,4,#,#,1,#,#,2,#,6,#,#"
-//		Output: true
-//	Example 2:
-//		Input: preorder = "1,#"
-//		Output: false
-//	Example 3:
-//		Input: preorder = "9,#,#,1"
-//		Output: false
-//	Constraints:
-//		1 <= preorder.length <= 104
-//		preorder consist of integers in the range [0, 100] and '#' separated by commas
-
-func isValidSerialization(preorder string) bool {
-	nodeList := strings.Split(preorder, ",")
-	l := len(nodeList)
-	slot := 1
+func jobScheduling(startTime []int, endTime []int, profit []int) int {
+	l := len(startTime)
+	jobList := make([][]int, l)
 	for i := 0; i < l; i++ {
-		if slot == 0 {
-			return false
-		}
-		if nodeList[i] == "#" {
-			slot--
-		} else {
-			slot++
-		}
+		jobList[i] = make([]int, 3)
+		jobList[i][0], jobList[i][1], jobList[i][2] = startTime[i], endTime[i], profit[i]
 	}
-	return slot == 0
+	sort.Slice(jobList, func(i, j int) bool {
+		return jobList[i][1] < jobList[j][1]
+	})
+	dp := make([]int, l)
+	dp[0] = jobList[0][2]
+	for i := 1; i < l; i++ {
+		dp[i] = jobList[i][2]
+		left, right := 0, i-1
+		for left < right {
+			mid := (left + right + 1) >> 1
+			if jobList[mid][1] <= jobList[i][0] {
+				left = mid
+			} else {
+				right = mid - 1
+			}
+		}
+		if jobList[left][1] <= jobList[i][0] {
+			dp[i] += dp[left]
+		}
+		dp[i] = utils.Max(dp[i-1], dp[i])
+	}
+	return dp[l-1]
 }
 
 func main() {
-	fmt.Println(isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"))
-	fmt.Println(isValidSerialization("1,#"))
-	fmt.Println(isValidSerialization("9,#,#,1"))
-	fmt.Println(isValidSerialization("9,3,4,#,#,#,1,#,#,2,#,6,#,#"))
+
 }
