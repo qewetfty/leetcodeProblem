@@ -1,4 +1,4 @@
-package main
+package array
 
 import "github.com/leetcodeProblem/utils"
 
@@ -29,8 +29,4 @@ func maxCount(m int, n int, ops [][]int) int {
 		resultX, resultY = utils.Min(resultX, op[0]), utils.Min(resultY, op[1])
 	}
 	return resultX * resultY
-}
-
-func main() {
-
 }
