@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 // There is an undirected connected tree with n nodes labeled from 0 to n - 1 and n - 1 edges.
 // You are given the integer n and the array edges where edges[i] = [ai, bi]
@@ -71,8 +71,4 @@ func sumOfDistancesInTree(n int, edges [][]int) []int {
 	}
 	dfs2(0, -1)
 	return res
-}
-
-func main() {
-
 }
