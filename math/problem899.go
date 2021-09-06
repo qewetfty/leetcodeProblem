@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"sort"
@@ -42,8 +42,4 @@ func orderlyQueue(s string, k int) string {
 		})
 		return string(strByte)
 	}
-}
-
-func main() {
-
 }
