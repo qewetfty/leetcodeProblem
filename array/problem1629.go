@@ -1,4 +1,4 @@
-package main
+package array
 
 import "github.com/leetcodeProblem/utils"
 
@@ -60,8 +60,4 @@ func slowestKey(releaseTimes []int, keysPressed string) byte {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }
