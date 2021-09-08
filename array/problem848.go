@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -40,7 +40,7 @@ func shiftingLetters(s string, shifts []int) string {
 	return string(resultByte)
 }
 
-func main() {
+func testProblem848() {
 	fmt.Println(shiftingLetters("abc", []int{3, 5, 9}))
 	fmt.Println(shiftingLetters("aaa", []int{1, 2, 3}))
 }
