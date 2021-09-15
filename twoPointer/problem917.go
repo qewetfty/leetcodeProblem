@@ -1,4 +1,4 @@
-package main
+package twoPointer
 
 // Given a string s, reverse the string according to the following rules:
 //	All the characters that are not English letters remain in the same position.
@@ -35,8 +35,4 @@ func reverseOnlyLetters(s string) string {
 		}
 	}
 	return string(b)
-}
-
-func main() {
-
 }
