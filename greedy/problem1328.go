@@ -1,4 +1,4 @@
-package main
+package greedy
 
 // Given a palindromic string of lowercase English letters palindrome, replace
 // exactly one character with any lowercase English letter so that the resulting
@@ -44,8 +44,4 @@ func breakPalindrome(palindrome string) string {
 	}
 	strByte[l-1] = 'b'
 	return string(strByte)
-}
-
-func main() {
-
 }
