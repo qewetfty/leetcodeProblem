@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"leetcodeProblem/data"
@@ -20,12 +20,12 @@ import (
 //		The number of nodes in the tree is in the range [1, 104].
 //		-100 <= Node.val <= 100
 
-var result int
+var result543 int
 
 func diameterOfBinaryTree(root *data.TreeNode) int {
-	result = 1
+	result543 = 1
 	depth543(root)
-	return result - 1
+	return result543 - 1
 }
 
 func depth543(node *data.TreeNode) int {
@@ -34,10 +34,6 @@ func depth543(node *data.TreeNode) int {
 	}
 	left := depth543(node.Left)
 	right := depth543(node.Right)
-	result = utils.Max(result, left+right+1)
+	result543 = utils.Max(result543, left+right+1)
 	return utils.Max(left, right) + 1
-}
-
-func main() {
-
 }
