@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import (
 	"leetcodeProblem/data"
@@ -25,6 +25,7 @@ import (
 //		1 <= preorder[i] <= 108
 //		All the values of preorder are unique.
 
+// 对preorder进行排序，获取中序遍历结果。通过前序遍历和中序遍历结果恢复BST的结构
 var preIndex int
 
 func bstFromPreorder(preorder []int) *data.TreeNode {
@@ -50,8 +51,4 @@ func buildTree1008(preorder, inorder []int, inorderMap map[int]int, left, right 
 	root.Left = buildTree1008(preorder, inorder, inorderMap, left, rootIndex-1)
 	root.Right = buildTree1008(preorder, inorder, inorderMap, rootIndex+1, right)
 	return root
-}
-
-func main() {
-
 }
