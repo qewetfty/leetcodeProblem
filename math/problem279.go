@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -77,7 +77,7 @@ func numSquares3(n int) int {
 	return dp[n]
 }
 
-func main() {
+func testProblem279() {
 	fmt.Println(numSquares(12))
 	fmt.Println(numSquares(13))
 }
