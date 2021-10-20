@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -48,7 +48,7 @@ func reverseWords(s string) string {
 	return strings.Join(wordList, " ")
 }
 
-func main() {
+func testProblem151() {
 	fmt.Println(reverseWords("  hello world  "))
 	fmt.Println(reverseWords("the sky is blue"))
 	fmt.Println(reverseWords("a good   example"))
