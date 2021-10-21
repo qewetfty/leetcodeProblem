@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import "math/rand"
 
@@ -33,7 +33,7 @@ type RandomizedSet struct {
 	indexMap map[int]int
 }
 
-func Constructor() RandomizedSet {
+func Constructor380() RandomizedSet {
 	return RandomizedSet{
 		nums:     make([]int, 0),
 		indexMap: make(map[int]int),
@@ -67,8 +67,4 @@ func (this *RandomizedSet) Remove(val int) bool {
 func (this *RandomizedSet) GetRandom() int {
 	index := rand.Intn(len(this.nums))
 	return this.nums[index]
-}
-
-func main() {
-
 }
