@@ -1,4 +1,4 @@
-package main
+package hashTable
 
 import (
 	"fmt"
@@ -58,7 +58,7 @@ type fre struct {
 	count int
 }
 
-func main() {
+func testProblem451() {
 	fmt.Println(frequencySort("tree"))
 	fmt.Println(frequencySort("cccaaa"))
 	fmt.Println(frequencySort("Aabb"))
