@@ -1,4 +1,4 @@
-package main
+package dfs_bfs
 
 import "leetcodeProblem/data"
 
@@ -28,18 +28,18 @@ import "leetcodeProblem/data"
 //		0 <= Node.val <= 9
 //		The depth of the tree will not exceed 10.
 
-var sum int
+var sum129 int
 
 func sumNumbers(root *data.TreeNode) int {
-	sum = 0
+	sum129 = 0
 	dfs129(root, 0)
-	return sum
+	return sum129
 }
 
 func dfs129(node *data.TreeNode, curNum int) {
 	curNum = curNum*10 + node.Val
 	if node.Left == nil && node.Right == nil {
-		sum += curNum
+		sum129 += curNum
 		return
 	}
 	if node.Left != nil {
@@ -48,8 +48,4 @@ func dfs129(node *data.TreeNode, curNum int) {
 	if node.Right != nil {
 		dfs129(node.Right, curNum)
 	}
-}
-
-func main() {
-
 }
