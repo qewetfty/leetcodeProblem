@@ -1,4 +1,4 @@
-package main
+package math
 
 import "fmt"
 
@@ -30,6 +30,6 @@ func arrangeCoins(n int) int {
 	return lo
 }
 
-func main() {
+func testProblem441() {
 	fmt.Println(arrangeCoins(5))
 }
