@@ -1,4 +1,4 @@
-package main
+package string
 
 import "fmt"
 
@@ -70,7 +70,7 @@ func countVowelSubstrings(word string) int {
 	return result
 }
 
-func main() {
+func testProblem2062() {
 	fmt.Println(countVowelSubstrings("aeiouu"))
 	fmt.Println(countVowelSubstrings("unicornarihan"))
 	fmt.Println(countVowelSubstrings("cuaieuouac"))
