@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "fmt"
 
@@ -34,7 +34,7 @@ func backtrack96(i int) int {
 	return num
 }
 
-func main() {
+func testProblem96() {
 	fmt.Println(numTrees(3))
 	fmt.Println(numTrees(4))
 	fmt.Println(numTrees(5))
