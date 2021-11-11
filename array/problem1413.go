@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -39,7 +39,7 @@ func minStartValue(nums []int) int {
 	return startValue
 }
 
-func main() {
+func testProblem1413() {
 	fmt.Println(minStartValue([]int{-3, 2, -3, 4, 2}))
 	fmt.Println(minStartValue([]int{1, 2}))
 	fmt.Println(minStartValue([]int{1, -2, -3}))
