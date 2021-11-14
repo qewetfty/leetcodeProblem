@@ -1,4 +1,4 @@
-package main
+package backtrack
 
 import "leetcodeProblem/utils"
 
@@ -92,8 +92,4 @@ func backtrack2065(node int, values []int, nodeMap map[int][][]int, useTime, max
 		backtrack2065(nextNode, values, nodeMap, useTime, maxTime, maxValue)
 		useTime, visitedMap[nextNode] = useTime-time, visitedMap[nextNode]-1
 	}
-}
-
-func main() {
-
 }
