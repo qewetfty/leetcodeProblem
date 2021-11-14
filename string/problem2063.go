@@ -69,7 +69,7 @@ func countVowels2(word string) int64 {
 	return result
 }
 
-func main() {
+func testProblem2063() {
 	fmt.Println(countVowels("aba"))
 	fmt.Println(countVowels("abc"))
 	fmt.Println(countVowels("ltcd"))

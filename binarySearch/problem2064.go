@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -73,7 +73,7 @@ func canDistribute(n, i, sum int, quantities []int) bool {
 	return needStoreNumber <= n
 }
 
-func main() {
+func testProblem2064() {
 	fmt.Println(minimizedMaximum(4, []int{1, 1, 1}))
 	fmt.Println(minimizedMaximum(1, []int{1}))
 	fmt.Println(minimizedMaximum(1, []int{100000}))
