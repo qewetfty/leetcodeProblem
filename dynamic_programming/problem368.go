@@ -1,4 +1,4 @@
-package main
+package dynamic_programming
 
 import (
 	"fmt"
@@ -56,7 +56,7 @@ func largestDivisibleSubset(nums []int) []int {
 	return result
 }
 
-func main() {
+func testProblem368() {
 	fmt.Println(largestDivisibleSubset([]int{1, 2, 3}))
 	fmt.Println(largestDivisibleSubset([]int{1, 2, 4, 8}))
 }
