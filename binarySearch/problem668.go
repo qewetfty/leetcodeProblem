@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import "fmt"
 
@@ -17,7 +17,7 @@ import "fmt"
 //		1 <= m, n <= 3 * 104
 //		1 <= k <= m * n
 
-func findKthNumber(m int, n int, k int) int {
+func findKthNumber668(m int, n int, k int) int {
 	lo, hi := 1, m*n
 	result := 1
 	for lo <= hi {
@@ -46,7 +46,7 @@ func binarySearch668(m, n, k, target int) bool {
 	return false
 }
 
-func main() {
-	fmt.Println(findKthNumber(3, 3, 5))
-	fmt.Println(findKthNumber(2, 3, 6))
+func testProblem668() {
+	fmt.Println(findKthNumber668(3, 3, 5))
+	fmt.Println(findKthNumber668(2, 3, 6))
 }
