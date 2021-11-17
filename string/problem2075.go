@@ -1,4 +1,4 @@
-package main
+package string
 
 import (
 	"fmt"
@@ -79,7 +79,7 @@ func decodeCiphertext(encodedText string, rows int) string {
 	return strings.TrimRight(string(resultByte), " ")
 }
 
-func main() {
+func testProblem2075() {
 	fmt.Println(decodeCiphertext("ch   ie   pr", 3))
 	fmt.Println(decodeCiphertext("iveo    eed   l te   olc", 4))
 	fmt.Println(decodeCiphertext(" b  ac", 2))
