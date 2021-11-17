@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "leetcodeProblem/data"
 
@@ -74,8 +74,4 @@ func reverseNode2074(head *data.ListNode) *data.ListNode {
 		prev, cur = cur, next
 	}
 	return prev
-}
-
-func main() {
-
 }
