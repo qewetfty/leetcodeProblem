@@ -1,4 +1,4 @@
-package main
+package array
 
 import "leetcodeProblem/utils"
 
@@ -42,8 +42,4 @@ func timeRequiredToBuy(tickets []int, k int) int {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }
