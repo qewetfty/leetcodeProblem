@@ -42,3 +42,8 @@ func (u *UnionFind) Union(i, j int) {
 func (u *UnionFind) Count() int {
 	return u.count
 }
+
+func (u *UnionFind) IsConnected(x, y int) bool {
+	x, y = u.Parent(x), u.Parent(y)
+	return x == y
+}

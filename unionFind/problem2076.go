@@ -1,4 +1,4 @@
-package main
+package unionFind
 
 import "leetcodeProblem/data"
 
@@ -73,8 +73,4 @@ func friendRequests(n int, restrictions [][]int, requests [][]int) []bool {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }
