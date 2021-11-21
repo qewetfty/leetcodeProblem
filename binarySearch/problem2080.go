@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 // Design a data structure to find the frequency of a given value in a given subarray.
 // The frequency of a value in a subarray is the number of occurrences of that value in the subarray.
@@ -29,7 +29,7 @@ type RangeFreqQuery struct {
 	indexMap map[int][]int
 }
 
-func Constructor(arr []int) RangeFreqQuery {
+func Constructor2080(arr []int) RangeFreqQuery {
 	indexMap := make(map[int][]int)
 	for i, num := range arr {
 		indexMap[num] = append(indexMap[num], i)
@@ -89,8 +89,4 @@ func findRight(nums []int, val int) int {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }
