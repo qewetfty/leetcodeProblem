@@ -1,4 +1,4 @@
-package main
+package math
 
 import (
 	"fmt"
@@ -111,7 +111,7 @@ func convertToKString(n int64, k int64) string {
 	return string(resByte)
 }
 
-func main() {
+func testProblem2081() {
 	fmt.Println(kMirror(2, 5))
 	fmt.Println(kMirror(3, 7))
 	fmt.Println(kMirror(7, 17))
