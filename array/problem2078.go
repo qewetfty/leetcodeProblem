@@ -1,4 +1,4 @@
-package main
+package array
 
 import (
 	"fmt"
@@ -50,7 +50,7 @@ func maxDistance(colors []int) int {
 	return result
 }
 
-func main() {
+func testProblem2078() {
 	fmt.Println(maxDistance([]int{1, 1, 1, 6, 1, 1, 1}))
 	fmt.Println(maxDistance([]int{1, 8, 3, 8, 3}))
 	fmt.Println(maxDistance([]int{0, 1}))
