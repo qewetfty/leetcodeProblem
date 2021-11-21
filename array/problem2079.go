@@ -1,4 +1,4 @@
-package main
+package array
 
 import "fmt"
 
@@ -67,7 +67,7 @@ func wateringPlants(plants []int, capacity int) int {
 	return result
 }
 
-func main() {
+func testProblem2079() {
 	fmt.Println(wateringPlants([]int{2, 2, 3, 3}, 5))
 	fmt.Println(wateringPlants([]int{1, 1, 1, 4, 2, 3}, 4))
 	fmt.Println(wateringPlants([]int{7, 7, 7, 7, 7, 7, 7}, 8))
