@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"github.com/leetcodeProblem/utils"
@@ -106,8 +106,4 @@ func binarySearch2070(items [][]int, query int) int {
 		}
 	}
 	return result
-}
-
-func main() {
-
 }

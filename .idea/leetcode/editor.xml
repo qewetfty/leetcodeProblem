@@ -3,6 +3,51 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2068]Check Whether Two Strings are Almost Equivalent.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go" />
+              <option name="questionId" value="2177" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2069]Walking Robot Simulation II.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2069]Walking Robot Simulation II.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2069]Walking Robot Simulation II.go" />
+              <option name="questionId" value="2178" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2070]Most Beautiful Item for Each Query.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2070]Most Beautiful Item for Each Query.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2070]Most Beautiful Item for Each Query.go" />
+              <option name="questionId" value="2179" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/52/rcmwcv917tsdjygc57t51d_h0000gn/T/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2068]Check Whether Two Strings are Almost Equivalent.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go" />
+              <option name="questionId" value="2177" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/52/rcmwcv917tsdjygc57t51d_h0000gn/T/leetcode/editor/en/[2081]Sum of k-Mirror Numbers.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/52/rcmwcv917tsdjygc57t51d_h0000gn/T/leetcode/editor/en/doc/content/[2081]Sum of k-Mirror Numbers.md" />
+              <option name="path" value="/var/folders/52/rcmwcv917tsdjygc57t51d_h0000gn/T/leetcode/editor/en/[2081]Sum of k-Mirror Numbers.go" />
+              <option name="questionId" value="2202" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[1]Two Sum.go">
           <value>
             <LeetcodeEditor>
