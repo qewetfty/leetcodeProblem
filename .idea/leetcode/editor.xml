@@ -3,6 +3,15 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[1996]The Number of Weak Characters in the Game.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go" />
+              <option name="questionId" value="2123" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go">
           <value>
             <LeetcodeEditor>
@@ -27,6 +36,42 @@
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2070]Most Beautiful Item for Each Query.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2070]Most Beautiful Item for Each Query.go" />
               <option name="questionId" value="2179" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2071]Maximum Number of Tasks You Can Assign.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2071]Maximum Number of Tasks You Can Assign.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2071]Maximum Number of Tasks You Can Assign.go" />
+              <option name="questionId" value="2180" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[952]Largest Component Size by Common Factor.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[952]Largest Component Size by Common Factor.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[952]Largest Component Size by Common Factor.go" />
+              <option name="questionId" value="989" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[953]Verifying an Alien Dictionary.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[953]Verifying an Alien Dictionary.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[953]Verifying an Alien Dictionary.go" />
+              <option name="questionId" value="990" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[986]Interval List Intersections.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[986]Interval List Intersections.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[986]Interval List Intersections.go" />
+              <option name="questionId" value="1028" />
             </LeetcodeEditor>
           </value>
         </entry>
