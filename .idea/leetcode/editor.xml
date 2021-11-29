@@ -48,6 +48,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[721]Accounts Merge.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[721]Accounts Merge.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[721]Accounts Merge.go" />
+              <option name="questionId" value="721" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[952]Largest Component Size by Common Factor.go">
           <value>
             <LeetcodeEditor>
