@@ -3,6 +3,42 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2057]Smallest Index With Equal Value.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go" />
+              <option name="questionId" value="2181" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.go" />
+              <option name="questionId" value="2182" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[328]Odd Even Linked List.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[328]Odd Even Linked List.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[328]Odd Even Linked List.go" />
+              <option name="questionId" value="328" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[797]All Paths From Source to Target.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[797]All Paths From Source to Target.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[797]All Paths From Source to Target.go" />
+              <option name="questionId" value="813" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go">
           <value>
             <LeetcodeEditor>
@@ -108,6 +144,15 @@
               <option name="contentPath" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/doc/content/[1]Two Sum.md" />
               <option name="path" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[1]Two Sum.go" />
               <option name="questionId" value="1" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[2057]Smallest Index With Equal Value.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2057]Smallest Index With Equal Value.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go" />
+              <option name="questionId" value="2181" />
             </LeetcodeEditor>
           </value>
         </entry>
