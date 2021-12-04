@@ -3,6 +3,15 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1032]Stream of Characters.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1032]Stream of Characters.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1032]Stream of Characters.go" />
+              <option name="questionId" value="1097" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go">
           <value>
             <LeetcodeEditor>
@@ -36,6 +45,24 @@
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2086]Minimum Number of Buckets Required to Collect Rainwater from Houses.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2086]Minimum Number of Buckets Required to Collect Rainwater from Houses.go" />
               <option name="questionId" value="2191" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2087]Minimum Cost Homecoming of a Robot in a Grid.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2087]Minimum Cost Homecoming of a Robot in a Grid.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2087]Minimum Cost Homecoming of a Robot in a Grid.go" />
+              <option name="questionId" value="2192" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2088]Count Fertile Pyramids in a Land.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2088]Count Fertile Pyramids in a Land.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2088]Count Fertile Pyramids in a Land.go" />
+              <option name="questionId" value="2193" />
             </LeetcodeEditor>
           </value>
         </entry>
