@@ -1,7 +1,7 @@
-package main
+package unionFind
 
 import (
-	"fmt"
+	"leetcodeProblem/data"
 	"sort"
 )
 
@@ -92,7 +92,7 @@ import (
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func findAllPeople(n int, meetings [][]int, firstPerson int) []int {
-	u := NewUnionFind(n)
+	u := data.NewUnionFind(n)
 	// 对meeting按照时间排序，按照时间从小到大开始执行Union操作
 	sort.Slice(meetings, func(i, j int) bool {
 		return meetings[i][2] < meetings[j][2]
@@ -125,56 +125,4 @@ func findAllPeople(n int, meetings [][]int, firstPerson int) []int {
 		}
 	}
 	return result
-}
-
-type unionFind struct {
-	parent []int
-	count  int
-}
-
-func NewUnionFind(n int) unionFind {
-	parent := make([]int, n)
-	for i := 0; i < n; i++ {
-		parent[i] = i
-	}
-	return unionFind{
-		parent: parent,
-		count:  n,
-	}
-}
-
-func (u unionFind) Parent(n int) int {
-	root, i := n, n
-	for u.parent[root] != root {
-		root = u.parent[root]
-	}
-	for u.parent[i] != i {
-		i, u.parent[i] = u.parent[i], root
-	}
-	return root
-}
-
-func (u unionFind) Union(i, j int) {
-	m, n := u.Parent(i), u.Parent(j)
-	if m == n {
-		return
-	}
-	u.parent[m] = n
-	u.count--
-}
-
-func (u unionFind) Count() int {
-	return u.count
-}
-
-func (u unionFind) Isolate(i int) {
-	if u.Parent(i) == i {
-		return
-	}
-	u.parent[i] = i
-	u.count++
-}
-
-func main() {
-	fmt.Println(findAllPeople(6, [][]int{{1, 2, 5}, {2, 3, 8}, {1, 5, 10}}, 1))
 }

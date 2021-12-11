@@ -47,3 +47,11 @@ func (u *UnionFind) IsConnected(x, y int) bool {
 	x, y = u.Parent(x), u.Parent(y)
 	return x == y
 }
+
+func (u *UnionFind) Isolate(i int) {
+	if u.Parent(i) == i {
+		return
+	}
+	u.parent[i] = i
+	u.count++
+}
