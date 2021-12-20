@@ -12,6 +12,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1200]Minimum Absolute Difference.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1200]Minimum Absolute Difference.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1200]Minimum Absolute Difference.go" />
+              <option name="questionId" value="1306" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1217]Minimum Cost to Move Chips to The Same Position.go">
           <value>
             <LeetcodeEditor>
@@ -117,6 +126,15 @@
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2094]Finding 3-Digit Even Numbers.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2094]Finding 3-Digit Even Numbers.go" />
               <option name="questionId" value="2215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2103]Rings and Rods.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2103]Rings and Rods.md" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2103]Rings and Rods.go" />
+              <option name="questionId" value="2226" />
             </LeetcodeEditor>
           </value>
         </entry>
