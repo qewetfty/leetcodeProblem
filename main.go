@@ -176,5 +176,9 @@ func (u unionFind) Isolate(i int) {
 }
 
 func main() {
-	fmt.Println(findAllPeople(6, [][]int{{1, 2, 5}, {2, 3, 8}, {1, 5, 10}}, 1))
+	fmt.Println(1 ^ 1)
+	fmt.Println(1 ^ 0)
+	fmt.Println(0 ^ 1)
+	fmt.Println(0 ^ 0)
+
 }
