@@ -8,7 +8,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1032]Stream of Characters.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1032]Stream of Characters.go" />
-              <option name="questionId" value="1097" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -17,7 +16,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1200]Minimum Absolute Difference.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1200]Minimum Absolute Difference.go" />
-              <option name="questionId" value="1306" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -26,7 +24,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1217]Minimum Cost to Move Chips to The Same Position.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1217]Minimum Cost to Move Chips to The Same Position.go" />
-              <option name="questionId" value="1329" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -35,7 +32,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2057]Smallest Index With Equal Value.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go" />
-              <option name="questionId" value="2181" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -44,7 +40,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.go" />
-              <option name="questionId" value="2182" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -53,7 +48,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2085]Count Common Words With One Occurrence.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2085]Count Common Words With One Occurrence.go" />
-              <option name="questionId" value="2190" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -62,7 +56,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2086]Minimum Number of Buckets Required to Collect Rainwater from Houses.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2086]Minimum Number of Buckets Required to Collect Rainwater from Houses.go" />
-              <option name="questionId" value="2191" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -71,7 +64,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2087]Minimum Cost Homecoming of a Robot in a Grid.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2087]Minimum Cost Homecoming of a Robot in a Grid.go" />
-              <option name="questionId" value="2192" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -80,7 +72,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2088]Count Fertile Pyramids in a Land.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2088]Count Fertile Pyramids in a Land.go" />
-              <option name="questionId" value="2193" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -89,7 +80,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2089]Find Target Indices After Sorting Array.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2089]Find Target Indices After Sorting Array.go" />
-              <option name="questionId" value="2210" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -98,7 +88,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2090]K Radius Subarray Averages.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2090]K Radius Subarray Averages.go" />
-              <option name="questionId" value="2211" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -107,7 +96,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2091]Removing Minimum and Maximum From Array.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2091]Removing Minimum and Maximum From Array.go" />
-              <option name="questionId" value="2212" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -116,7 +104,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2092]Find All People With Secret.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2092]Find All People With Secret.go" />
-              <option name="questionId" value="2213" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -125,7 +112,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2094]Finding 3-Digit Even Numbers.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2094]Finding 3-Digit Even Numbers.go" />
-              <option name="questionId" value="2215" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -134,7 +120,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2103]Rings and Rods.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2103]Rings and Rods.go" />
-              <option name="questionId" value="2226" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -143,7 +128,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[231]Power of Two.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[231]Power of Two.go" />
-              <option name="questionId" value="231" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -152,7 +136,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[328]Odd Even Linked List.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[328]Odd Even Linked List.go" />
-              <option name="questionId" value="328" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -161,7 +144,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[476]Number Complement.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[476]Number Complement.go" />
-              <option name="questionId" value="476" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -170,7 +152,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[56]Merge Intervals.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[56]Merge Intervals.go" />
-              <option name="questionId" value="56" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -179,7 +160,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[790]Domino and Tromino Tiling.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[790]Domino and Tromino Tiling.go" />
-              <option name="questionId" value="806" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -188,7 +168,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[797]All Paths From Source to Target.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[797]All Paths From Source to Target.go" />
-              <option name="questionId" value="813" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -197,7 +176,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[876]Middle of the Linked List.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[876]Middle of the Linked List.go" />
-              <option name="questionId" value="908" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -206,7 +184,17 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[878]Nth Magical Number.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[878]Nth Magical Number.go" />
-              <option name="questionId" value="910" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[997]Find the Town Judge.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[997]Find the Town Judge.md" />
+              <option name="frontendQuestionId" value="leetcode.com997" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[997]Find the Town Judge.go" />
+              <option name="titleSlug" value="find-the-town-judge" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -215,7 +203,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[1996]The Number of Weak Characters in the Game.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go" />
-              <option name="questionId" value="2123" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -224,7 +211,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2068]Check Whether Two Strings are Almost Equivalent.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go" />
-              <option name="questionId" value="2177" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -233,7 +219,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2069]Walking Robot Simulation II.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2069]Walking Robot Simulation II.go" />
-              <option name="questionId" value="2178" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -242,7 +227,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2070]Most Beautiful Item for Each Query.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2070]Most Beautiful Item for Each Query.go" />
-              <option name="questionId" value="2179" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -251,7 +235,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2071]Maximum Number of Tasks You Can Assign.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2071]Maximum Number of Tasks You Can Assign.go" />
-              <option name="questionId" value="2180" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -260,7 +243,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[721]Accounts Merge.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[721]Accounts Merge.go" />
-              <option name="questionId" value="721" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -269,7 +251,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[952]Largest Component Size by Common Factor.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[952]Largest Component Size by Common Factor.go" />
-              <option name="questionId" value="989" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -278,7 +259,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[953]Verifying an Alien Dictionary.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[953]Verifying an Alien Dictionary.go" />
-              <option name="questionId" value="990" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -287,7 +267,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[986]Interval List Intersections.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[986]Interval List Intersections.go" />
-              <option name="questionId" value="1028" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -296,7 +275,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/doc/content/[2068]Check Whether Two Strings are Almost Equivalent.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodePlugin/leetcode/editor/en/[2068]Check Whether Two Strings are Almost Equivalent.go" />
-              <option name="questionId" value="2177" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -305,7 +283,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="/var/folders/52/rcmwcv917tsdjygc57t51d_h0000gn/T/leetcode/editor/en/doc/content/[2081]Sum of k-Mirror Numbers.md" />
               <option name="path" value="/var/folders/52/rcmwcv917tsdjygc57t51d_h0000gn/T/leetcode/editor/en/[2081]Sum of k-Mirror Numbers.go" />
-              <option name="questionId" value="2202" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -314,7 +291,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/doc/content/[1]Two Sum.md" />
               <option name="path" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[1]Two Sum.go" />
-              <option name="questionId" value="1" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -323,7 +299,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2057]Smallest Index With Equal Value.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go" />
-              <option name="questionId" value="2181" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -332,7 +307,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/doc/content/[2076]Process Restricted Friend Requests.md" />
               <option name="path" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[2076]Process Restricted Friend Requests.go" />
-              <option name="questionId" value="2198" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -341,7 +315,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/doc/content/[238]Product of Array Except Self.md" />
               <option name="path" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[238]Product of Array Except Self.go" />
-              <option name="questionId" value="238" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -350,7 +323,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/doc/content/[35]Search Insert Position.md" />
               <option name="path" value="/var/folders/np/p66sst_d0qsclc1_j67hy6pw0000gn/T/leetcode/editor/en/[35]Search Insert Position.go" />
-              <option name="questionId" value="35" />
             </LeetcodeEditor>
           </value>
         </entry>
