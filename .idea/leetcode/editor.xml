@@ -145,6 +145,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2126]Destroying Asteroids.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2126]Destroying Asteroids.md" />
+              <option name="frontendQuestionId" value="leetcode.com2126" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2126]Destroying Asteroids.go" />
+              <option name="titleSlug" value="destroying-asteroids" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[231]Power of Two.go">
           <value>
             <LeetcodeEditor>
