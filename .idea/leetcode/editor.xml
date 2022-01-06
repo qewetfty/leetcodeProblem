@@ -27,6 +27,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[131]Palindrome Partitioning.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[131]Palindrome Partitioning.md" />
+              <option name="frontendQuestionId" value="leetcode.com131" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[131]Palindrome Partitioning.go" />
+              <option name="titleSlug" value="palindrome-partitioning" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go">
           <value>
             <LeetcodeEditor>
@@ -120,6 +131,17 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2103]Rings and Rods.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2103]Rings and Rods.go" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2125]Number of Laser Beams in a Bank.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2125]Number of Laser Beams in a Bank.md" />
+              <option name="frontendQuestionId" value="leetcode.com2125" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2125]Number of Laser Beams in a Bank.go" />
+              <option name="titleSlug" value="number-of-laser-beams-in-a-bank" />
             </LeetcodeEditor>
           </value>
         </entry>
