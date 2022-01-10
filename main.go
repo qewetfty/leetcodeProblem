@@ -180,5 +180,4 @@ func main() {
 	fmt.Println(1 ^ 0)
 	fmt.Println(0 ^ 1)
 	fmt.Println(0 ^ 0)
-
 }
