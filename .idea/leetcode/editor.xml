@@ -3,6 +3,69 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2115]Find All Possible Recipes from Given Supplies.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[2115]Find All Possible Recipes from Given Supplies.md" />
+              <option name="frontendQuestionId" value="leetcode.com2115" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[2115]Find All Possible Recipes from Given Supplies.go" />
+              <option name="titleSlug" value="find-all-possible-recipes-from-given-supplies" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2119]A Number After a Double Reversal.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[2119]A Number After a Double Reversal.md" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[2119]A Number After a Double Reversal.go" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2124]Check if All A's Appears Before All B's.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[2124]Check if All A's Appears Before All B's.md" />
+              <option name="frontendQuestionId" value="leetcode.com2124" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[2124]Check if All A's Appears Before All B's.go" />
+              <option name="titleSlug" value="check-if-all-as-appears-before-all-bs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2125]Number of Laser Beams in a Bank.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[2125]Number of Laser Beams in a Bank.md" />
+              <option name="frontendQuestionId" value="leetcode.com2125" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[2125]Number of Laser Beams in a Bank.go" />
+              <option name="titleSlug" value="number-of-laser-beams-in-a-bank" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2127]Maximum Employees to Be Invited to a Meeting.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[2127]Maximum Employees to Be Invited to a Meeting.md" />
+              <option name="frontendQuestionId" value="leetcode.com2127" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[2127]Maximum Employees to Be Invited to a Meeting.go" />
+              <option name="titleSlug" value="maximum-employees-to-be-invited-to-a-meeting" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[452]Minimum Number of Arrows to Burst Balloons.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[452]Minimum Number of Arrows to Burst Balloons.md" />
+              <option name="frontendQuestionId" value="leetcode.com452" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[452]Minimum Number of Arrows to Burst Balloons.go" />
+              <option name="titleSlug" value="minimum-number-of-arrows-to-burst-balloons" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1032]Stream of Characters.go">
           <value>
             <LeetcodeEditor>
