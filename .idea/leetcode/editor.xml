@@ -289,6 +289,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[875]Koko Eating Bananas.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[875]Koko Eating Bananas.md" />
+              <option name="frontendQuestionId" value="leetcode.com875" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[875]Koko Eating Bananas.go" />
+              <option name="titleSlug" value="koko-eating-bananas" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[876]Middle of the Linked List.go">
           <value>
             <LeetcodeEditor>
