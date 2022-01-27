@@ -246,6 +246,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[421]Maximum XOR of Two Numbers in an Array.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[421]Maximum XOR of Two Numbers in an Array.md" />
+              <option name="frontendQuestionId" value="leetcode.com421" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[421]Maximum XOR of Two Numbers in an Array.go" />
+              <option name="titleSlug" value="maximum-xor-of-two-numbers-in-an-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[476]Number Complement.go">
           <value>
             <LeetcodeEditor>
