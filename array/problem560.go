@@ -22,6 +22,8 @@ package array
 // Related Topics Array Hash Table Prefix Sum 👍 10984 👎 353
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
+// 前缀和解法
 func subarraySum(nums []int, k int) int {
 	l := len(nums)
 	// 构造前缀和
@@ -39,6 +41,21 @@ func subarraySum(nums []int, k int) int {
 		}
 	}
 	return result
+}
+
+// hashTable+前缀和解法
+func subarraySum2(nums []int, k int) int {
+	count, pre := 0, 0
+	preSumMap := make(map[int]int)
+	preSumMap[0] = 1
+	for _, num := range nums {
+		pre = pre + num
+		if _, ok := preSumMap[pre-k]; ok {
+			count = count + preSumMap[pre-k]
+		}
+		preSumMap[pre]++
+	}
+	return count
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
