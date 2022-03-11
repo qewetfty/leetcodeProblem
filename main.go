@@ -1,33 +1,56 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func findPairs2(nums []int, k int) int {
-	numMap := make(map[int]int)
-	for _, num := range nums {
-		numMap[num]++
+func repeatLimitedString(s string, repeatLimit int) string {
+	l := len(s)
+	charList := make([]int, 26)
+	for i := 0; i < l; i++ {
+		charList[s[i]-'a']++
 	}
-	res := 0
-	if k == 0 {
-		for _, v := range numMap {
-			if v > 1 {
-				res++
+	result := ""
+	for i := 'z'; i >= 'a'; i-- {
+		j := i - 'a'
+		// 先添加最大的某个字符
+		for charList[j] > 0 {
+			if charList[j] > repeatLimit {
+				charNum := Min(charList[j], repeatLimit)
+				charList[j] = charList[j] - charNum
+				result = result + strings.Repeat(string(i), charNum)
+				// 向某个字符中间插入比它小的字符。如果没有，则直接返回结果
+				hasResult := false
+				for k := i - 1; k >= 'a'; k-- {
+					if charList[k-'a'] == 0 {
+						continue
+					}
+					result = result + string(k)
+					charList[k-'a'] = charList[k-'a'] - 1
+					hasResult = true
+					break
+				}
+				if !hasResult {
+					return result
+				}
+			} else {
+				result = result + strings.Repeat(string(i), charList[j])
+				charList[j] = 0
 			}
 		}
-	} else {
-		for num := range numMap {
-			if _, ok := numMap[num+k]; ok {
-				res++
-			}
-		}
 	}
-	return res
+	return result
+}
+
+func Min(x, y int) int {
+	if x <= y {
+		return x
+	}
+	return y
 }
 
 func main() {
-	fmt.Println(findPairs2([]int{1, 3, 1, 5, 4}, 0))
-	fmt.Println(findPairs2([]int{3, 1, 4, 1, 5}, 2))
-	fmt.Println(findPairs2([]int{1, 2, 3, 4, 5}, 1))
-	fmt.Println(findPairs2([]int{1, 2, 4, 4, 3, 3, 0, 9, 2, 3}, 3))
-	fmt.Println(findPairs2([]int{-1, -2, -3}, 1))
+	fmt.Println(repeatLimitedString("aababab", 2))
+	fmt.Println(repeatLimitedString("cczazcc", 3))
 }
