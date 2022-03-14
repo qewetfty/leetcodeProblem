@@ -20,3 +20,11 @@ func Abs(x int) int {
 	}
 	return -x
 }
+
+// Gcd 求解两个数的最大公约数
+func Gcd(x, y int) int {
+	if x == 0 {
+		return y
+	}
+	return Gcd(y%x, x)
+}

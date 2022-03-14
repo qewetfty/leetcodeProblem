@@ -40,7 +40,6 @@ import (
 //		path is a valid absolute Unix path.
 
 func simplifyPath(path string) string {
-	strings.Replace(path, "//", "#", -1)
 	stack := make([]string, 0)
 	splitPath := strings.Split(path, "/")
 	for _, p := range splitPath {
@@ -55,7 +54,6 @@ func simplifyPath(path string) string {
 		}
 	}
 	result := "/" + strings.Join(stack, "/")
-	strings.Replace(result, "#", "//", -1)
 	return result
 }
 
