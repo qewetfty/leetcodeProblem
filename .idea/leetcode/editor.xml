@@ -90,6 +90,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1249]Minimum Remove to Make Valid Parentheses.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1249]Minimum Remove to Make Valid Parentheses.md" />
+              <option name="frontendQuestionId" value="leetcode.com1249" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1249]Minimum Remove to Make Valid Parentheses.go" />
+              <option name="titleSlug" value="minimum-remove-to-make-valid-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[131]Palindrome Partitioning.go">
           <value>
             <LeetcodeEditor>
@@ -249,6 +260,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2183]Count Array Pairs Divisible by K.go" />
               <option name="titleSlug" value="count-array-pairs-divisible-by-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2200]Find All K-Distant Indices in an Array.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2200]Find All K-Distant Indices in an Array.md" />
+              <option name="frontendQuestionId" value="leetcode.com2200" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2200]Find All K-Distant Indices in an Array.go" />
+              <option name="titleSlug" value="find-all-k-distant-indices-in-an-array" />
             </LeetcodeEditor>
           </value>
         </entry>
