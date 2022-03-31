@@ -112,6 +112,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1]Two Sum.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1]Two Sum.md" />
+              <option name="frontendQuestionId" value="leetcode.com1" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1]Two Sum.go" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2057]Smallest Index With Equal Value.go">
           <value>
             <LeetcodeEditor>
@@ -274,6 +285,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2201]Count Artifacts That Can Be Extracted.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2201]Count Artifacts That Can Be Extracted.md" />
+              <option name="frontendQuestionId" value="leetcode.com2201" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2201]Count Artifacts That Can Be Extracted.go" />
+              <option name="titleSlug" value="count-artifacts-that-can-be-extracted" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[231]Power of Two.go">
           <value>
             <LeetcodeEditor>
@@ -293,6 +315,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[316]Remove Duplicate Letters.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[316]Remove Duplicate Letters.md" />
+              <option name="frontendQuestionId" value="leetcode.com316" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[316]Remove Duplicate Letters.go" />
+              <option name="titleSlug" value="remove-duplicate-letters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[328]Odd Even Linked List.go">
           <value>
             <LeetcodeEditor>
@@ -309,6 +342,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[392]Is Subsequence.go" />
               <option name="titleSlug" value="is-subsequence" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[410]Split Array Largest Sum.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[410]Split Array Largest Sum.md" />
+              <option name="frontendQuestionId" value="leetcode.com410" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[410]Split Array Largest Sum.go" />
+              <option name="titleSlug" value="split-array-largest-sum" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -405,6 +449,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[74]Search a 2D Matrix.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[74]Search a 2D Matrix.md" />
+              <option name="frontendQuestionId" value="leetcode.com74" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[74]Search a 2D Matrix.go" />
+              <option name="titleSlug" value="search-a-2d-matrix" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[763]Partition Labels.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[763]Partition Labels.md" />
+              <option name="frontendQuestionId" value="leetcode.com763" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[763]Partition Labels.go" />
+              <option name="titleSlug" value="partition-labels" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[790]Domino and Tromino Tiling.go">
           <value>
             <LeetcodeEditor>
@@ -432,6 +498,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[856]Score of Parentheses.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[856]Score of Parentheses.md" />
+              <option name="frontendQuestionId" value="leetcode.com856" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[856]Score of Parentheses.go" />
+              <option name="titleSlug" value="score-of-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[875]Koko Eating Bananas.go">
           <value>
             <LeetcodeEditor>
@@ -456,6 +533,17 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[878]Nth Magical Number.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[878]Nth Magical Number.go" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[946]Validate Stack Sequences.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[946]Validate Stack Sequences.md" />
+              <option name="frontendQuestionId" value="leetcode.com946" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[946]Validate Stack Sequences.go" />
+              <option name="titleSlug" value="validate-stack-sequences" />
             </LeetcodeEditor>
           </value>
         </entry>
