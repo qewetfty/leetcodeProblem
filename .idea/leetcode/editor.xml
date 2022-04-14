@@ -449,6 +449,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[700]Search in a Binary Search Tree.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[700]Search in a Binary Search Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com700" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[700]Search in a Binary Search Tree.go" />
+              <option name="titleSlug" value="search-in-a-binary-search-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[703]Kth Largest Element in a Stream.go">
           <value>
             <LeetcodeEditor>
