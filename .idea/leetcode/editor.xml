@@ -307,6 +307,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2202]Maximize the Topmost Element After K Moves.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2202]Maximize the Topmost Element After K Moves.md" />
+              <option name="frontendQuestionId" value="leetcode.com2202" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2202]Maximize the Topmost Element After K Moves.go" />
+              <option name="titleSlug" value="maximize-the-topmost-element-after-k-moves" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[230]Kth Smallest Element in a BST.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[230]Kth Smallest Element in a BST.md" />
+              <option name="frontendQuestionId" value="leetcode.com230" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[230]Kth Smallest Element in a BST.go" />
+              <option name="titleSlug" value="kth-smallest-element-in-a-bst" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[231]Power of Two.go">
           <value>
             <LeetcodeEditor>
