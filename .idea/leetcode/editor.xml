@@ -93,6 +93,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1202]Smallest String With Swaps.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[1202]Smallest String With Swaps.md" />
+              <option name="frontendQuestionId" value="leetcode.com1202" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1202]Smallest String With Swaps.go" />
+              <option name="titleSlug" value="smallest-string-with-swaps" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[1217]Minimum Cost to Move Chips to The Same Position.go">
           <value>
             <LeetcodeEditor>
@@ -315,6 +326,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2202]Maximize the Topmost Element After K Moves.go" />
               <option name="titleSlug" value="maximize-the-topmost-element-after-k-moves" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2203]Minimum Weighted Subgraph With the Required Paths.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2203]Minimum Weighted Subgraph With the Required Paths.md" />
+              <option name="frontendQuestionId" value="leetcode.com2203" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2203]Minimum Weighted Subgraph With the Required Paths.go" />
+              <option name="titleSlug" value="minimum-weighted-subgraph-with-the-required-paths" />
             </LeetcodeEditor>
           </value>
         </entry>
