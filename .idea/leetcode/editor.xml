@@ -267,6 +267,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2267] Check if There Is a Valid Parentheses String Path.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[2267] Check if There Is a Valid Parentheses String Path.md" />
+              <option name="frontendQuestionId" value="leetcode.com2267" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[2267] Check if There Is a Valid Parentheses String Path.go" />
+              <option name="titleSlug" value="check-if-there-is-a-valid-parentheses-string-path" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[230]Kth Smallest Element in a BST.go">
           <value>
             <LeetcodeEditor>
@@ -297,6 +308,28 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[316]Remove Duplicate Letters.go" />
               <option name="titleSlug" value="remove-duplicate-letters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[329]Longest Increasing Path in a Matrix.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[329]Longest Increasing Path in a Matrix.md" />
+              <option name="frontendQuestionId" value="leetcode.com329" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[329]Longest Increasing Path in a Matrix.go" />
+              <option name="titleSlug" value="longest-increasing-path-in-a-matrix" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[354]Russian Doll Envelopes.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[354]Russian Doll Envelopes.md" />
+              <option name="frontendQuestionId" value="leetcode.com354" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[354]Russian Doll Envelopes.go" />
+              <option name="titleSlug" value="russian-doll-envelopes" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -385,6 +418,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[61]Rotate List.go" />
               <option name="titleSlug" value="rotate-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[63]Unique Paths II.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[63]Unique Paths II.md" />
+              <option name="frontendQuestionId" value="leetcode.com63" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[63]Unique Paths II.go" />
+              <option name="titleSlug" value="unique-paths-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -484,6 +528,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[856]Score of Parentheses.go" />
               <option name="titleSlug" value="score-of-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[867]Transpose Matrix.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[867]Transpose Matrix.md" />
+              <option name="frontendQuestionId" value="leetcode.com867" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[867]Transpose Matrix.go" />
+              <option name="titleSlug" value="transpose-matrix" />
             </LeetcodeEditor>
           </value>
         </entry>
