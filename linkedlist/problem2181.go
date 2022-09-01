@@ -1,5 +1,7 @@
 package linkedlist
 
+import "github.com/leetcodeProblem/data"
+
 //You are given the head of a linked list, which contains a series of integers
 //separated by 0's. The beginning and end of the linked list will have Node.val ==
 //0.
@@ -53,8 +55,8 @@ package linkedlist
  *     Next *ListNode
  * }
  */
-func mergeNodes(head *ListNode) *ListNode {
-	dummy := &ListNode{}
+func mergeNodes(head *data.ListNode) *data.ListNode {
+	dummy := &data.ListNode{}
 	cur := dummy
 	head = head.Next
 	for head != nil {
@@ -63,7 +65,7 @@ func mergeNodes(head *ListNode) *ListNode {
 			curSum = curSum + node.Val
 			node = node.Next
 		}
-		cur.Next = &ListNode{Val: curSum}
+		cur.Next = &data.ListNode{Val: curSum}
 		cur = cur.Next
 		head = node.Next
 	}
