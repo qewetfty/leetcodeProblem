@@ -72,6 +72,28 @@ func findPairs(nums []int, k int) int {
 	return res
 }
 
+func findPairs2(nums []int, k int) int {
+	numMap := make(map[int]int)
+	for _, num := range nums {
+		numMap[num]++
+	}
+	res := 0
+	if k == 0 {
+		for _, v := range numMap {
+			if v > 1 {
+				res++
+			}
+		}
+	} else {
+		for num := range numMap {
+			if _, ok := numMap[num+k]; ok {
+				res++
+			}
+		}
+	}
+	return res
+}
+
 func testProblem532() {
 	fmt.Println(findPairs([]int{1, 3, 1, 5, 4}, 0))
 	fmt.Println(findPairs([]int{3, 1, 4, 1, 5}, 2))

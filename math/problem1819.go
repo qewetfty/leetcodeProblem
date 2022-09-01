@@ -2,7 +2,7 @@ package math
 
 import (
 	"fmt"
-	"github.com/leetcodeProblem/utils"
+	"leetcodeProblem/utils"
 )
 
 // You are given an array nums that consists of positive integers.
