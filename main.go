@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math/big"
+	"strconv"
+	"strings"
 )
 
 func countTexts(pressedKeys string) int {
@@ -53,4 +55,10 @@ func main() {
 	fmt.Println(countTexts("2222"))
 	fmt.Println(countTexts("22222"))
 	fmt.Println(countTexts("222222"))
+	var sb *strings.Builder
+	sb.WriteString(strconv.Itoa(1))
+	sb.WriteByte('(')
+	sb.WriteByte(')')
+	sb.String()
+	fmt.Fprint(sb, '(')
 }
