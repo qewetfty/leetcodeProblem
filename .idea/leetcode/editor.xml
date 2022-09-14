@@ -399,6 +399,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[417]Pacific Atlantic Water Flow.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[417]Pacific Atlantic Water Flow.md" />
+              <option name="frontendQuestionId" value="leetcode.com417" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[417]Pacific Atlantic Water Flow.go" />
+              <option name="titleSlug" value="pacific-atlantic-water-flow" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[421]Maximum XOR of Two Numbers in an Array.go">
           <value>
             <LeetcodeEditor>
@@ -531,6 +542,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[792]Number of Matching Subsequences.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[792]Number of Matching Subsequences.md" />
+              <option name="frontendQuestionId" value="leetcode.com792" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[792]Number of Matching Subsequences.go" />
+              <option name="titleSlug" value="number-of-matching-subsequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[814]Binary Tree Pruning.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[814]Binary Tree Pruning.md" />
+              <option name="frontendQuestionId" value="leetcode.com814" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[814]Binary Tree Pruning.go" />
+              <option name="titleSlug" value="binary-tree-pruning" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[82]Remove Duplicates from Sorted List II.go">
           <value>
             <LeetcodeEditor>
@@ -583,6 +616,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[875]Koko Eating Bananas.go" />
               <option name="titleSlug" value="koko-eating-bananas" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[890]Find and Replace Pattern.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/doc/content/[890]Find and Replace Pattern.md" />
+              <option name="frontendQuestionId" value="leetcode.com890" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leetcodeEditor/leetcode/editor/en/[890]Find and Replace Pattern.go" />
+              <option name="titleSlug" value="find-and-replace-pattern" />
             </LeetcodeEditor>
           </value>
         </entry>
