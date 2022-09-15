@@ -3,6 +3,39 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[1457]Pseudo-Palindromic Paths in a Binary Tree.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[1457]Pseudo-Palindromic Paths in a Binary Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com1457" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[1457]Pseudo-Palindromic Paths in a Binary Tree.go" />
+              <option name="titleSlug" value="pseudo-palindromic-paths-in-a-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[1996]The Number of Weak Characters in the Game.md" />
+              <option name="frontendQuestionId" value="leetcode.com1996" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go" />
+              <option name="titleSlug" value="the-number-of-weak-characters-in-the-game" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2007]Find Original Array From Doubled Array.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[2007]Find Original Array From Doubled Array.md" />
+              <option name="frontendQuestionId" value="leetcode.com2007" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[2007]Find Original Array From Doubled Array.go" />
+              <option name="titleSlug" value="find-original-array-from-doubled-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[2115]Find All Possible Recipes from Given Supplies.go">
           <value>
             <LeetcodeEditor>
@@ -47,6 +80,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[393]UTF-8 Validation.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[393]UTF-8 Validation.md" />
+              <option name="frontendQuestionId" value="leetcode.com393" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[393]UTF-8 Validation.go" />
+              <option name="titleSlug" value="utf-8-validation" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[416]Partition Equal Subset Sum.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[416]Partition Equal Subset Sum.md" />
+              <option name="frontendQuestionId" value="leetcode.com416" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[416]Partition Equal Subset Sum.go" />
+              <option name="titleSlug" value="partition-equal-subset-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[429]N-ary Tree Level Order Traversal.go">
           <value>
             <LeetcodeEditor>
@@ -88,6 +143,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[637]Average of Levels in Binary Tree.go" />
               <option name="titleSlug" value="average-of-levels-in-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[94]Binary Tree Inorder Traversal.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[94]Binary Tree Inorder Traversal.md" />
+              <option name="frontendQuestionId" value="leetcode.com94" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[94]Binary Tree Inorder Traversal.go" />
+              <option name="titleSlug" value="binary-tree-inorder-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
