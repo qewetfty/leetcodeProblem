@@ -58,3 +58,27 @@ func dfs1457(node *data.TreeNode, numberMap map[int]int) {
 	dfs1457(node.Right, numberMap)
 	numberMap[node.Val]--
 }
+
+func pseudoPalindromicPathsBit(root *data.TreeNode) int {
+	if root == nil {
+		return 0
+	}
+	result1457 = 0
+	dfs1457Bit(root, 0)
+	return result1457
+}
+
+func dfs1457Bit(node *data.TreeNode, temp int) {
+	n := temp ^ (1 << node.Val)
+	if node.Left == nil && node.Right == nil {
+		if n == 0 || n&(n-1) == 0 {
+			result1457++
+		}
+	}
+	if node.Left != nil {
+		dfs1457Bit(node.Left, n)
+	}
+	if node.Right != nil {
+		dfs1457Bit(node.Right, n)
+	}
+}
