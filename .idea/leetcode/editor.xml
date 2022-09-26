@@ -14,6 +14,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[1770]Maximum Score from Performing Multiplication Operations.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[1770]Maximum Score from Performing Multiplication Operations.md" />
+              <option name="frontendQuestionId" value="leetcode.com1770" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[1770]Maximum Score from Performing Multiplication Operations.go" />
+              <option name="titleSlug" value="maximum-score-from-performing-multiplication-operations" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[1996]The Number of Weak Characters in the Game.go">
           <value>
             <LeetcodeEditor>
@@ -135,6 +146,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[609]Find Duplicate File in System.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[609]Find Duplicate File in System.md" />
+              <option name="frontendQuestionId" value="leetcode.com609" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[609]Find Duplicate File in System.go" />
+              <option name="titleSlug" value="find-duplicate-file-in-system" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[637]Average of Levels in Binary Tree.go">
           <value>
             <LeetcodeEditor>
@@ -146,6 +168,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[718]Maximum Length of Repeated Subarray.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[718]Maximum Length of Repeated Subarray.md" />
+              <option name="frontendQuestionId" value="leetcode.com718" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[718]Maximum Length of Repeated Subarray.go" />
+              <option name="titleSlug" value="maximum-length-of-repeated-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[94]Binary Tree Inorder Traversal.go">
           <value>
             <LeetcodeEditor>
@@ -154,6 +187,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[94]Binary Tree Inorder Traversal.go" />
               <option name="titleSlug" value="binary-tree-inorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../leet/leetcode/editor/en/[990]Satisfiability of Equality Equations.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../leet/leetcode/editor/en/doc/content/[990]Satisfiability of Equality Equations.md" />
+              <option name="frontendQuestionId" value="leetcode.com990" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/../leet/leetcode/editor/en/[990]Satisfiability of Equality Equations.go" />
+              <option name="titleSlug" value="satisfiability-of-equality-equations" />
             </LeetcodeEditor>
           </value>
         </entry>

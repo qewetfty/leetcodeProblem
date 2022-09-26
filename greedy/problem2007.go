@@ -1,7 +1,5 @@
 package greedy
 
-import "sort"
-
 //An integer array original is transformed into a doubled array changed by
 //appending twice the value of every element in original, and then randomly shuffling
 //the resulting array.
@@ -55,23 +53,25 @@ func findOriginalArray(changed []int) []int {
 	if l%2 == 1 {
 		return []int{}
 	}
-	sort.Ints(changed)
-	numberMap := make(map[int]int)
+	mapArr := make([]int, 100001)
 	for _, num := range changed {
-		numberMap[num]++
+		mapArr[num]++
 	}
-	result := make([]int, 0)
-	for _, num := range changed {
-		if value := numberMap[num]; value == 0 {
-			continue
+	expectedLen := l / 2
+	result := make([]int, expectedLen)
+	curIndex := 0
+	for i := 0; i < 100001; i++ {
+		for mapArr[i] > 0 {
+			mapArr[i]--
+			if i*2 > 100000 || mapArr[i*2] == 0 {
+				return []int{}
+			}
+			mapArr[i*2]--
+			result[curIndex] = i
+			if curIndex++; curIndex == expectedLen {
+				break
+			}
 		}
-		numberMap[num]--
-		doubleNum := num * 2
-		if value := numberMap[doubleNum]; value == 0 {
-			return []int{}
-		}
-		numberMap[doubleNum]--
-		result = append(result, num)
 	}
 	return result
 }
